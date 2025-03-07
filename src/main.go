@@ -3,6 +3,8 @@ package main
 import (
 	"log"
 	"net/http"
+
+	"github.com/gorilla/mux"
 )
 
 func main() {
@@ -10,19 +12,10 @@ func main() {
 		log.Fatalf("Error initializing database: %v", err)
 	}
 
-	http.HandleFunc("/api/paddle/stats", withCommonHeaders(getPaddleStats))
-	http.HandleFunc("/api/paddle/stats", withCommonHeaders(uploadPaddleStats))
+	router := mux.NewRouter()
+
+	router.HandleFunc("/api/paddle/stats", withCommonHeaders(getPaddleStats)).Methods("GET")
+	router.HandleFunc("/api/paddle/stats", withCommonHeaders(uploadPaddleStats)).Methods("POST")
 	// You can add more endpoints here, wrapping them with the middleware
-	http.ListenAndServe(":8080", nil)
-}
-
-// Middleware to set common headers and handle errors
-func withCommonHeaders(next http.HandlerFunc) http.HandlerFunc {
-	return func(w http.ResponseWriter, r *http.Request) {
-		// Set common headers
-		w.Header().Set("Content-Type", "application/json")
-
-		// Call the next handler
-		next(w, r)
-	}
+	http.ListenAndServe(":8080", router)
 }

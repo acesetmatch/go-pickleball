@@ -7,12 +7,6 @@ import (
 
 // getPaddleStats handles the API request for fetching paddle statistics
 func getPaddleStats(w http.ResponseWriter, r *http.Request) {
-	// Only allow GET requests
-	if r.Method != http.MethodGet {
-		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
-		return
-	}
-
 	stats := Paddle{
 		Specs: Specs{
 			Name:              "Ben Johns",
@@ -45,12 +39,6 @@ func getPaddleStats(w http.ResponseWriter, r *http.Request) {
 
 // uploadPaddleStats handles the API request for uploading paddle statistics
 func uploadPaddleStats(w http.ResponseWriter, r *http.Request) {
-	// Only allow POST requests
-	if r.Method != http.MethodPost {
-		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
-		return
-	}
-
 	// Parse the JSON body
 	var paddle Paddle
 	if err := json.NewDecoder(r.Body).Decode(&paddle); err != nil {
@@ -67,4 +55,15 @@ func uploadPaddleStats(w http.ResponseWriter, r *http.Request) {
 
 	// Set success status code
 	w.WriteHeader(http.StatusCreated)
+}
+
+// Middleware to set common headers and handle errors
+func withCommonHeaders(next http.HandlerFunc) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		// Set common headers
+		w.Header().Set("Content-Type", "application/json")
+
+		// Call the next handler
+		next(w, r)
+	}
 }
