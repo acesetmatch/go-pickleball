@@ -14,7 +14,7 @@ func main() {
 
 	router := mux.NewRouter()
 
-	router.HandleFunc("/api/paddle/stats", withCommonHeaders(getPaddleStats)).Methods("GET")
+	router.HandleFunc("/api/paddle/stats/:id", withCommonHeaders(getPaddleStats)).Methods("GET")
 	router.HandleFunc("/api/paddle/stats", withCommonHeaders(uploadPaddleStats)).Methods("POST")
 	// You can add more endpoints here, wrapping them with the middleware
 	http.ListenAndServe(":8080", router)

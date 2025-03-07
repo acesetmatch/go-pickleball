@@ -25,6 +25,7 @@ type Performance struct {
 
 // Paddle represents a paddle with its specs and performance
 type Paddle struct {
+	ID          string      `json:"id"`
 	Specs       Specs       `json:"specs"`
 	Performance Performance `json:"performance"`
 }

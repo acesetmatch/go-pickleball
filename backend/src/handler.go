@@ -3,13 +3,19 @@ package main
 import (
 	"encoding/json"
 	"net/http"
+
+	"github.com/gorilla/mux"
 )
 
 // getPaddleStats handles the API request for fetching paddle statistics
 func getPaddleStats(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	paddleId := vars["id"]
+
 	stats := Paddle{
+		ID: "ENGAGE-PURSUIT-MX-6.0-2023-42069",
 		Specs: Specs{
-			Name:              "Ben Johns",
+			Name:              "Engage Pursuit MX",
 			Surface:           "Composite",
 			AverageWeight:     220.0,
 			Core:              15.0,
