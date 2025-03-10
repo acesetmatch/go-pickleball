@@ -110,7 +110,7 @@ func createTables() error {
 
 // GetPaddleByID retrieves a paddle with its specs and performance by ID
 // Example ID: "ENGAGE-PURSUIT-MX-6.0-2023-42069"
-func GetPaddleByID(id int) (*Paddle, error) {
+func GetPaddleByID(paddleId string) (*Paddle, error) {
 	paddle := &Paddle{}
 
 	// Query for paddle, specs, and performance in a single query using JOINs
@@ -127,8 +127,8 @@ func GetPaddleByID(id int) (*Paddle, error) {
 		JOIN 
 			paddle_performance perf ON s.id = perf.paddle_spec_id
 		WHERE 
-			p.id = $1
-	`, id)
+			p.paddle_id = $1
+	`, paddleId)
 
 	err := row.Scan(
 		&paddle.ID, &paddle.Metadata.Brand, &paddle.Metadata.Model, &paddle.Metadata.SerialCode,

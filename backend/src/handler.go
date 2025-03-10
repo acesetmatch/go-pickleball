@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
-	"strconv"
 
 	"github.com/gorilla/mux"
 )
@@ -38,16 +37,16 @@ func getPaddleStats(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	paddleId := vars["id"]
 
-	id, err := strconv.Atoi(paddleId)
+	// id, err := strconv.Atoi(paddleId)
 
-	if err != nil {
-		// Log the error
-		log.Printf("Error converting ID to integer: %v", err)
-		http.Error(w, "Invalid paddle ID format", http.StatusBadRequest)
-		return
-	}
+	// if err != nil {
+	// 	// Log the error
+	// 	log.Printf("Error converting ID to integer: %v", err)
+	// 	http.Error(w, "Invalid paddle ID format", http.StatusBadRequest)
+	// 	return
+	// }
 
-	paddle, err := GetPaddleByID(id)
+	paddle, err := GetPaddleByID(paddleId)
 
 	if err != nil {
 		log.Printf("Error converting ID to integer: %v", err)
