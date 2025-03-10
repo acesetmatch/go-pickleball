@@ -51,11 +51,27 @@ func InitDB() error {
 
 // createTables creates the necessary tables if they don't exist
 func createTables() error {
-	// Create specs table
+	// Create paddles table
 	_, err := DB.Exec(`
+		CREATE TABLE IF NOT EXISTS paddles (
+			id SERIAL PRIMARY KEY,
+			paddle_id VARCHAR(100) UNIQUE NOT NULL,
+			brand VARCHAR(100) NOT NULL,
+			model VARCHAR(100) NOT NULL,
+			serial_code VARCHAR(100),
+			created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+		)
+	`)
+	if err != nil {
+		return err
+	}
+
+	// Create specs table
+	_, err = DB.Exec(`
 		CREATE TABLE IF NOT EXISTS paddle_specs (
 			id SERIAL PRIMARY KEY,
-			name VARCHAR(100) NOT NULL,
+			paddle_id INTEGER REFERENCES paddles(id),
+			shape VARCHAR(50) NOT NULL,
 			surface VARCHAR(50) NOT NULL,
 			average_weight FLOAT NOT NULL,
 			core FLOAT NOT NULL,
@@ -93,25 +109,30 @@ func createTables() error {
 }
 
 // GetPaddleByID retrieves a paddle with its specs and performance by ID
+// Example ID: "ENGAGE-PURSUIT-MX-6.0-2023-42069"
 func GetPaddleByID(id int) (*Paddle, error) {
 	paddle := &Paddle{}
 
-	// Query for paddle specs and performance in a single query using JOIN
+	// Query for paddle, specs, and performance in a single query using JOINs
 	row := DB.QueryRow(`
 		SELECT 
-			s.name, s.surface, s.average_weight, s.core, s.paddle_length, 
+			p.paddle_id, p.brand, p.model, p.serial_code,
+			s.shape, s.surface, s.average_weight, s.core, s.paddle_length, 
 			s.paddle_width, s.grip_length, s.grip_type, s.grip_circumference,
-			p.power, p.pop, p.spin, p.twist_weight, p.swing_weight, p.balance_point
+			perf.power, perf.pop, perf.spin, perf.twist_weight, perf.swing_weight, perf.balance_point
 		FROM 
-			paddle_specs s
+			paddles p
 		JOIN 
-			paddle_performance p ON s.id = p.paddle_spec_id
+			paddle_specs s ON p.id = s.paddle_id
+		JOIN 
+			paddle_performance perf ON s.id = perf.paddle_spec_id
 		WHERE 
-			s.id = $1
+			p.id = $1
 	`, id)
 
 	err := row.Scan(
-		&paddle.Specs.Name, &paddle.Specs.Surface, &paddle.Specs.AverageWeight,
+		&paddle.ID, &paddle.Metadata.Brand, &paddle.Metadata.Model, &paddle.Metadata.SerialCode,
+		&paddle.Specs.Shape, &paddle.Specs.Surface, &paddle.Specs.AverageWeight,
 		&paddle.Specs.Core, &paddle.Specs.PaddleLength, &paddle.Specs.PaddleWidth,
 		&paddle.Specs.GripLength, &paddle.Specs.GripType, &paddle.Specs.GripCircumference,
 		&paddle.Performance.Power, &paddle.Performance.Pop, &paddle.Performance.Spin,
@@ -127,6 +148,23 @@ func GetPaddleByID(id int) (*Paddle, error) {
 
 // SavePaddle saves a paddle's specs and performance to the database
 func SavePaddle(paddle *Paddle) (int, error) {
+	// Generate paddle ID if not provided
+	if paddle.ID == "" {
+		paddle.ID = paddle.GeneratePaddleID()
+	}
+
+	// Check if a paddle with this business ID already exists
+	var existingID int
+	err := DB.QueryRow("SELECT id FROM paddles WHERE paddle_id = $1", paddle.ID).Scan(&existingID)
+	if err == nil {
+		// If no error, then a paddle with this ID was found
+		return 0, fmt.Errorf("paddle with ID %s already exists", paddle.ID)
+	} else if err != sql.ErrNoRows {
+		// If error is not "no rows", then it's a database error
+		return 0, fmt.Errorf("error checking for existing paddle: %w", err)
+	}
+	// If err is sql.ErrNoRows, then no paddle with this ID exists, so we can proceed
+
 	// Begin a transaction
 	tx, err := DB.Begin()
 	if err != nil {
@@ -134,16 +172,43 @@ func SavePaddle(paddle *Paddle) (int, error) {
 	}
 	defer tx.Rollback()
 
+	// Insert into paddles table first
+	var paddleDBID int
+	err = tx.QueryRow(`
+		INSERT INTO paddles (
+			paddle_id, brand, model, serial_code
+		) VALUES ($1, $2, $3, $4)
+		RETURNING id
+	`,
+		paddle.ID, paddle.Metadata.Brand, paddle.Metadata.Model, paddle.Metadata.SerialCode,
+	).Scan(&paddleDBID)
+
+	if err != nil {
+		return 0, err
+	}
+
+	// Check if a paddle_specs record with this paddle_id already exists
+	var existingSpecID int
+	err = tx.QueryRow("SELECT id FROM paddle_specs WHERE paddle_id = $1", paddleDBID).Scan(&existingSpecID)
+	if err == nil {
+		// If no error, then specs for this paddle already exist
+		return 0, fmt.Errorf("specs for paddle with database ID %d already exist", paddleDBID)
+	} else if err != sql.ErrNoRows {
+		// If error is not "no rows", then it's a database error
+		return 0, fmt.Errorf("error checking for existing paddle specs: %w", err)
+	}
+	// If err is sql.ErrNoRows, then no specs for this paddle exist, so we can proceed
+
 	var specID int
 	// Insert paddle specs
 	err = tx.QueryRow(`
 		INSERT INTO paddle_specs (
-			name, surface, average_weight, core, paddle_length, 
+			paddle_id, shape, surface, average_weight, core, paddle_length, 
 			paddle_width, grip_length, grip_type, grip_circumference
-		) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+		) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
 		RETURNING id
 	`,
-		paddle.Specs.Name, paddle.Specs.Surface, paddle.Specs.AverageWeight,
+		paddleDBID, paddle.Specs.Shape, paddle.Specs.Surface, paddle.Specs.AverageWeight,
 		paddle.Specs.Core, paddle.Specs.PaddleLength, paddle.Specs.PaddleWidth,
 		paddle.Specs.GripLength, paddle.Specs.GripType, paddle.Specs.GripCircumference,
 	).Scan(&specID)
@@ -171,7 +236,7 @@ func SavePaddle(paddle *Paddle) (int, error) {
 		return 0, err
 	}
 
-	return specID, nil
+	return paddleDBID, nil
 }
 
 // GetAllPaddles retrieves all paddles with their specs and performance
@@ -198,7 +263,7 @@ func GetAllPaddles() ([]*Paddle, error) {
 		paddle := &Paddle{}
 		var id int
 		err := rows.Scan(
-			&id, &paddle.Specs.Name, &paddle.Specs.Surface, &paddle.Specs.AverageWeight,
+			&id, &paddle.Specs.Surface, &paddle.Specs.AverageWeight,
 			&paddle.Specs.Core, &paddle.Specs.PaddleLength, &paddle.Specs.PaddleWidth,
 			&paddle.Specs.GripLength, &paddle.Specs.GripType, &paddle.Specs.GripCircumference,
 			&paddle.Performance.Power, &paddle.Performance.Pop, &paddle.Performance.Spin,
