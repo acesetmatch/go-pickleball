@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
 	"strings"
 )
 
@@ -45,6 +44,13 @@ type Performance struct {
 	BalancePoint float64 `json:"balance_point"`
 }
 
+// PaddleInput represents the input data for creating a paddle
+type PaddleInput struct {
+	Metadata    Metadata    `json:"metadata"`
+	Specs       Specs       `json:"specs"`
+	Performance Performance `json:"performance"`
+}
+
 // Paddle represents a paddle with its specs and performance
 type Paddle struct {
 	ID          string      `json:"id"`
@@ -53,19 +59,33 @@ type Paddle struct {
 	Performance Performance `json:"performance"`
 }
 
-func (pi *Paddle) GeneratePaddleID() string {
-	// Format: BRAND-MODEL-RANDOM
-	paddleID := fmt.Sprintf("%s-%s-%06d",
-		formatIDComponent(pi.Metadata.Brand),
-		formatIDComponent(pi.Metadata.Model),
-		rand.Intn(1000000))
+// ToPaddle converts a PaddleInput to a Paddle by generating an ID
+func (input *PaddleInput) ToPaddle() *Paddle {
+	paddle := &Paddle{
+		Metadata:    input.Metadata,
+		Specs:       input.Specs,
+		Performance: input.Performance,
+	}
+
+	// Generate ID based on metadata
+	paddle.ID = generatePaddleID(paddle.Metadata.Brand, paddle.Metadata.Model)
+	return paddle
+}
+
+// generatePaddleID creates a paddle ID from brand and model
+func generatePaddleID(brand, model string) string {
+	// Format: BRAND-MODEL
+	paddleID := fmt.Sprintf("%s-%s",
+		formatIDComponent(brand),
+		formatIDComponent(model),
+	)
 	return paddleID
 }
 
 // formatIDComponent formats a string to be used in a paddle ID
 // by converting to uppercase and replacing spaces with hyphens
 func formatIDComponent(s string) string {
-	s = strings.ToUpper(s)
+	s = strings.ToLower(s)
 	s = strings.ReplaceAll(s, " ", "-")
 	return s
 }

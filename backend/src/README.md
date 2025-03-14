@@ -88,7 +88,6 @@ curl -X POST \
   http://localhost:8080/api/paddle \
   -H "Content-Type: application/json" \
   -d '{
-    "id": "ENGAGE-PURSUIT-MX-6.0-2023-42069",
     "metadata": {
       "brand": "Engage",
       "model": "Pursuit MX 6.0",

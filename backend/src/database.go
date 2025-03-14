@@ -148,14 +148,9 @@ func GetPaddleByID(paddleId string) (*Paddle, error) {
 
 // SavePaddle saves a paddle's specs and performance to the database
 func SavePaddle(paddle *Paddle) (int, error) {
-	// Generate paddle ID if not provided
-	if paddle.ID == "" {
-		paddle.ID = paddle.GeneratePaddleID()
-	}
-
 	// Check if a paddle with this business ID already exists
 	var existingID int
-	err := DB.QueryRow("SELECT id FROM paddles WHERE paddle_id = $1", paddle.ID).Scan(&existingID)
+	err := DB.QueryRow("SELECT id FROM paddles WHERE LOWER(paddle_id) = LOWER($1)", paddle.ID).Scan(&existingID)
 	if err == nil {
 		// If no error, then a paddle with this ID was found
 		return 0, fmt.Errorf("paddle with ID %s already exists", paddle.ID)

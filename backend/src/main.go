@@ -25,8 +25,8 @@ func main() {
 	}).Methods("GET")
 
 	// Add your API routes
-	router.HandleFunc("/api/paddle", uploadPaddleStats).Methods("POST")
-	router.HandleFunc("/api/paddle/{id}", getPaddleStats).Methods("GET")
+	router.HandleFunc("/api/paddle", withCommonHeaders(uploadPaddleStats)).Methods("POST")
+	router.HandleFunc("/api/paddle/{id}", withCommonHeaders(getPaddleStats)).Methods("GET")
 
 	// Add logging middleware
 	router.Use(func(next http.Handler) http.Handler {

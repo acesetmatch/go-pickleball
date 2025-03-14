@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 
@@ -32,19 +33,40 @@ import (
 // 	},
 // }
 
+// errorResponse represents a standardized error response
+type errorResponse struct {
+	Error   string `json:"error"`
+	Message string `json:"message,omitempty"`
+	Code    int    `json:"code"`
+}
+
+// respondWithError sends a standardized error response
+func respondWithError(w http.ResponseWriter, message string, code int) {
+	response := errorResponse{
+		Error:   http.StatusText(code),
+		Message: message,
+		Code:    code,
+	}
+
+	w.WriteHeader(code)
+
+	if err := json.NewEncoder(w).Encode(response); err != nil {
+		// If encoding fails, fall back to a simple error
+		log.Printf("Error encoding error response: %v", err)
+		http.Error(w, message, code)
+	}
+}
+
 // getPaddleStats handles the API request for fetching paddle statistics
 func getPaddleStats(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	paddleId := vars["id"]
 
-	// id, err := strconv.Atoi(paddleId)
-
-	// if err != nil {
-	// 	// Log the error
-	// 	log.Printf("Error converting ID to integer: %v", err)
-	// 	http.Error(w, "Invalid paddle ID format", http.StatusBadRequest)
-	// 	return
-	// }
+	// Validate the paddle ID
+	if err := validatePaddleID(paddleId); err != nil {
+		respondWithError(w, fmt.Sprintf("Invalid paddle ID: %v", err), http.StatusBadRequest)
+		return
+	}
 
 	paddle, err := GetPaddleByID(paddleId)
 
@@ -63,14 +85,31 @@ func getPaddleStats(w http.ResponseWriter, r *http.Request) {
 
 // uploadPaddleStats handles the API request for uploading paddle statistics
 func uploadPaddleStats(w http.ResponseWriter, r *http.Request) {
-	// Parse the JSON body
-	var paddle Paddle
-	if err := json.NewDecoder(r.Body).Decode(&paddle); err != nil {
-		http.Error(w, "Invalid request body", http.StatusBadRequest)
+	// Create a decoder with strict field checking
+	decoder := json.NewDecoder(r.Body)
+	decoder.DisallowUnknownFields()
+
+	// Parse the JSON body into PaddleInput
+	var paddleInput PaddleInput
+	if err := decoder.Decode(&paddleInput); err != nil {
+		// This will catch any extra fields in the JSON
+		respondWithError(w, fmt.Sprintf("Invalid request body: %v", err), http.StatusBadRequest)
 		return
 	}
 
-	paddleDBID, err := SavePaddle(&paddle)
+	// Validate the paddle input
+	if err := validatePaddleInput(&paddleInput); err != nil {
+		respondWithError(w, fmt.Sprintf("Validation error: %v", err), http.StatusBadRequest)
+		return
+	}
+
+	// Convert PaddleInput to Paddle (this generates the ID)
+	paddle := paddleInput.ToPaddle()
+
+	log.Printf("paddle: %v", *paddle)
+
+	// Save the paddle to the database
+	paddleDBID, err := SavePaddle(paddle)
 	if err != nil {
 		log.Printf("Error saving paddle: %v", err)
 		http.Error(w, "Failed to save paddle data", http.StatusInternalServerError)
@@ -85,7 +124,7 @@ func uploadPaddleStats(w http.ResponseWriter, r *http.Request) {
 	}{
 		ID:       paddleDBID,
 		PaddleID: paddle.ID,
-		Paddle:   &paddle,
+		Paddle:   paddle,
 	}
 
 	// Set status code BEFORE writing any data
