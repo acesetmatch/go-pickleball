@@ -2,67 +2,61 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import { useParams } from 'next/navigation';
-import { getPaddleById } from '@/lib/fetch';
+import { useParams, useRouter, useSearchParams } from 'next/navigation';
+import { getPaddleById, Paddle } from '@/services/fetch';
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { ArrowLeft } from "lucide-react";
+import { PaddleDetails } from '@/components/PaddleDetails';
+import { PaddlePerformanceChart } from '@/components/PaddlePerformanceChart';
+import paddlesData from '@/data/paddles.json';
 
-// Define TypeScript interfaces for our data structure
-interface Metadata {
-  brand: string;
-  model: string;
-  serial_code: string;
-}
+// Data source options
+type DataSource = 'api' | 'json';
 
-interface Specs {
-  shape: string;
-  surface: string;
-  average_weight: number;
-  core: number;
-  paddle_length: number;
-  paddle_width: number;
-  grip_length: number;
-  grip_type: string;
-  grip_circumference: number;
-}
-
-interface Performance {
-  power: number;
-  pop: number;
-  spin: number;
-  twist_weight: number;
-  swing_weight: number;
-  balance_point: number;
-}
-
-interface Paddle {
-  id: string;
-  metadata: Metadata;
-  specs: Specs;
-  performance: Performance;
-}
-
-export default function PaddleDetails() {
+export default function PaddleDetailsPage() {
   const [paddle, setPaddle] = useState<Paddle | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [dataSource, setDataSource] = useState<DataSource>('api');
+  
   const params = useParams();
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const paddleId = params.id as string;
 
+  // Effect to read URL params for data source on initial load
+  useEffect(() => {
+    const sourceParam = searchParams.get('source') as DataSource | null;
+    if (sourceParam && (sourceParam === 'api' || sourceParam === 'json')) {
+      setDataSource(sourceParam);
+    }
+  }, [searchParams]);
+
+  // Effect to load paddle data
   useEffect(() => {
     async function loadPaddleData(): Promise<void> {
       try {
         setLoading(true);
-        const data = await getPaddleById(paddleId);
-        setPaddle(data);
+        
+        if (dataSource === 'api') {
+          // Fetch from API - no type casting needed now
+          const data = await getPaddleById(paddleId);
+          setPaddle(data);
+        } else {
+          // Use local JSON data
+          setTimeout(() => {
+            const foundPaddle = (paddlesData as Paddle[]).find(p => p.id === paddleId);
+            setPaddle(foundPaddle || null);
+          }, 500);
+        }
+        
         setError(null);
-      } catch (err: any) {
+      } catch (err: unknown) {
         console.error('Failed to fetch paddle:', err);
-        setError(err.message || 'Failed to load paddle details. Please try again later.');
+        setError(err instanceof Error ? err.message : 'Failed to load paddle details. Please try again later.');
       } finally {
         setLoading(false);
       }
@@ -71,7 +65,14 @@ export default function PaddleDetails() {
     if (paddleId) {
       loadPaddleData();
     }
-  }, [paddleId]);
+  }, [paddleId, dataSource]);
+
+  const handleBack = () => {
+    // Preserve the data source when going back
+    const source = searchParams.get('source');
+    const backUrl = source ? `/paddles?source=${source}` : '/paddles';
+    router.push(backUrl);
+  };
 
   if (loading) {
     return (
@@ -94,6 +95,16 @@ export default function PaddleDetails() {
             </div>
           </CardContent>
         </Card>
+        
+        {/* Performance Metrics Skeleton */}
+        <Card className="mt-8">
+          <CardHeader>
+            <Skeleton className="h-8 w-1/3 mb-2" />
+          </CardHeader>
+          <CardContent>
+            <Skeleton className="h-80 w-full" />
+          </CardContent>
+        </Card>
       </div>
     );
   }
@@ -106,7 +117,7 @@ export default function PaddleDetails() {
           <AlertDescription>{error}</AlertDescription>
         </Alert>
         <div className="mt-4">
-          <Button variant="outline" onClick={() => window.history.back()}>
+          <Button variant="outline" onClick={handleBack}>
             <ArrowLeft className="mr-2 h-4 w-4" /> Go Back
           </Button>
         </div>
@@ -119,10 +130,10 @@ export default function PaddleDetails() {
       <div className="container mx-auto px-4 py-8">
         <Alert>
           <AlertTitle>Paddle Not Found</AlertTitle>
-          <AlertDescription>The paddle you're looking for could not be found.</AlertDescription>
+          <AlertDescription>The paddle you are looking for could not be found.</AlertDescription>
         </Alert>
         <div className="mt-4">
-          <Button variant="outline" onClick={() => window.history.back()}>
+          <Button variant="outline" onClick={handleBack}>
             <ArrowLeft className="mr-2 h-4 w-4" /> Go Back
           </Button>
         </div>
@@ -132,116 +143,18 @@ export default function PaddleDetails() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <Card>
-        <CardHeader className="bg-primary text-primary-foreground">
-          <CardTitle className="text-3xl">{paddle.metadata.brand} {paddle.metadata.model}</CardTitle>
-          <div className="text-primary-foreground/80">
-            <p>ID: {paddle.id}</p>
-            <p>Serial: {paddle.metadata.serial_code}</p>
-          </div>
-        </CardHeader>
-        
-        <CardContent className="p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Specifications */}
-            <div>
-              <h2 className="text-2xl font-bold mb-4">Specifications</h2>
-              <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead>Property</TableHead>
-                    <TableHead>Value</TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  <TableRow>
-                    <TableCell className="font-medium">Shape</TableCell>
-                    <TableCell>{paddle.specs.shape}</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">Surface</TableCell>
-                    <TableCell>{paddle.specs.surface}</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">Weight</TableCell>
-                    <TableCell>{paddle.specs.average_weight}g</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">Core</TableCell>
-                    <TableCell>{paddle.specs.core}mm</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">Length</TableCell>
-                    <TableCell>{paddle.specs.paddle_length}"</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">Width</TableCell>
-                    <TableCell>{paddle.specs.paddle_width}"</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">Grip Length</TableCell>
-                    <TableCell>{paddle.specs.grip_length}"</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">Grip Type</TableCell>
-                    <TableCell>{paddle.specs.grip_type}</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">Grip Circumference</TableCell>
-                    <TableCell>{paddle.specs.grip_circumference}"</TableCell>
-                  </TableRow>
-                </TableBody>
-              </Table>
-            </div>
-
-            {/* Performance */}
-            <div>
-              <h2 className="text-2xl font-bold mb-4">Performance</h2>
-              <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead>Metric</TableHead>
-                    <TableHead>Value</TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  <TableRow>
-                    <TableCell className="font-medium">Power</TableCell>
-                    <TableCell>{paddle.performance.power}</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">Pop</TableCell>
-                    <TableCell>{paddle.performance.pop}</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">Spin</TableCell>
-                    <TableCell>{paddle.performance.spin} RPM</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">Twist Weight</TableCell>
-                    <TableCell>{paddle.performance.twist_weight}g</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">Swing Weight</TableCell>
-                    <TableCell>{paddle.performance.swing_weight}g</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">Balance Point</TableCell>
-                    <TableCell>{paddle.performance.balance_point}cm</TableCell>
-                  </TableRow>
-                </TableBody>
-              </Table>
-            </div>
-          </div>
-        </CardContent>
-
-        <CardFooter className="border-t p-6 flex justify-between">
-          <Button variant="outline" onClick={() => window.history.back()}>
-            <ArrowLeft className="mr-2 h-4 w-4" /> Back
-          </Button>
-          <Button>Compare</Button>
-        </CardFooter>
-      </Card>
+      <PaddleDetails paddle={paddle} onBack={handleBack} />
+      
+      <div className="mt-8">
+        <Card>
+          <CardHeader>
+            <h2 className="text-2xl font-bold">Performance Metrics</h2>
+          </CardHeader>
+          <CardContent>
+            <PaddlePerformanceChart paddle={paddle} />
+          </CardContent>
+        </Card>
+      </div>
     </div>
   );
 }

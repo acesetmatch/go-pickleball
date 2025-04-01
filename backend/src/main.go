@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
+	"github.com/rs/cors"
 )
 
 func main() {
@@ -25,8 +26,14 @@ func main() {
 	}).Methods("GET")
 
 	// Add your API routes
-	router.HandleFunc("/api/paddle", withCommonHeaders(uploadPaddleStats)).Methods("POST")
-	router.HandleFunc("/api/paddle/{id}", withCommonHeaders(getPaddleStats)).Methods("GET")
+	// Get all paddles with basic info for cards
+	router.HandleFunc("/api/paddles", withCommonHeaders(getPaddlesList)).Methods("GET")
+
+	// Get complete details for a specific paddle
+	router.HandleFunc("/api/paddles/{id}", withCommonHeaders(getPaddleDetails)).Methods("GET")
+
+	// Upload paddle stats endpoint
+	router.HandleFunc("/api/paddles", withCommonHeaders(uploadPaddleStats)).Methods("POST")
 
 	// Add logging middleware
 	router.Use(func(next http.Handler) http.Handler {
@@ -36,7 +43,18 @@ func main() {
 		})
 	})
 
-	// Start the server - THIS LINE IS CRITICAL
+	// Enable CORS
+	c := cors.New(cors.Options{
+		AllowedOrigins:   []string{"http://localhost:3000"}, // Your frontend URL
+		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+		AllowedHeaders:   []string{"Content-Type", "Authorization"},
+		AllowCredentials: true,
+	})
+
+	// Use the CORS middleware
+	handler := c.Handler(router)
+
+	// Start the server with CORS enabled
 	log.Println("Server starting on :8080")
-	log.Fatal(http.ListenAndServe(":8080", router))
+	log.Fatal(http.ListenAndServe(":8080", handler))
 }

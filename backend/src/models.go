@@ -7,9 +7,8 @@ import (
 
 // PaddleIdentifier represents the identifying information of a paddle
 type Metadata struct {
-	Brand      string  `json:"brand"`
-	Model      string  `json:"model"`
-	SerialCode *string `json:"serial_code,omitempty"`
+	Brand string `json:"brand"`
+	Model string `json:"model"`
 }
 
 // PaddleShape represents the shape of a paddle

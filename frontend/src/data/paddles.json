@@ -1,0 +1,158 @@
+[
+  {
+    "id": "engage-pursuit-mx-6.0",
+    "metadata": {
+      "brand": "Engage",
+      "model": "Pursuit MX 6.0"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": 220.5,
+      "core": 16.0,
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.0,
+      "grip_type": "Cushion",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 85.0,
+      "pop": 78.0,
+      "spin": 3200.0,
+      "twist_weight": 210.0,
+      "swing_weight": 225.0,
+      "balance_point": 29.5
+    }
+  },
+  {
+    "id": "selkirk-vanguard-power-air",
+    "metadata": {
+      "brand": "Selkirk",
+      "model": "Vanguard Power Air"
+    },
+    "specs": {
+      "shape": "Wide-body",
+      "surface": "Fiberglass",
+      "average_weight": 215.0,
+      "core": 14.0,
+      "paddle_length": 15.75,
+      "paddle_width": 8.0,
+      "grip_length": 4.75,
+      "grip_type": "Comfort",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 90.0,
+      "pop": 70.0,
+      "spin": 2800.0,
+      "twist_weight": 205.0,
+      "swing_weight": 220.0,
+      "balance_point": 28.0
+    }
+  },
+  {
+    "id": "joola-hyperion-cfs",
+    "metadata": {
+      "brand": "JOOLA",
+      "model": "Hyperion CFS"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Carbon Fiber",
+      "average_weight": 205.0,
+      "core": 13.5,
+      "paddle_length": 16.0,
+      "paddle_width": 7.75,
+      "grip_length": 5.25,
+      "grip_type": "Tennis",
+      "grip_circumference": 4.5
+    },
+    "performance": {
+      "power": 82.0,
+      "pop": 85.0,
+      "spin": 3500.0,
+      "twist_weight": 195.0,
+      "swing_weight": 210.0,
+      "balance_point": 30.0
+    }
+  },
+  {
+    "id": "franklin-signature-ben-johns",
+    "metadata": {
+      "brand": "Franklin",
+      "model": "Signature Ben Johns"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": 210.0,
+      "core": 15.0,
+      "paddle_length": 16.25,
+      "paddle_width": 7.25,
+      "grip_length": 5.0,
+      "grip_type": "Premium",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 88.0,
+      "pop": 82.0,
+      "spin": 3300.0,
+      "twist_weight": 200.0,
+      "swing_weight": 215.0,
+      "balance_point": 29.0
+    }
+  },
+  {
+    "id": "paddletek-tempest-wave-pro",
+    "metadata": {
+      "brand": "Paddletek",
+      "model": "Tempest Wave Pro"
+    },
+    "specs": {
+      "shape": "Wide-body",
+      "surface": "Graphite",
+      "average_weight": 225.0,
+      "core": 16.5,
+      "paddle_length": 15.5,
+      "paddle_width": 8.25,
+      "grip_length": 4.5,
+      "grip_type": "Standard",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 92.0,
+      "pop": 68.0,
+      "spin": 2600.0,
+      "twist_weight": 215.0,
+      "swing_weight": 230.0,
+      "balance_point": 27.5
+    }
+  },
+  {
+    "id": "gearbox-cx14e",
+    "metadata": {
+      "brand": "Gearbox",
+      "model": "CX14E"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": 200.0,
+      "core": 14.0,
+      "paddle_length": 16.75,
+      "paddle_width": 7.0,
+      "grip_length": 5.5,
+      "grip_type": "Tennis",
+      "grip_circumference": 4.75
+    },
+    "performance": {
+      "power": 80.0,
+      "pop": 88.0,
+      "spin": 3600.0,
+      "twist_weight": 190.0,
+      "swing_weight": 205.0,
+      "balance_point": 31.0
+    }
+  }
+] 

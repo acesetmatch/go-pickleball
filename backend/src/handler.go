@@ -148,3 +148,69 @@ func withCommonHeaders(next http.HandlerFunc) http.HandlerFunc {
 		next(w, r)
 	}
 }
+
+// getPaddlesList handles the API request for fetching basic paddle information for cards
+func getPaddlesList(w http.ResponseWriter, r *http.Request) {
+	paddles, err := GetAllPaddles()
+	if err != nil {
+		log.Printf("Error retrieving paddles: %v", err)
+		respondWithError(w, "Failed to retrieve paddles data", http.StatusInternalServerError)
+		return
+	}
+
+	// Create a simplified response with only the necessary fields for cards
+	type SimplePaddle struct {
+		ID       string `json:"id"`
+		Metadata struct {
+			Brand string `json:"brand"`
+			Model string `json:"model"`
+		} `json:"metadata"`
+		Specs Specs `json:"specs"`
+	}
+
+	simplePaddles := make([]SimplePaddle, 0, len(paddles))
+	for _, paddle := range paddles {
+		simplePaddle := SimplePaddle{
+			ID: paddle.ID,
+			Metadata: struct {
+				Brand string `json:"brand"`
+				Model string `json:"model"`
+			}{
+				Brand: paddle.Metadata.Brand,
+				Model: paddle.Metadata.Model,
+			},
+			Specs: paddle.Specs,
+		}
+		simplePaddles = append(simplePaddles, simplePaddle)
+	}
+
+	if err := json.NewEncoder(w).Encode(simplePaddles); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+}
+
+// getPaddleDetails handles the API request for fetching complete paddle details
+func getPaddleDetails(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	paddleId := vars["id"]
+
+	// Validate the paddle ID
+	if err := validatePaddleID(paddleId); err != nil {
+		respondWithError(w, fmt.Sprintf("Invalid paddle ID: %v", err), http.StatusBadRequest)
+		return
+	}
+
+	paddle, err := GetPaddleByID(paddleId)
+	if err != nil {
+		log.Printf("Error retrieving paddle: %v", err)
+		respondWithError(w, "Paddle not found", http.StatusNotFound)
+		return
+	}
+
+	// Return the complete paddle data (including specs and performance)
+	if err := json.NewEncoder(w).Encode(paddle); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+}
