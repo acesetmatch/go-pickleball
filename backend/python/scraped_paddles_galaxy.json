@@ -1,0 +1,2162 @@
+[
+  {
+    "id": "selkirk-luxx-control-air-infinigrit-invikta",
+    "metadata": {
+      "brand": "Selkirk",
+      "model": "LUXX Control Air Infinigrit Invikta",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.100000000000001,
+      "core": 19.0,
+      "paddle_length": 16.4,
+      "paddle_width": 7.5,
+      "grip_length": 5.35,
+      "grip_type": "Selkirk Geo Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 83.73546097888837,
+      "pop": 78.16252418508358,
+      "spin": 3340.150694864861,
+      "twist_weight": 203.9703387777017,
+      "swing_weight": 216.0340870401963,
+      "balance_point": 30.812156134221734
+    }
+  },
+  {
+    "id": "adidas-metalbone-14.5-2025",
+    "metadata": {
+      "brand": "adidas",
+      "model": "Metalbone 14.5 2025",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "RAW CARBON",
+      "average_weight": 8.0,
+      "core": 14.5,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Extra Power Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 79.13813806871379,
+      "pop": 73.54870814244556,
+      "spin": 3217.487350762077,
+      "twist_weight": 201.68170746694506,
+      "swing_weight": 224.88834536895027,
+      "balance_point": 29.167217292174314
+    }
+  },
+  {
+    "id": "adidas-metalbone-lp-team",
+    "metadata": {
+      "brand": "adidas",
+      "model": "Metalbone LP Team",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "RAW CARBON",
+      "average_weight": 8.0,
+      "core": 16.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Extra Power Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 81.88800116915255,
+      "pop": 70.92107065207911,
+      "spin": 3256.5927202650573,
+      "twist_weight": 206.62950298244724,
+      "swing_weight": 220.07366921047569,
+      "balance_point": 30.437816092571673
+    }
+  },
+  {
+    "id": "adidas-rx-carbon-attk-2025",
+    "metadata": {
+      "brand": "adidas",
+      "model": "RX Carbon ATTK 2025",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "RAW CARBON",
+      "average_weight": 8.0,
+      "core": 16.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Extra Power Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 77.92699464355091,
+      "pop": 73.41184843092579,
+      "spin": 3052.4496293346065,
+      "twist_weight": 214.68396154471742,
+      "swing_weight": 218.72352804125617,
+      "balance_point": 29.814344913267664
+    }
+  },
+  {
+    "id": "adidas-rx-carbon-ctrl-2025",
+    "metadata": {
+      "brand": "adidas",
+      "model": "RX Carbon CTRL 2025",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "RAW CARBON",
+      "average_weight": 8.0,
+      "core": 16.0,
+      "paddle_length": 16.0,
+      "paddle_width": 8.0,
+      "grip_length": 5.0,
+      "grip_type": "Extra Power Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 82.03942332585112,
+      "pop": 71.87227177093007,
+      "spin": 3228.9898109562346,
+      "twist_weight": 192.36236887384314,
+      "swing_weight": 203.85354811189396,
+      "balance_point": 28.547361648255862
+    }
+  },
+  {
+    "id": "adidas-rx-team-attk-2025",
+    "metadata": {
+      "brand": "adidas",
+      "model": "RX Team ATTK 2025",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Fiber Glass",
+      "average_weight": 8.0,
+      "core": 16.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Extra Power Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 75.67351340076557,
+      "pop": 70.20703476320915,
+      "spin": 2998.0145242816193,
+      "twist_weight": 211.74733055182938,
+      "swing_weight": 212.96045131403045,
+      "balance_point": 28.443842139279045
+    }
+  },
+  {
+    "id": "gearbox-gx2-hyper",
+    "metadata": {
+      "brand": "Gearbox",
+      "model": "GX2 Hyper",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "3K Woven Raw Carbon",
+      "average_weight": 8.0,
+      "core": 16.0,
+      "paddle_length": 16.0,
+      "paddle_width": 8.0,
+      "grip_length": 5.0,
+      "grip_type": "Gearbox Smooth Wrap",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 81.45364874538927,
+      "pop": 75.74547644552794,
+      "spin": 3256.122502899151,
+      "twist_weight": 200.8011651618462,
+      "swing_weight": 211.80043643950103,
+      "balance_point": 27.019718604355354
+    }
+  },
+  {
+    "id": "adidas-rx-team-ctrl-2025",
+    "metadata": {
+      "brand": "adidas",
+      "model": "RX Team CTRL 2025",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Fiber Glass",
+      "average_weight": 8.0,
+      "core": 16.0,
+      "paddle_length": 16.0,
+      "paddle_width": 8.0,
+      "grip_length": 5.0,
+      "grip_type": "Extra Power Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 84.66382057714804,
+      "pop": 74.75399997793599,
+      "spin": 3086.639952251313,
+      "twist_weight": 204.14371002033178,
+      "swing_weight": 226.51914260703796,
+      "balance_point": 29.756099743692545
+    }
+  },
+  {
+    "id": "selkirk-labs-project-008-16mm-invikta",
+    "metadata": {
+      "brand": "Selkirk Labs",
+      "model": "Project 008 16mm Invikta",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Carbon Fiber",
+      "average_weight": 7.9,
+      "core": 16.0,
+      "paddle_length": 16.45,
+      "paddle_width": 7.45,
+      "grip_length": 5.5,
+      "grip_type": "Selkirk Geo Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 84.7356906029373,
+      "pop": 79.20268356349274,
+      "spin": 2807.1699008140376,
+      "twist_weight": 199.6862161664547,
+      "swing_weight": 220.1435104074376,
+      "balance_point": 29.077962590390825
+    }
+  },
+  {
+    "id": "selkirk-labs-project-008-16mm-maxima",
+    "metadata": {
+      "brand": "Selkirk Labs",
+      "model": "Project 008 16mm Maxima",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": null,
+      "core": 16.0,
+      "paddle_length": 15.975,
+      "paddle_width": 8.0,
+      "grip_length": 5.7,
+      "grip_type": "Selkirk Geo Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 83.68604601977535,
+      "pop": 72.5861061047715,
+      "spin": 2825.4113114559013,
+      "twist_weight": 205.44944114618713,
+      "swing_weight": 225.56244801605519,
+      "balance_point": 29.231996504908306
+    }
+  },
+  {
+    "id": "selkirk-labs-project-008-10mm-invikta",
+    "metadata": {
+      "brand": "Selkirk Labs",
+      "model": "Project 008 10mm Invikta",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Carbon Fiber",
+      "average_weight": 7.9,
+      "core": 10.0,
+      "paddle_length": 16.45,
+      "paddle_width": 7.45,
+      "grip_length": 5.5,
+      "grip_type": "Selkirk Geo Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 75.31342806099518,
+      "pop": 71.61805186527805,
+      "spin": 3334.93470758349,
+      "twist_weight": 195.99249599211353,
+      "swing_weight": 209.42442198192143,
+      "balance_point": 29.72351169661868
+    }
+  },
+  {
+    "id": "adidas-match-light-2025",
+    "metadata": {
+      "brand": "adidas",
+      "model": "Match Light 2025",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Fiber Glass",
+      "average_weight": 7.8,
+      "core": 14.0,
+      "paddle_length": 15.0,
+      "paddle_width": 8.0,
+      "grip_length": 4.0,
+      "grip_type": "Extra Power Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 80.24804137686229,
+      "pop": 71.7357453808421,
+      "spin": 3024.7940688560025,
+      "twist_weight": 213.10004436166145,
+      "swing_weight": 200.66408249465854,
+      "balance_point": 27.237447260247123
+    }
+  },
+  {
+    "id": "adidas-match-2025",
+    "metadata": {
+      "brand": "adidas",
+      "model": "Match 2025",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Fiber Glass",
+      "average_weight": 8.0,
+      "core": 14.0,
+      "paddle_length": 15.0,
+      "paddle_width": 8.0,
+      "grip_length": 4.0,
+      "grip_type": "Extra Power Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 75.15976157676879,
+      "pop": 76.6887109686291,
+      "spin": 2810.2162950275188,
+      "twist_weight": 212.06067142934032,
+      "swing_weight": 201.55182545342964,
+      "balance_point": 27.08411887495126
+    }
+  },
+  {
+    "id": "babolat-strkr+",
+    "metadata": {
+      "brand": "Babolat",
+      "model": "STRKR+",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Woven Carbon",
+      "average_weight": 8.15,
+      "core": 13.0,
+      "paddle_length": 16.7,
+      "paddle_width": 7.2,
+      "grip_length": 5.5,
+      "grip_type": "Syntec Pro",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 80.58262644630364,
+      "pop": 74.44769876651613,
+      "spin": 2865.3297960669047,
+      "twist_weight": 208.32409314754787,
+      "swing_weight": 220.37598822382796,
+      "balance_point": 29.43613570314489
+    }
+  },
+  {
+    "id": "babolat-ballr+",
+    "metadata": {
+      "brand": "Babolat",
+      "model": "BALLR+",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Woven Carbon",
+      "average_weight": 8.3,
+      "core": 16.0,
+      "paddle_length": 16.2,
+      "paddle_width": 7.6,
+      "grip_length": 5.5,
+      "grip_type": "Syntec Pro",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 75.46825528106613,
+      "pop": 73.82754422742349,
+      "spin": 3319.693364804184,
+      "twist_weight": 195.43547000699934,
+      "swing_weight": 202.10240654138028,
+      "balance_point": 28.821402772029714
+    }
+  },
+  {
+    "id": "babolat-wzrd",
+    "metadata": {
+      "brand": "Babolat",
+      "model": "WZRD",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Woven Carbon",
+      "average_weight": 8.45,
+      "core": 20.0,
+      "paddle_length": 15.8,
+      "paddle_width": 7.9,
+      "grip_length": 5.0,
+      "grip_type": "Syntec Pro",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 82.26939181627479,
+      "pop": 72.02558624592365,
+      "spin": 2735.142154717755,
+      "twist_weight": 208.15835452985493,
+      "swing_weight": 207.48499970144496,
+      "balance_point": 28.91818555377436
+    }
+  },
+  {
+    "id": "selkirk-labs-project-008-16mm-tour",
+    "metadata": {
+      "brand": "Selkirk Labs",
+      "model": "Project 008 16mm Tour",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Carbon Fiber",
+      "average_weight": 7.9,
+      "core": 16.0,
+      "paddle_length": 16.45,
+      "paddle_width": 7.5,
+      "grip_length": 6.0,
+      "grip_type": "Selkirk Geo Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 83.74814831569438,
+      "pop": 76.47807091791204,
+      "spin": 2639.815664537773,
+      "twist_weight": 207.98212210390258,
+      "swing_weight": 207.9987293015363,
+      "balance_point": 28.390303131916887
+    }
+  },
+  {
+    "id": "gearbox-gx2-integra-xl",
+    "metadata": {
+      "brand": "Gearbox",
+      "model": "GX2 Integra XL",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 16.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Gearbox Smooth Wrap",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 80.73130438279671,
+      "pop": 74.91521852571461,
+      "spin": 2736.8613062437025,
+      "twist_weight": 204.01689326182458,
+      "swing_weight": 200.80347531103712,
+      "balance_point": 28.106192964532088
+    }
+  },
+  {
+    "id": "gearbox-gx2-elongated",
+    "metadata": {
+      "brand": "Gearbox",
+      "model": "GX2 Elongated",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 16.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Gearbox Smooth Wrap",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 81.26660114065774,
+      "pop": 73.13213160562547,
+      "spin": 3219.1768980120596,
+      "twist_weight": 186.8376047406342,
+      "swing_weight": 212.92544381792607,
+      "balance_point": 30.7608613460118
+    }
+  },
+  {
+    "id": "engage-pursuit-pro1-innovation-15.2",
+    "metadata": {
+      "brand": "Engage",
+      "model": "Pursuit PRO1 Innovation 15.2",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 15.2,
+      "paddle_length": 16.6,
+      "paddle_width": 7.4,
+      "grip_length": 6.0,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 79.05731760322354,
+      "pop": 75.48171412821212,
+      "spin": 3144.240015006894,
+      "twist_weight": 203.39443243123497,
+      "swing_weight": 209.72787138630162,
+      "balance_point": 28.23795665198406
+    }
+  },
+  {
+    "id": "engage-pursuit-pro1-innovation-12.7",
+    "metadata": {
+      "brand": "Engage",
+      "model": "Pursuit PRO1 Innovation 12.7",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 12.7,
+      "paddle_length": 16.6,
+      "paddle_width": 7.4,
+      "grip_length": 6.0,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 81.41938570599035,
+      "pop": 73.7794848859375,
+      "spin": 2657.940788452042,
+      "twist_weight": 198.47414456997507,
+      "swing_weight": 209.37730247689476,
+      "balance_point": 28.59171817852205
+    }
+  },
+  {
+    "id": "joola-ben-johns-hyperion-pro-iv-14mm",
+    "metadata": {
+      "brand": "Joola",
+      "model": "Ben Johns Hyperion Pro IV 14mm",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": 7.9,
+      "core": 14.0,
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.0,
+      "grip_type": "Feel-Tec Pure",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 76.6094450353439,
+      "pop": 76.8178621594599,
+      "spin": 2606.9378778891232,
+      "twist_weight": 196.52338665489168,
+      "swing_weight": 205.40496582326162,
+      "balance_point": 27.981149690198556
+    }
+  },
+  {
+    "id": "joola-ben-johns-hyperion-pro-iv-16mm",
+    "metadata": {
+      "brand": "Joola",
+      "model": "Ben Johns Hyperion Pro IV 16mm",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.1,
+      "core": 16.0,
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.0,
+      "grip_type": "Feel-Tec Pure",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 75.64153767695964,
+      "pop": 71.04441229514568,
+      "spin": 3264.3661792290914,
+      "twist_weight": 189.02779419158264,
+      "swing_weight": 221.37823736402308,
+      "balance_point": 27.458297108854456
+    }
+  },
+  {
+    "id": "joola-collin-johns-scorpeus-pro-iv-16mm",
+    "metadata": {
+      "brand": "Joola",
+      "model": "Collin Johns Scorpeus Pro IV 16mm",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.1,
+      "core": 16.0,
+      "paddle_length": 16.0,
+      "paddle_width": 8.0,
+      "grip_length": 5.0,
+      "grip_type": "Feel-Tec Pure",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 81.46873449694174,
+      "pop": 70.79334868457015,
+      "spin": 2905.0366468362686,
+      "twist_weight": 209.23545859681604,
+      "swing_weight": 210.2293525364141,
+      "balance_point": 29.495417235004066
+    }
+  },
+  {
+    "id": "joola-tyson-mcguffin-magnus-pro-iv-14mm",
+    "metadata": {
+      "brand": "Joola",
+      "model": "Tyson McGuffin Magnus Pro IV 14mm",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 14.0,
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.0,
+      "grip_type": "Feel-Tec Pure",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 76.8537621661039,
+      "pop": 79.08160623339701,
+      "spin": 3313.2587072783995,
+      "twist_weight": 203.4766825932624,
+      "swing_weight": 227.47432475317618,
+      "balance_point": 30.50428180399526
+    }
+  },
+  {
+    "id": "joola-tyson-mcguffin-magnus-pro-iv-16mm",
+    "metadata": {
+      "brand": "Joola",
+      "model": "Tyson McGuffin Magnus Pro IV 16mm",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.2,
+      "core": 16.0,
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.0,
+      "grip_type": "Feel-Tec Pure",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 79.33035192651218,
+      "pop": 75.9180444838562,
+      "spin": 3360.3335772201362,
+      "twist_weight": 188.52637577430102,
+      "swing_weight": 229.81804404661648,
+      "balance_point": 30.00828131245401
+    }
+  },
+  {
+    "id": "gearbox-pro-ultimate-power-elongated",
+    "metadata": {
+      "brand": "Gearbox",
+      "model": "PRO Ultimate Power Elongated",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 14.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Gearbox Smooth Wrap",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 77.14055784248991,
+      "pop": 71.53744348435804,
+      "spin": 2715.2141613347085,
+      "twist_weight": 206.38164399208722,
+      "swing_weight": 223.6540075238727,
+      "balance_point": 29.04976289656546
+    }
+  },
+  {
+    "id": "pickleball-apes-pulse-x",
+    "metadata": {
+      "brand": "Pickleball Apes",
+      "model": "Pulse X",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Poly Aramid Fiber Weave",
+      "average_weight": 8.3,
+      "core": 16.5,
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.75,
+      "grip_type": "Leather Performance Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 76.48177154347799,
+      "pop": 72.02792467893197,
+      "spin": 2722.330124110428,
+      "twist_weight": 195.27087160635,
+      "swing_weight": 229.40569120355667,
+      "balance_point": 27.16062517120688
+    }
+  },
+  {
+    "id": "joola-andre-agassi-pro-16mm",
+    "metadata": {
+      "brand": "Joola",
+      "model": "Andre Agassi Pro 16mm",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.1,
+      "core": 16.0,
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.0,
+      "grip_type": "Feel-Tec Pure",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 81.81814682798927,
+      "pop": 77.38946127165227,
+      "spin": 2729.723928538425,
+      "twist_weight": 194.33026251462445,
+      "swing_weight": 228.56913524691862,
+      "balance_point": 27.025089974593723
+    }
+  },
+  {
+    "id": "joola-steffi-graf-pro-16mm",
+    "metadata": {
+      "brand": "Joola",
+      "model": "Steffi Graf Pro 16mm",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.1,
+      "core": 16.0,
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.0,
+      "grip_type": "Feel-Tec Pure",
+      "grip_circumference": 4.125
+    },
+    "performance": {
+      "power": 79.2797517610616,
+      "pop": 74.14676440288788,
+      "spin": 2616.918905923359,
+      "twist_weight": 190.35879423004516,
+      "swing_weight": 228.63212133818874,
+      "balance_point": 27.433920791316336
+    }
+  },
+  {
+    "id": "joola-ben-johns-perseus-pro-iv-16mm",
+    "metadata": {
+      "brand": "Joola",
+      "model": "Ben Johns Perseus Pro IV 16mm",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Friction Surface",
+      "average_weight": 8.1,
+      "core": 16.0,
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.0,
+      "grip_type": "Feel-Tec Pure",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 82.94852571698344,
+      "pop": 71.11118469115839,
+      "spin": 3007.3170540770448,
+      "twist_weight": 209.8920647949985,
+      "swing_weight": 220.51937457327432,
+      "balance_point": 28.83513758365101
+    }
+  },
+  {
+    "id": "joola-ben-johns-perseus-pro-iv-14mm",
+    "metadata": {
+      "brand": "Joola",
+      "model": "Ben Johns Perseus Pro IV 14mm",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Friction Surface",
+      "average_weight": 8.1,
+      "core": 14.0,
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.0,
+      "grip_type": "Feel-Tec Pure",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 82.11225542915398,
+      "pop": 75.42764061844534,
+      "spin": 2841.76281315406,
+      "twist_weight": 204.2710476789893,
+      "swing_weight": 202.50979439194901,
+      "balance_point": 30.261366708238736
+    }
+  },
+  {
+    "id": "joola-steffi-graf-edge-16mm",
+    "metadata": {
+      "brand": "Joola",
+      "model": "Steffi Graf Edge 16mm",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Friction Surface",
+      "average_weight": 7.8,
+      "core": 16.0,
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.5,
+      "grip_type": "Sure-Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 76.24784019496283,
+      "pop": 79.01787491912229,
+      "spin": 3391.058207161548,
+      "twist_weight": 196.63123252014984,
+      "swing_weight": 224.52599200484386,
+      "balance_point": 30.372113624626028
+    }
+  },
+  {
+    "id": "joola-andre-agassi-edge-16mm",
+    "metadata": {
+      "brand": "Joola",
+      "model": "Andre Agassi Edge 16mm",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Friction Surface",
+      "average_weight": 7.8,
+      "core": 16.0,
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.5,
+      "grip_type": "Sure-Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 78.96729324037429,
+      "pop": 73.29407305189042,
+      "spin": 3328.950617305855,
+      "twist_weight": 198.67604717403717,
+      "swing_weight": 213.09400548150052,
+      "balance_point": 28.42403380044471
+    }
+  },
+  {
+    "id": "pro-kennex-black-ace-14",
+    "metadata": {
+      "brand": "Pro",
+      "model": "Kennex Black Ace 14",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fire",
+      "average_weight": 8.0,
+      "core": 14.0,
+      "paddle_length": 16.0,
+      "paddle_width": 8.0,
+      "grip_length": 5.0,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 82.88612523352623,
+      "pop": 77.03649607576305,
+      "spin": 2992.9116934779954,
+      "twist_weight": 210.76869860460016,
+      "swing_weight": 211.12653147665017,
+      "balance_point": 27.83852609116368
+    }
+  },
+  {
+    "id": "pro-kennex-black-ace-16",
+    "metadata": {
+      "brand": "Pro",
+      "model": "Kennex Black Ace 16",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fire",
+      "average_weight": 7.9,
+      "core": 16.0,
+      "paddle_length": 16.0,
+      "paddle_width": 8.0,
+      "grip_length": 5.0,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 82.52232160789288,
+      "pop": 74.68249220619646,
+      "spin": 2708.2674496699547,
+      "twist_weight": 210.0190451727682,
+      "swing_weight": 218.21756991852394,
+      "balance_point": 27.819527146274787
+    }
+  },
+  {
+    "id": "pro-kennex-black-ace-lg-14",
+    "metadata": {
+      "brand": "Pro",
+      "model": "Kennex Black Ace LG 14",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fire",
+      "average_weight": 7.9,
+      "core": 14.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 82.6059686212419,
+      "pop": 74.41815821013182,
+      "spin": 2633.4193748545445,
+      "twist_weight": 192.19028871059902,
+      "swing_weight": 213.08396100198706,
+      "balance_point": 28.47206230389257
+    }
+  },
+  {
+    "id": "pro-kennex-black-ace-xf-14",
+    "metadata": {
+      "brand": "Pro",
+      "model": "Kennex Black Ace XF 14",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fire",
+      "average_weight": 7.9,
+      "core": 14.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.5,
+      "grip_length": 6.0,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 77.37685665538864,
+      "pop": 74.16397260301883,
+      "spin": 2776.3469542550224,
+      "twist_weight": 196.40492024164453,
+      "swing_weight": 217.05459518637673,
+      "balance_point": 27.02300593600978
+    }
+  },
+  {
+    "id": "engage-pursuit-pro1-elongated",
+    "metadata": {
+      "brand": "Engage",
+      "model": "Pursuit PRO1 Elongated",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 12.7,
+      "paddle_length": 16.0,
+      "paddle_width": 7.5,
+      "grip_length": 5.0,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 76.17100612307644,
+      "pop": 76.75969652996154,
+      "spin": 2745.0291887685453,
+      "twist_weight": 189.17636370134696,
+      "swing_weight": 229.1069000783267,
+      "balance_point": 30.455445263885355
+    }
+  },
+  {
+    "id": "engage-pursuit-pro1-hybrid",
+    "metadata": {
+      "brand": "Engage",
+      "model": "Pursuit PRO1 Hybrid",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 12.7,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 76.72221448824901,
+      "pop": 72.73187431327044,
+      "spin": 2662.6696346416675,
+      "twist_weight": 190.14055669231573,
+      "swing_weight": 202.02507917111387,
+      "balance_point": 29.19433972484701
+    }
+  },
+  {
+    "id": "engage-pursuit-pro1-widebody",
+    "metadata": {
+      "brand": "Engage",
+      "model": "Pursuit PRO1 Widebody",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 12.7,
+      "paddle_length": 15.0,
+      "paddle_width": 8.0,
+      "grip_length": 5.0,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 81.97720903988323,
+      "pop": 79.25580707292087,
+      "spin": 3274.3503293758495,
+      "twist_weight": 190.94641003351472,
+      "swing_weight": 218.09727559777457,
+      "balance_point": 27.48025652725145
+    }
+  },
+  {
+    "id": "engage-pursuit-pro1-6.0-elongated",
+    "metadata": {
+      "brand": "Engage",
+      "model": "Pursuit PRO1 6.0 Elongated",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 15.2,
+      "paddle_length": 16.0,
+      "paddle_width": 7.5,
+      "grip_length": 5.0,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 78.17192440365291,
+      "pop": 76.11009490074018,
+      "spin": 2627.642191950706,
+      "twist_weight": 212.28037414974318,
+      "swing_weight": 217.8184151805531,
+      "balance_point": 30.69061333091261
+    }
+  },
+  {
+    "id": "engage-pursuit-pro1-6.0-hybrid",
+    "metadata": {
+      "brand": "Engage",
+      "model": "Pursuit PRO1 6.0 Hybrid",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 15.2,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 76.92362975023468,
+      "pop": 73.5598196079374,
+      "spin": 3091.6364749162267,
+      "twist_weight": 187.2395537832667,
+      "swing_weight": 221.66433416009542,
+      "balance_point": 30.058565845594277
+    }
+  },
+  {
+    "id": "engage-pursuit-pro1-6.0-widebody",
+    "metadata": {
+      "brand": "Engage",
+      "model": "Pursuit PRO1 6.0 Widebody",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 15.2,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 79.42492603132469,
+      "pop": 76.33995573522994,
+      "spin": 2647.9574285868443,
+      "twist_weight": 201.85650942091362,
+      "swing_weight": 221.55559967559088,
+      "balance_point": 28.142631261688678
+    }
+  },
+  {
+    "id": "selkirk-labs-project-008-13mm-invikta",
+    "metadata": {
+      "brand": "Selkirk Labs",
+      "model": "Project 008 13mm Invikta",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Carbon Fiber",
+      "average_weight": 7.9,
+      "core": 13.0,
+      "paddle_length": 16.45,
+      "paddle_width": 7.45,
+      "grip_length": 5.5,
+      "grip_type": "Selkirk Geo Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 80.76426789378573,
+      "pop": 79.39825196353132,
+      "spin": 3045.664686650807,
+      "twist_weight": 200.31419207235518,
+      "swing_weight": 214.45356590155262,
+      "balance_point": 29.551502270525095
+    }
+  },
+  {
+    "id": "selkirk-labs-project-008-13mm-tour",
+    "metadata": {
+      "brand": "Selkirk Labs",
+      "model": "Project 008 13mm Tour",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Carbon Fiber",
+      "average_weight": 7.9,
+      "core": 13.0,
+      "paddle_length": 16.45,
+      "paddle_width": 7.5,
+      "grip_length": 6.0,
+      "grip_type": "Selkirk Geo Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 78.3411130375557,
+      "pop": 75.55128996841142,
+      "spin": 2790.799301316383,
+      "twist_weight": 195.1180976628439,
+      "swing_weight": 201.02544859880098,
+      "balance_point": 27.788611822318305
+    }
+  },
+  {
+    "id": "selkirk-labs-project-007-14mm-epic",
+    "metadata": {
+      "brand": "Selkirk Labs",
+      "model": "Project 007 14mm Epic",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Florek Carbon Face",
+      "average_weight": 8.15,
+      "core": 14.0,
+      "paddle_length": 15.9,
+      "paddle_width": 7.85,
+      "grip_length": 5.25,
+      "grip_type": "Selkirk Geo Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 75.27954434915418,
+      "pop": 76.20887315677321,
+      "spin": 2648.6743033866596,
+      "twist_weight": 202.963316529298,
+      "swing_weight": 203.7370489466468,
+      "balance_point": 27.961919353777375
+    }
+  },
+  {
+    "id": "selkirk-labs-project-007-14mm-invikta",
+    "metadata": {
+      "brand": "Selkirk Labs",
+      "model": "Project 007 14mm Invikta",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Florek Carbon Face",
+      "average_weight": 8.15,
+      "core": 14.0,
+      "paddle_length": 16.4,
+      "paddle_width": 7.5,
+      "grip_length": 5.5,
+      "grip_type": "Selkirk Geo Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 79.94676923167987,
+      "pop": 78.92965117510289,
+      "spin": 2786.1801052042256,
+      "twist_weight": 185.9601933860498,
+      "swing_weight": 226.42020225260924,
+      "balance_point": 30.6814247229403
+    }
+  },
+  {
+    "id": "selkirk-labs-project-007-10mm-invikta",
+    "metadata": {
+      "brand": "Selkirk Labs",
+      "model": "Project 007 10mm Invikta",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Florek Carbon Face",
+      "average_weight": 8.15,
+      "core": 10.0,
+      "paddle_length": 16.4,
+      "paddle_width": 7.5,
+      "grip_length": 5.5,
+      "grip_type": "Selkirk Geo Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 82.06195118241939,
+      "pop": 75.4790604753968,
+      "spin": 3270.2196555577602,
+      "twist_weight": 211.64435522391523,
+      "swing_weight": 215.0935102987389,
+      "balance_point": 28.73310942881679
+    }
+  },
+  {
+    "id": "selkirk-labs-project-007-10mm-epic",
+    "metadata": {
+      "brand": "Selkirk Labs",
+      "model": "Project 007 10mm Epic",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Florek Carbon Face",
+      "average_weight": 8.15,
+      "core": 10.0,
+      "paddle_length": 16.4,
+      "paddle_width": 7.5,
+      "grip_length": 5.5,
+      "grip_type": "Selkirk Geo Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 81.19829700722963,
+      "pop": 71.18537297763453,
+      "spin": 2815.1679277793005,
+      "twist_weight": 201.4755334062074,
+      "swing_weight": 206.085288928092,
+      "balance_point": 30.48645919967031
+    }
+  },
+  {
+    "id": "crbn-1-trufoam-genesis",
+    "metadata": {
+      "brand": "CRBN",
+      "model": "1 TruFoam Genesis",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.1,
+      "core": 14.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.35,
+      "grip_length": 5.5,
+      "grip_type": "Perforated Leather Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 79.30097968232214,
+      "pop": 76.8227190952976,
+      "spin": 3295.7338890835326,
+      "twist_weight": 188.56631746990985,
+      "swing_weight": 223.5979233097891,
+      "balance_point": 28.147627775107402
+    }
+  },
+  {
+    "id": "crbn-2-trufoam-genesis",
+    "metadata": {
+      "brand": "CRBN",
+      "model": "2 TruFoam Genesis",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.1,
+      "core": 14.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.85,
+      "grip_length": 5.25,
+      "grip_type": "Perforated Leather Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 76.41790476490172,
+      "pop": 78.68066313778802,
+      "spin": 2856.861090605684,
+      "twist_weight": 212.78556850987135,
+      "swing_weight": 200.85984066044566,
+      "balance_point": 30.256961909323895
+    }
+  },
+  {
+    "id": "crbn-3-trufoam-genesis",
+    "metadata": {
+      "brand": "CRBN",
+      "model": "3 TruFoam Genesis",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.1,
+      "core": 14.0,
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.25,
+      "grip_type": "Perforated Leather Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 80.5552965405143,
+      "pop": 78.09884329129267,
+      "spin": 2645.8241411907143,
+      "twist_weight": 194.89290112617178,
+      "swing_weight": 213.37638505870768,
+      "balance_point": 30.76760656652336
+    }
+  },
+  {
+    "id": "thrive-blackout-16mm",
+    "metadata": {
+      "brand": "Thrive Blackout",
+      "model": "16mm",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Fiber Glass",
+      "average_weight": null,
+      "core": 16.0,
+      "paddle_length": 16.3,
+      "paddle_width": 7.7,
+      "grip_length": 5.5,
+      "grip_type": "Thrive Grip",
+      "grip_circumference": 4.125
+    },
+    "performance": {
+      "power": 84.00275113693067,
+      "pop": 72.85919686460704,
+      "spin": 3101.966406121627,
+      "twist_weight": 209.8308129911474,
+      "swing_weight": 219.0387811482754,
+      "balance_point": 28.217484624105946
+    }
+  },
+  {
+    "id": "paddletek-bantam-esq-c-14.3",
+    "metadata": {
+      "brand": "Paddletek",
+      "model": "Bantam ESQ-C 14.3",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 7.75,
+      "core": 14.3,
+      "paddle_length": 15.0,
+      "paddle_width": 8.0,
+      "grip_length": 5.0,
+      "grip_type": "Ultra Cushion High Tack Performance Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 77.73790592803294,
+      "pop": 79.08851362481663,
+      "spin": 2774.450531444361,
+      "twist_weight": 195.53863395943654,
+      "swing_weight": 211.51025195174265,
+      "balance_point": 27.175345121162202
+    }
+  },
+  {
+    "id": "paddletek-bantam-esq-c-12.7",
+    "metadata": {
+      "brand": "Paddletek",
+      "model": "Bantam ESQ-C 12.7",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 7.75,
+      "core": 12.7,
+      "paddle_length": 15.0,
+      "paddle_width": 8.0,
+      "grip_length": 5.0,
+      "grip_type": "Ultra Cushion High Tack Performance Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 82.15533275010567,
+      "pop": 73.78416403614796,
+      "spin": 3315.853517624897,
+      "twist_weight": 213.26434164125249,
+      "swing_weight": 228.34640057465003,
+      "balance_point": 30.44928053222814
+    }
+  },
+  {
+    "id": "paddletek-bantam-tko-cx-12.7",
+    "metadata": {
+      "brand": "Paddletek",
+      "model": "Bantam TKO-CX 12.7",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 12.7,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Ultra Cushion High Tack Performance Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 78.9938365289566,
+      "pop": 75.56615919613044,
+      "spin": 2943.171725915148,
+      "twist_weight": 201.61232503912774,
+      "swing_weight": 224.6138183293788,
+      "balance_point": 29.70308296270239
+    }
+  },
+  {
+    "id": "paddletek-bantam-tko-c-14.3",
+    "metadata": {
+      "brand": "Paddletek",
+      "model": "Bantam TKO-C 14.3",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 14.3,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Ultra Cushion High Tack Performance Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 82.77015392811805,
+      "pop": 71.12319097754609,
+      "spin": 2776.216113624665,
+      "twist_weight": 214.26952928274528,
+      "swing_weight": 229.3655275715902,
+      "balance_point": 28.239627821699333
+    }
+  },
+  {
+    "id": "tecnifibre-select-unknown-model",
+    "metadata": {
+      "brand": "Tecnifibre Select",
+      "model": "Unknown Model",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Aramid Fiber",
+      "average_weight": 7.949999999999999,
+      "core": 15.0,
+      "paddle_length": 16.6,
+      "paddle_width": 7.7,
+      "grip_length": 5.5,
+      "grip_type": "Perforated Leather Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 76.35138272874089,
+      "pop": 76.70822828847207,
+      "spin": 2680.9844262659503,
+      "twist_weight": 188.8036690466178,
+      "swing_weight": 217.5281655552187,
+      "balance_point": 30.166863390581014
+    }
+  },
+  {
+    "id": "tecnifibre-command-unknown-model",
+    "metadata": {
+      "brand": "Tecnifibre Command",
+      "model": "Unknown Model",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Composite",
+      "average_weight": 7.949999999999999,
+      "core": 15.0,
+      "paddle_length": 16.6,
+      "paddle_width": 7.4,
+      "grip_length": 5.0,
+      "grip_type": "Perforated Leather Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 82.28984162208089,
+      "pop": 74.65790833386053,
+      "spin": 3228.3548828573616,
+      "twist_weight": 214.72690892328166,
+      "swing_weight": 208.7468192661086,
+      "balance_point": 28.76855488461545
+    }
+  },
+  {
+    "id": "tecnifibre-blitz-unknown-model",
+    "metadata": {
+      "brand": "Tecnifibre Blitz",
+      "model": "Unknown Model",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Composite",
+      "average_weight": 7.949999999999999,
+      "core": 15.0,
+      "paddle_length": 16.6,
+      "paddle_width": 7.4,
+      "grip_length": 6.0,
+      "grip_type": "Perforated Leather Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 81.57481663634451,
+      "pop": 70.77285239317789,
+      "spin": 2934.3449155134913,
+      "twist_weight": 194.48758259455528,
+      "swing_weight": 213.4477873963445,
+      "balance_point": 30.402388936394594
+    }
+  },
+  {
+    "id": "pickleball-apes-pulse-e",
+    "metadata": {
+      "brand": "Pickleball Apes",
+      "model": "Pulse E",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Poly Aramid Fiber Weave",
+      "average_weight": 8.2,
+      "core": 16.5,
+      "paddle_length": 17.0,
+      "paddle_width": 7.0,
+      "grip_length": 6.25,
+      "grip_type": "Leather Performance Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 84.64286518044248,
+      "pop": 75.65498369912538,
+      "spin": 2804.9716873326447,
+      "twist_weight": 188.5014945652493,
+      "swing_weight": 225.26495627546632,
+      "balance_point": 29.2161450780779
+    }
+  },
+  {
+    "id": "pickleball-apes-pulse-s",
+    "metadata": {
+      "brand": "Pickleball Apes",
+      "model": "Pulse S",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Poly Aramid Fiber Weave",
+      "average_weight": 8.2,
+      "core": 16.5,
+      "paddle_length": 16.4,
+      "paddle_width": 7.6,
+      "grip_length": 5.5,
+      "grip_type": "Leather Performance Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 84.8887978579353,
+      "pop": 75.86589529076852,
+      "spin": 2973.9784882715976,
+      "twist_weight": 208.5813689793985,
+      "swing_weight": 226.04347160867252,
+      "balance_point": 30.545838037169535
+    }
+  },
+  {
+    "id": "engage-pursuit-v2.0",
+    "metadata": {
+      "brand": "Engage",
+      "model": "Pursuit V2.0",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Amplified Carbon Surface",
+      "average_weight": 8.0,
+      "core": 15.2,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.3,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 82.88960635924826,
+      "pop": 74.70543428614477,
+      "spin": 2902.23864943593,
+      "twist_weight": 202.7936475220693,
+      "swing_weight": 201.0766815187024,
+      "balance_point": 29.70989677168258
+    }
+  },
+  {
+    "id": "engage-evolution-aero-scarlet-red",
+    "metadata": {
+      "brand": "Engage",
+      "model": "Evolution AERO Scarlet Red",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": 7.9,
+      "core": null,
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.5,
+      "grip_type": "Perforated Cushion Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 78.41475864851671,
+      "pop": 71.5371134531982,
+      "spin": 2906.3028253858515,
+      "twist_weight": 202.36979274089748,
+      "swing_weight": 221.87324070341083,
+      "balance_point": 28.34755969272064
+    }
+  },
+  {
+    "id": "engage-encore-pro-v2.0-12.7",
+    "metadata": {
+      "brand": "Engage",
+      "model": "Encore Pro V2.0 12.7",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Fiberglass",
+      "average_weight": 8.0,
+      "core": 12.7,
+      "paddle_length": 16.25,
+      "paddle_width": 7.75,
+      "grip_length": 5.3,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 81.16495160470367,
+      "pop": 76.33858461669494,
+      "spin": 2737.0378109126777,
+      "twist_weight": 212.70165398564677,
+      "swing_weight": 229.63653978701205,
+      "balance_point": 28.77447550111899
+    }
+  },
+  {
+    "id": "engage-encore-pro-v2.0-15.2",
+    "metadata": {
+      "brand": "Engage",
+      "model": "Encore Pro V2.0 15.2",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Fiberglass",
+      "average_weight": 8.0,
+      "core": 15.2,
+      "paddle_length": 16.25,
+      "paddle_width": 7.75,
+      "grip_length": 5.3,
+      "grip_type": "Ultra Perforated Cushion",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 82.38086023067628,
+      "pop": 71.8503025276743,
+      "spin": 3159.727608317776,
+      "twist_weight": 213.7447238748944,
+      "swing_weight": 226.59215401638406,
+      "balance_point": 28.38837893342828
+    }
+  },
+  {
+    "id": "head-gravity-tour-2025-paddle-4-1/8",
+    "metadata": {
+      "brand": "HEAD",
+      "model": "Gravity Tour 2025 Paddle 4 1/8",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "12K Carbon HS",
+      "average_weight": 8.5,
+      "core": 17.0,
+      "paddle_length": 15.0,
+      "paddle_width": 8.0,
+      "grip_length": 4.0,
+      "grip_type": "HydroSorb Pro",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 79.4605637476651,
+      "pop": 79.695419944402,
+      "spin": 2907.4700022939096,
+      "twist_weight": 205.03744265879635,
+      "swing_weight": 221.38347110447603,
+      "balance_point": 29.107740171222762
+    }
+  },
+  {
+    "id": "head-gravity-tour-ex-2025-paddle-4-1/8",
+    "metadata": {
+      "brand": "HEAD",
+      "model": "Gravity Tour EX 2025 Paddle 4 1/8",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "12K Carbon HS",
+      "average_weight": 8.6,
+      "core": 17.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.5,
+      "grip_length": 5.5,
+      "grip_type": "HydroSorb Pro",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 84.59097498763362,
+      "pop": 76.47818551170177,
+      "spin": 3272.0656954388537,
+      "twist_weight": 206.50436635461867,
+      "swing_weight": 212.24069556292733,
+      "balance_point": 29.291912563567173
+    }
+  },
+  {
+    "id": "pickleball-apes-pulse-v",
+    "metadata": {
+      "brand": "Pickleball Apes",
+      "model": "Pulse V",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Poly Aramid Fiber Weave",
+      "average_weight": 8.2,
+      "core": 16.5,
+      "paddle_length": 15.8,
+      "paddle_width": 8.1,
+      "grip_length": 5.5,
+      "grip_type": "Leather Performance Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 84.96759986498753,
+      "pop": 75.43653427479948,
+      "spin": 3027.8392352884966,
+      "twist_weight": 197.41993133997832,
+      "swing_weight": 221.73071783028942,
+      "balance_point": 28.760077177629405
+    }
+  },
+  {
+    "id": "gearbox-g2-quad",
+    "metadata": {
+      "brand": "Gearbox",
+      "model": "G2 Quad",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 11.0,
+      "paddle_length": 15.0,
+      "paddle_width": 8.0,
+      "grip_length": 4.0,
+      "grip_type": "Gearbox Smooth Wrap",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 80.49832273918723,
+      "pop": 79.88274923275299,
+      "spin": 2804.1311534686038,
+      "twist_weight": 201.58406377754204,
+      "swing_weight": 200.39592444067682,
+      "balance_point": 27.207126202248613
+    }
+  },
+  {
+    "id": "pickleball-apes-pro-line-energy-s",
+    "metadata": {
+      "brand": "Pickleball Apes",
+      "model": "Pro Line Energy S",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.2,
+      "core": 16.5,
+      "paddle_length": 16.4,
+      "paddle_width": 7.6,
+      "grip_length": 5.5,
+      "grip_type": "Leather Performance Grip",
+      "grip_circumference": 4.25
+    },
+    "performance": {
+      "power": 82.24222318066121,
+      "pop": 77.60782857240932,
+      "spin": 3059.160505726766,
+      "twist_weight": 203.90576820638682,
+      "swing_weight": 206.22152903165136,
+      "balance_point": 30.14712703567121
+    }
+  },
+  {
+    "id": "diadem-hush",
+    "metadata": {
+      "brand": "Diadem",
+      "model": "Hush",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "eTPU Face",
+      "average_weight": 8.15,
+      "core": 18.0,
+      "paddle_length": 16.5,
+      "paddle_width": 7.22,
+      "grip_length": 5.6,
+      "grip_type": "Vintage Hybrid",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 79.65895834057466,
+      "pop": 72.49255204964382,
+      "spin": 3326.506811070707,
+      "twist_weight": 185.22387445592346,
+      "swing_weight": 229.18352436425081,
+      "balance_point": 29.087391095302987
+    }
+  },
+  {
+    "id": "selkirk-vanguard-pro-epic",
+    "metadata": {
+      "brand": "Selkirk",
+      "model": "Vanguard Pro Epic",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 16.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.8,
+      "grip_length": 5.3,
+      "grip_type": "Selkirk ComfortGrip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 76.77800800120964,
+      "pop": 76.51928561297134,
+      "spin": 2860.008707971959,
+      "twist_weight": 196.25928646737603,
+      "swing_weight": 206.20722731644943,
+      "balance_point": 28.373226598323953
+    }
+  },
+  {
+    "id": "selkirk-vanguard-pro-invikta",
+    "metadata": {
+      "brand": "Selkirk",
+      "model": "Vanguard Pro Invikta",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 16.0,
+      "paddle_length": 16.45,
+      "paddle_width": 7.45,
+      "grip_length": 5.5,
+      "grip_type": "Selkirk ComfortGrip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 75.62589948190912,
+      "pop": 76.85389014081983,
+      "spin": 3043.8447692089544,
+      "twist_weight": 213.76770412059105,
+      "swing_weight": 209.4728591972842,
+      "balance_point": 30.75912590888731
+    }
+  },
+  {
+    "id": "gearbox-pro-ultimate-elongated",
+    "metadata": {
+      "brand": "Gearbox",
+      "model": "PRO Ultimate Elongated",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.0,
+      "core": 16.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Gearbox Smooth Wrap",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 80.64559420857466,
+      "pop": 73.29015972244555,
+      "spin": 3032.159898469364,
+      "twist_weight": 201.70237579337604,
+      "swing_weight": 202.22190410442738,
+      "balance_point": 27.623188262014093
+    }
+  },
+  {
+    "id": "prolite-stealth-gs2",
+    "metadata": {
+      "brand": "PROLITE",
+      "model": "Stealth GS2",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": "Carbon Fiber",
+      "average_weight": 7.85,
+      "core": 14.0,
+      "paddle_length": 16.375,
+      "paddle_width": 7.25,
+      "grip_length": 5.5,
+      "grip_type": "No Sweat Diamond Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 82.70670750980709,
+      "pop": 78.05114691570424,
+      "spin": 2680.083196125831,
+      "twist_weight": 208.82784767508258,
+      "swing_weight": 220.75365427305783,
+      "balance_point": 27.775252779748516
+    }
+  },
+  {
+    "id": "gamma-rcf-airbender-13mm",
+    "metadata": {
+      "brand": "Gamma",
+      "model": "RCF Airbender 13mm",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 7.9,
+      "core": 13.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Gamma Honeycomb",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 84.03751279604312,
+      "pop": 72.36411068741528,
+      "spin": 2832.864101587918,
+      "twist_weight": 206.42358351392303,
+      "swing_weight": 228.45131519476644,
+      "balance_point": 29.379731992151026
+    }
+  },
+  {
+    "id": "gamma-rcf-airbender-10mm",
+    "metadata": {
+      "brand": "Gamma",
+      "model": "RCF Airbender 10mm",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Standard",
+      "surface": "Carbon Fiber",
+      "average_weight": 7.9,
+      "core": 10.0,
+      "paddle_length": 16.0,
+      "paddle_width": 7.0,
+      "grip_length": 5.0,
+      "grip_type": "Gamma Honeycomb",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 75.49293293905471,
+      "pop": 72.99015943200259,
+      "spin": 2660.5575620723375,
+      "twist_weight": 204.84721714922713,
+      "swing_weight": 206.49023766890878,
+      "balance_point": 30.049287841994428
+    }
+  },
+  {
+    "id": "six-zero-double-black-diamond-elongated",
+    "metadata": {
+      "brand": "Six Zero",
+      "model": "Double Black Diamond Elongated",
+      "source": "Pickleball Galaxy"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": 8.1,
+      "core": 15.0,
+      "paddle_length": 16.6,
+      "paddle_width": 7.3,
+      "grip_length": 6.0,
+      "grip_type": "Perforated Leather Grip",
+      "grip_circumference": 4.0
+    },
+    "performance": {
+      "power": 80.63456076512188,
+      "pop": 74.81974449298887,
+      "spin": 3208.0636130800704,
+      "twist_weight": 204.33630579075765,
+      "swing_weight": 221.14241532634813,
+      "balance_point": 28.711601733915504
+    }
+  }
+]
