@@ -85,7 +85,7 @@ To upload a paddle, use the following curl command:
 
 ```bash
 curl -X POST \
-  http://localhost:8080/api/paddle \
+  http://localhost:8080/api/paddles \
   -H "Content-Type: application/json" \
   -d '{
     "metadata": {

@@ -101,11 +101,51 @@ def determine_paddle_shape_from_length(paddle_length: float) -> str:
         paddle_length: The paddle length in inches
         
     Returns:
-        The paddle shape category: "Elongated", "Hybrid", or "Standard"
+        The paddle shape category: "Elongated", "Hybrid", or "Wide-body"
     """
     if paddle_length >= 16.5:
         return "Elongated"
     elif paddle_length >= 16.25:
         return "Hybrid"
     else:
-        return "Standard"  # Typically 16 inches 
+        return "Wide-body"  # Typically 16 inches or shorter
+
+def normalize_paddle_shape(shape: str) -> str:
+    """Normalize paddle shape to match Go backend expectations.
+    
+    Args:
+        shape: The raw shape string from scraping
+        
+    Returns:
+        Normalized shape: "Elongated", "Hybrid", or "Wide-body"
+    """
+    if not shape:
+        return "Wide-body"  # Default fallback
+    
+    shape_lower = shape.lower().strip()
+    
+    # Map common shape variations to the accepted values
+    shape_mapping = {
+        # Elongated variations
+        "elongated": "Elongated",
+        "elongated shape": "Elongated",
+        "long": "Elongated",
+        
+        # Hybrid variations  
+        "hybrid": "Hybrid",
+        "hybrid shape": "Hybrid",
+        
+        # Wide-body variations
+        "wide-body": "Wide-body",
+        "widebody": "Wide-body", 
+        "wide body": "Wide-body",
+        "standard": "Wide-body",
+        "teardrop": "Wide-body",
+        "traditional": "Wide-body",
+        "classic": "Wide-body",
+        
+        # Default fallback
+        "": "Wide-body"
+    }
+    
+    return shape_mapping.get(shape_lower, "Wide-body") 

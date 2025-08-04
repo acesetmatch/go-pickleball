@@ -9,6 +9,34 @@ export interface ApiError {
   status?: number;
 }
 
+// Define paddle creation data interface
+export interface CreatePaddleData {
+  metadata: {
+    brand: string;
+    model: string;
+    serial_code?: string;
+  };
+  specs: {
+    shape: string;
+    surface: string;
+    average_weight: number;
+    core: number;
+    paddle_length: number;
+    paddle_width: number;
+    grip_length: number;
+    grip_type: string;
+    grip_circumference: number;
+  };
+  performance: {
+    power: number;
+    pop: number;
+    spin: number;
+    twist_weight: number;
+    swing_weight: number;
+    balance_point: number;
+  };
+}
+
 // First, let's define the Paddle interface in fetch.ts so it can be exported and reused
 export interface Paddle {
   id: string;
@@ -55,11 +83,11 @@ export async function fetchData<T>(
       }
     );
     return response.data;
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error(`Error fetching data from ${endpoint}:`, error);
     
     // Network error check (no response from server)
-    if (error.code === 'ERR_NETWORK') {
+    if (error && typeof error === 'object' && 'code' in error && error.code === 'ERR_NETWORK') {
       const apiError: ApiError = {
         message: 'Network error. Please check if the server is running.',
         status: 0
@@ -68,8 +96,8 @@ export async function fetchData<T>(
     }
     
     const apiError: ApiError = {
-      message: error.response?.data?.message || 'Failed to fetch data. Please try again later.',
-      status: error.response?.status
+      message: 'Failed to fetch data. Please try again later.',
+      status: undefined
     };
     
     throw apiError;
@@ -77,7 +105,7 @@ export async function fetchData<T>(
 }
 
 // Generic fetch function for POST requests
-export async function postData<T, D = any>(
+export async function postData<T, D = Record<string, unknown>>(
   endpoint: string,
   data: D,
   config?: AxiosRequestConfig
@@ -95,11 +123,11 @@ export async function postData<T, D = any>(
       }
     );
     return response.data;
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error(`Error posting data to ${endpoint}:`, error);
     
     // Network error check
-    if (error.code === 'ERR_NETWORK') {
+    if (error && typeof error === 'object' && 'code' in error && error.code === 'ERR_NETWORK') {
       const apiError: ApiError = {
         message: 'Network error. Please check if the server is running.',
         status: 0
@@ -108,8 +136,8 @@ export async function postData<T, D = any>(
     }
     
     const apiError: ApiError = {
-      message: error.response?.data?.message || 'Failed to submit data. Please try again later.',
-      status: error.response?.status
+      message: 'Failed to submit data. Please try again later.',
+      status: undefined
     };
     
     throw apiError;
@@ -126,6 +154,6 @@ export async function getPaddleById(id: string): Promise<Paddle> {
   return fetchData<Paddle>(`/api/paddles/${id}`);
 }
 
-export async function createPaddle(paddleData: any): Promise<any> {
-  return postData<any, any>('/api/paddles', paddleData);
+export async function createPaddle(paddleData: CreatePaddleData): Promise<Paddle> {
+  return postData<Paddle, CreatePaddleData>('/api/paddles', paddleData);
 }

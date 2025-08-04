@@ -66,7 +66,7 @@ export function PaddleDetails({ paddle, onBack }: PaddleDetailsProps) {
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-medium">Weight</TableCell>
-                  <TableCell>{paddle.specs.average_weight}g</TableCell>
+                  <TableCell>{paddle.specs.average_weight}ounces</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-medium">Core</TableCell>

@@ -5,7 +5,8 @@ import requests
 import time
 from bs4 import BeautifulSoup
 from typing import Dict, Any, List, Optional
-from data_models import Paddle, Metadata, Specs, Performance, generate_paddle_id, determine_paddle_shape_from_length
+from data_models import Paddle, Metadata, Specs, Performance, generate_paddle_id, determine_paddle_shape_from_length, normalize_paddle_shape
+from image_downloader import download_image
 
 def scrape_central_paddles() -> List[Paddle]:
     """Scrape paddle data from Pickleball Central."""
@@ -76,6 +77,7 @@ def scrape_central_paddles() -> List[Paddle]:
                     if length_match:
                         paddle_length = float(length_match.group(1))
                         shape = determine_paddle_shape_from_length(paddle_length)
+                        shape = normalize_paddle_shape(shape)  # Ensure it matches Go backend expectations
                         logging.info(f"Determined shape '{shape}' from paddle length {paddle_length} for {name}")
                 except (ValueError, TypeError) as e:
                     logging.warning(f"Could not parse paddle length from '{specs.get('paddle_length')}': {e}")
@@ -106,6 +108,33 @@ def scrape_central_paddles() -> List[Paddle]:
             # Create metadata and paddle objects using the correct data model structure
             metadata = Metadata(brand=brand, model=name, source="Pickleball Central")
             paddle_id = generate_paddle_id(brand, name)
+            
+            # Extract and download image
+            image_url = None
+            try:
+                # Look for image in the card
+                img_elem = card.select_one('.card-image img')
+                if img_elem and img_elem.get('src'):
+                    image_url = img_elem.get('src')
+                    # Ensure we have the full URL
+                    if image_url.startswith('/'):
+                        image_url = f"https://pickleballcentral.com{image_url}"
+                    elif not image_url.startswith('http'):
+                        image_url = f"https://pickleballcentral.com/{image_url}"
+                
+                if image_url:
+                    logging.info(f"Found image URL: {image_url}")
+                    # Download the image
+                    local_image_path = download_image(image_url, brand, name, "images")
+                    if local_image_path:
+                        logging.info(f"Successfully downloaded image to: {local_image_path}")
+                    else:
+                        logging.warning(f"Failed to download image from: {image_url}")
+                else:
+                    logging.warning("No image URL found on the card")
+                    
+            except Exception as e:
+                logging.error(f"Error extracting/downloading image: {e}")
             
             # Create basic specs (you may want to extract more detailed specs)
             paddle_specs = Specs(

@@ -4,7 +4,8 @@ import logging
 from typing import List, Optional
 
 from base_scraper import PaddleScraper
-from data_models import Paddle, Metadata, Specs, Performance, generate_paddle_id, extract_float, clean_model_name, determine_paddle_shape_from_length
+from data_models import Paddle, Metadata, Specs, Performance, generate_paddle_id, extract_float, clean_model_name, determine_paddle_shape_from_length, normalize_paddle_shape
+from image_downloader import download_image, extract_image_url_from_galaxy_html
 
 class PickleballGalaxyScraper(PaddleScraper):
     def __init__(self):
@@ -344,6 +345,7 @@ class PickleballGalaxyScraper(PaddleScraper):
             shape = None
             if length:
                 shape = determine_paddle_shape_from_length(length)
+                shape = normalize_paddle_shape(shape)  # Ensure it matches Go backend expectations
                 self.logger.debug(f"Determined shape '{shape}' from length {length}")
             
             # Extract surface material
@@ -488,6 +490,113 @@ class PickleballGalaxyScraper(PaddleScraper):
             # Create the metadata with source information
             metadata = Metadata(brand=brand, model=model, source="Pickleball Galaxy")
             paddle_id = generate_paddle_id(brand, model)
+            
+            # Extract and download image
+            image_url = None
+            try:
+                # Debug: Log all images on the page
+                all_images = soup.find_all('img')
+                self.logger.debug(f"Found {len(all_images)} total images on the page")
+                for i, img in enumerate(all_images[:10]):  # Log first 10 images
+                    src = img.get('src', 'No src')
+                    alt = img.get('alt', 'No alt')
+                    img_id = img.get('id', 'No id')
+                    img_class = img.get('class', [])
+                    self.logger.debug(f"Image {i+1}: src='{src}', alt='{alt}', id='{img_id}', class='{img_class}'")
+                
+                # Priority 1: Look for the closeup image (960x960) - highest quality
+                img_elem = soup.select_one('img#closeup_image')
+                if img_elem and img_elem.get('src'):
+                    image_url = img_elem.get('src')
+                    self.logger.debug(f"Found closeup_image: {image_url}")
+                    if (image_url.startswith('graphics/') and 
+                        not image_url.endswith('blank.gif') and
+                        not 'logo' in image_url.lower() and
+                        not 'header' in image_url.lower() and
+                        not 'banner' in image_url.lower()):
+                        image_url = f"https://www.pickleballgalaxy.com/mm5/{image_url}"
+                        self.logger.info(f"Using closeup image: {image_url}")
+                    elif image_url.endswith('blank.gif'):
+                        image_url = None
+                        self.logger.debug("Skipping blank.gif placeholder")
+                    else:
+                        image_url = None
+                        self.logger.debug("Skipping logo/header/banner image")
+                
+                # Priority 2: Look for the main product image (480x480)
+                if not image_url:
+                    img_elem = soup.select_one('img#main_image')
+                    if img_elem and img_elem.get('src'):
+                        image_url = img_elem.get('src')
+                        self.logger.debug(f"Found main_image: {image_url}")
+                        if (image_url.startswith('graphics/') and 
+                            not image_url.endswith('blank.gif') and
+                            not 'logo' in image_url.lower() and
+                            not 'header' in image_url.lower() and
+                            not 'banner' in image_url.lower()):
+                            image_url = f"https://www.pickleballgalaxy.com/mm5/{image_url}"
+                            self.logger.info(f"Using main image: {image_url}")
+                        elif image_url.endswith('blank.gif'):
+                            image_url = None
+                            self.logger.debug("Skipping blank.gif placeholder")
+                        else:
+                            image_url = None
+                            self.logger.debug("Skipping logo/header/banner image")
+                
+                # Priority 3: Look for any product image in the layout
+                if not image_url:
+                    img_elem = soup.select_one('img.x-product-layout-images__image')
+                    if img_elem and img_elem.get('src'):
+                        image_url = img_elem.get('src')
+                        self.logger.debug(f"Found layout image: {image_url}")
+                        if (image_url.startswith('graphics/') and 
+                            not image_url.endswith('blank.gif') and
+                            not 'logo' in image_url.lower() and
+                            not 'header' in image_url.lower() and
+                            not 'banner' in image_url.lower()):
+                            image_url = f"https://www.pickleballgalaxy.com/mm5/{image_url}"
+                            self.logger.info(f"Using layout image: {image_url}")
+                        elif image_url.endswith('blank.gif'):
+                            image_url = None
+                            self.logger.debug("Skipping blank.gif placeholder")
+                        else:
+                            image_url = None
+                            self.logger.debug("Skipping logo/header/banner image")
+                
+                # Priority 4: Look for any image with graphics in src (but avoid thumbnails and logos)
+                if not image_url:
+                    graphics_images = soup.select('img[src*="graphics"]')
+                    for img in graphics_images:
+                        src = img.get('src', '')
+                        # Skip thumbnails, blank images, and logos
+                        if (src.startswith('graphics/') and 
+                            not src.endswith('blank.gif') and 
+                            not src.endswith('_80x80.jpg') and
+                            not src.endswith('_80x80.png') and
+                            not 'logo' in src.lower() and
+                            not 'header' in src.lower() and
+                            not 'banner' in src.lower() and
+                            # Make sure it looks like a product image (has dimensions in filename)
+                            ('_480x480' in src or '_960x960' in src or '_480x480' in src)):
+                            image_url = src
+                            self.logger.debug(f"Found graphics image: {image_url}")
+                            image_url = f"https://www.pickleballgalaxy.com/mm5/{image_url}"
+                            self.logger.info(f"Using graphics image: {image_url}")
+                            break
+                
+                if image_url:
+                    self.logger.info(f"Final image URL: {image_url}")
+                    # Download the image
+                    local_image_path = download_image(image_url, brand, model, "images")
+                    if local_image_path:
+                        self.logger.info(f"Successfully downloaded image to: {local_image_path}")
+                    else:
+                        self.logger.warning(f"Failed to download image from: {image_url}")
+                else:
+                    self.logger.warning("No valid image URL found on the page")
+                    
+            except Exception as e:
+                self.logger.error(f"Error extracting/downloading image: {e}")
             
             # Create final paddle object
             paddle = Paddle(id=paddle_id, metadata=metadata, specs=specs, performance=performance)

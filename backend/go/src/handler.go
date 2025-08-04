@@ -95,7 +95,7 @@ func uploadPaddleStats(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Validate the paddle input
-	if err := (&paddleInput); err != nil {
+	if err := validatePaddleInput(&paddleInput); err != nil {
 		respondWithError(w, fmt.Sprintf("Validation error: %v", err), http.StatusBadRequest)
 		return
 	}
