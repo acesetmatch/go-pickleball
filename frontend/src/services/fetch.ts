@@ -1,7 +1,7 @@
 // src/lib/fetch.ts
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 
-const API_BASE_URL = 'http://localhost:8080';
+const API_BASE_URL = 'http://localhost';
 
 // Define error interface
 export interface ApiError {
@@ -79,6 +79,7 @@ export async function fetchData<T>(
           'Content-Type': 'application/json',
           ...config?.headers,
         },
+        timeout: 10000, // 10 second timeout
         ...config,
       }
     );
@@ -119,6 +120,7 @@ export async function postData<T, D = Record<string, unknown>>(
           'Content-Type': 'application/json',
           ...config?.headers,
         },
+        timeout: 10000, // 10 second timeout
         ...config,
       }
     );

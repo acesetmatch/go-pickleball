@@ -6,7 +6,6 @@ services:
   # PostgreSQL Database
   postgres:
     image: postgres:15-alpine
-    container_name: pickleball-postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -26,7 +25,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: pickleball-api
     environment:
       - DB_HOST=postgres
       - DB_PORT=5432
@@ -45,7 +43,6 @@ services:
     build:
       context: .
       dockerfile: nginx.Dockerfile
-    container_name: pickleball-nginx
     ports:
       - '80:80'
       - '443:443'
