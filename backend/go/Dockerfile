@@ -14,7 +14,9 @@ RUN go mod download
 COPY . .
 
 # Build the application
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main ./src
+ARG GOMAXPROCS=1
+ENV GOMAXPROCS=${GOMAXPROCS}
+RUN CGO_ENABLED=0 GOOS=linux go build -installsuffix cgo -o main ./src
 
 # Final stage
 FROM alpine:latest
