@@ -45,7 +45,7 @@ func main() {
 
 	// Enable CORS
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"https://pickleball-db.vercel.app"}, // Your frontend URL
+		AllowedOrigins:   []string{"https://pickleball-db.vercel.app", "https://pickleball-db.com"}, // Your frontend URLs
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowedHeaders:   []string{"*"},
 		AllowCredentials: true,
