@@ -13,10 +13,12 @@ RUN go mod download
 # Copy source code
 COPY . .
 
-# Build the application
+# Build the application with minimal memory usage
 ARG GOMAXPROCS=1
 ENV GOMAXPROCS=${GOMAXPROCS}
-RUN CGO_ENABLED=0 GOOS=linux go build -installsuffix cgo -o main ./src
+ENV GOGC=off
+ENV GOMEMLIMIT=256MiB
+RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w" -installsuffix cgo -o main ./src
 
 # Final stage
 FROM alpine:latest
