@@ -149,15 +149,8 @@ def scrape_central_paddles() -> List[Paddle]:
                 grip_circumference=4.25 # Default, should be extracted from specs
             )
             
-            # Create performance metrics (could be randomized or calculated)
-            performance = Performance(
-                power=80.0 + random.uniform(-5, 5),
-                pop=75.0 + random.uniform(-5, 5),
-                spin=3000.0 + random.uniform(-400, 400),
-                twist_weight=200.0 + random.uniform(-15, 15),
-                swing_weight=215.0 + random.uniform(-15, 15),
-                balance_point=29.0 + random.uniform(-2, 2)
-            )
+            # Do not generate synthetic performance metrics; leave unset when not scraped
+            performance = None
             
             # Create the paddle object
             paddle = Paddle(

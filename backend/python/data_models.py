@@ -36,7 +36,7 @@ class Paddle:
     id: str
     metadata: Metadata
     specs: Specs
-    performance: Performance
+    performance: Optional[Performance]
 
 # Helper functions
 def generate_paddle_id(brand: str, model: str) -> str:

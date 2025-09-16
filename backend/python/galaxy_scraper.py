@@ -475,17 +475,8 @@ class PickleballGalaxyScraper(PaddleScraper):
             self.logger.info(f"  specs.average_weight: {specs.average_weight}")
             self.logger.info(f"  specs.paddle_width: {specs.paddle_width}")
             
-            # Generate estimated performance metrics
-            self.logger.debug("Generating estimated performance metrics")
-            
-            performance = Performance(
-                power=80.0 + random.uniform(-5, 5),
-                pop=75.0 + random.uniform(-5, 5),
-                spin=3000.0 + random.uniform(-400, 400),
-                twist_weight=200.0 + random.uniform(-15, 15),
-                swing_weight=215.0 + random.uniform(-15, 15),
-                balance_point=29.0 + random.uniform(-2, 2)
-            )
+            # Do not generate synthetic performance metrics; leave unset when not scraped
+            performance = None
             
             # Create the metadata with source information
             metadata = Metadata(brand=brand, model=model, source="Pickleball Galaxy")
