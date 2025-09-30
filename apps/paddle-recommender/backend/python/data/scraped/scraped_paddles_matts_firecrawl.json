@@ -1,0 +1,154 @@
+[
+  {
+    "id": "honolulu-pickleball-co-j6nf-16mm",
+    "metadata": {
+      "brand": "Honolulu Pickleball Co",
+      "model": "J6Nf 16Mm",
+      "source": "Matt's Pickleball (Firecrawl)"
+    },
+    "specs": {
+      "shape": "Elongated",
+      "surface": "Carbon Fiber",
+      "average_weight": null,
+      "core": "16mm",
+      "paddle_length": 16.5,
+      "paddle_width": 7.5,
+      "grip_length": 5.75,
+      "grip_circumference": 4.125
+    },
+    "performance": null
+  },
+  {
+    "id": "unknown-boom",
+    "metadata": {
+      "brand": "Unknown",
+      "model": "Boom",
+      "source": "Matt's Pickleball (Firecrawl)"
+    },
+    "specs": {
+      "shape": null,
+      "surface": null,
+      "average_weight": null,
+      "core": null,
+      "paddle_length": null,
+      "paddle_width": null,
+      "grip_length": null,
+      "grip_circumference": null
+    },
+    "performance": null
+  },
+  {
+    "id": "honolulu-pickleball-co-j6fc-16mm",
+    "metadata": {
+      "brand": "Honolulu Pickleball Co",
+      "model": "J6Fc 16Mm",
+      "source": "Matt's Pickleball (Firecrawl)"
+    },
+    "specs": {
+      "shape": null,
+      "surface": null,
+      "average_weight": null,
+      "core": null,
+      "paddle_length": null,
+      "paddle_width": null,
+      "grip_length": null,
+      "grip_circumference": null
+    },
+    "performance": null
+  },
+  {
+    "id": "honolulu-pickleball-co-j2nf-lh-16mm",
+    "metadata": {
+      "brand": "Honolulu Pickleball Co",
+      "model": "J2Nf Lh 16Mm",
+      "source": "Matt's Pickleball (Firecrawl)"
+    },
+    "specs": {
+      "shape": null,
+      "surface": null,
+      "average_weight": null,
+      "core": null,
+      "paddle_length": null,
+      "paddle_width": null,
+      "grip_length": null,
+      "grip_circumference": null
+    },
+    "performance": null
+  },
+  {
+    "id": "unknown-4-trufoam-gene",
+    "metadata": {
+      "brand": "Unknown",
+      "model": "4 Trufoam Gene",
+      "source": "Matt's Pickleball (Firecrawl)"
+    },
+    "specs": {
+      "shape": null,
+      "surface": null,
+      "average_weight": null,
+      "core": null,
+      "paddle_length": null,
+      "paddle_width": null,
+      "grip_length": null,
+      "grip_circumference": null
+    },
+    "performance": null
+  },
+  {
+    "id": "unknown-quanta-r4-16mm",
+    "metadata": {
+      "brand": "Unknown",
+      "model": "Quanta R4 16Mm",
+      "source": "Matt's Pickleball (Firecrawl)"
+    },
+    "specs": {
+      "shape": null,
+      "surface": null,
+      "average_weight": null,
+      "core": null,
+      "paddle_length": null,
+      "paddle_width": null,
+      "grip_length": null,
+      "grip_circumference": null
+    },
+    "performance": null
+  },
+  {
+    "id": "unknown-loco-hybrid-16mm",
+    "metadata": {
+      "brand": "Unknown",
+      "model": "Loco Hybrid 16Mm",
+      "source": "Matt's Pickleball (Firecrawl)"
+    },
+    "specs": {
+      "shape": "Hybrid",
+      "surface": null,
+      "average_weight": null,
+      "core": null,
+      "paddle_length": null,
+      "paddle_width": null,
+      "grip_length": null,
+      "grip_circumference": null
+    },
+    "performance": null
+  },
+  {
+    "id": "honolulu-pickleball-co-j2fc-plu",
+    "metadata": {
+      "brand": "Honolulu Pickleball Co",
+      "model": "J2Fc Plu",
+      "source": "Matt's Pickleball (Firecrawl)"
+    },
+    "specs": {
+      "shape": null,
+      "surface": null,
+      "average_weight": null,
+      "core": null,
+      "paddle_length": null,
+      "paddle_width": null,
+      "grip_length": null,
+      "grip_circumference": null
+    },
+    "performance": null
+  }
+]

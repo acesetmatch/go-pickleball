@@ -1,0 +1,29 @@
+{
+  "profile": {
+    "setup": {
+      "pain_points": ["resets_short", "low_spin"]
+    },
+    "style": {
+      "styles": ["hand_speed"]
+    },
+    "physical": {
+      "arm_sensitivity": true
+    }
+  },
+  "candidates": [
+    {
+      "paddle_id": "ENGAGE-PURSUIT-MX-6.0",
+      "modded_specs": {
+        "lead_weight": 3.0,
+        "grip_size": "4.25"
+      }
+    },
+    {
+      "paddle_id": "SELKIRK-AMPED-S2", 
+      "modded_specs": {
+        "lead_weight": 5.0,
+        "grip_size": "4.5"
+      }
+    }
+  ]
+}
