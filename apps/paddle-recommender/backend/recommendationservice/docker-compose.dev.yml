@@ -1,0 +1,46 @@
+# Development docker-compose with hot reload
+# Usage: docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: builder  # Use builder stage for dev dependencies
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --log-level debug
+    environment:
+      - ENVIRONMENT=development
+      - DEBUG=true
+      - LOG_LEVEL=DEBUG
+    volumes:
+      # Mount source code for hot reload
+      - ./app:/app/app:ro
+      - ./tests:/app/tests:ro
+      # Don't mount __pycache__ or venv
+    ports:
+      - "8000:8000"
+      - "5678:5678"  # debugpy port for VS Code debugging
+    stdin_open: true
+    tty: true
+
+  postgres:
+    ports:
+      - "5433:5432"  # Use 5433 externally to avoid conflicts
+    environment:
+      - POSTGRES_USER=paddle_user
+      - POSTGRES_PASSWORD=paddle_pass
+      - POSTGRES_DB=paddle_db_dev  # Separate dev database
+
+  redis:
+    ports:
+      - "6379:6379"
+
+  # Auto-start pgAdmin in dev
+  pgadmin:
+    profiles: []  # Remove profile so it starts by default in dev
+
+  # Auto-start Redis Commander in dev
+  redis-commander:
+    profiles: []  # Remove profile so it starts by default in dev

@@ -1,0 +1,9 @@
+-r base.txt
+
+# Production Server
+gunicorn==21.2.0
+gevent==23.9.1
+
+# Security
+cryptography==41.0.7
+pydantic[email]==2.5.3

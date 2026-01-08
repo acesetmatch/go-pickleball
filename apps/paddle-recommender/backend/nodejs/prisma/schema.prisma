@@ -1,0 +1,121 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Paddle {
+  id        Int      @id @default(autoincrement())
+  paddleId  String   @unique @map("paddle_id")
+  brand     String
+  model     String
+  price     Decimal? @db.Decimal(10, 2)
+  imageUrl  String?  @map("image_url")
+  buyUrl    String?  @map("buy_url")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  specs       PaddleSpec[]
+  @@map("paddles")
+}
+
+model PaddleSpec {
+  id                Int      @id @default(autoincrement())
+  paddleId          Int      @map("paddle_id")
+  shape             String
+  surface           String
+  averageWeight     Float    @map("average_weight")
+  core              Float
+  paddleLength      Float    @map("paddle_length")
+  paddleWidth       Float    @map("paddle_width")
+  gripLength        Float    @map("grip_length")
+  gripType          String   @map("grip_type")
+  gripCircumference Float    @map("grip_circumference")
+  createdAt         DateTime @default(now()) @map("created_at")
+
+  paddle      Paddle                @relation(fields: [paddleId], references: [id])
+  performance PaddlePerformance[]
+
+  @@map("paddle_specs")
+}
+
+model PaddlePerformance {
+  id           Int      @id @default(autoincrement())
+  paddleSpecId Int      @map("paddle_spec_id")
+  power        Float
+  pop          Float
+  spin         Float
+  twistWeight  Float    @map("twist_weight")
+  swingWeight  Float    @map("swing_weight")
+  balancePoint Float    @map("balance_point")
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  paddleSpec PaddleSpec @relation(fields: [paddleSpecId], references: [id])
+
+  @@map("paddle_performance")
+}
+
+model SourcePaddle {
+  id                      Int      @id @default(autoincrement())
+  source                  String   // mattspickleball, pickleballeffect, pickleballstudio
+  company                 String
+  normalizedCompany       String?  @map("normalized_company") // Normalized for matching
+  paddleName              String   @map("paddle_name")
+  price                   String?
+  discountCode            String?  @map("discount_code")
+  purchaseLink            String?  @map("purchase_link")
+  swingWeight             Float?   @map("swing_weight")
+  twistWeight             Float?   @map("twist_weight")
+  weight                  Float?
+  weightGrams             Float?   @map("weight_grams")
+  spinRPM                 Int?     @map("spin_rpm")
+  serveSpeed              Float?   @map("serve_speed")
+  punchVolleySpeed        Float?   @map("punch_volley_speed")
+  swingWeightPercentile   String?  @map("swing_weight_percentile")
+  twistWeightPercentile   String?  @map("twist_weight_percentile")
+  powerPercentile         String?  @map("power_percentile")
+  popPercentile           String?  @map("pop_percentile")
+  spinPercentile          String?  @map("spin_percentile")
+  coreThickness           Float?   @map("core_thickness")
+  shape                   String?
+  length                  Float?
+  width                   Float?
+  gripLength              Float?   @map("grip_length")
+  gripCircumference       Float?   @map("grip_circumference")
+  gripSize                Float?   @map("grip_size")
+  balancePoint            String?  @map("balance_point")
+  faceMaterial            String?  @map("face_material")
+  coreMaterial            String?  @map("core_material")
+  surfaceTexture          String?  @map("surface_texture")
+  paddleType              String?  @map("paddle_type")
+  manufacturingProcess    String?  @map("manufacturing_process")
+  buildType               String?  @map("build_type")
+  controlRating           Int?     @map("control_rating")
+  feelRating              Int?     @map("feel_rating")
+  forgivenessRating       Int?     @map("forgiveness_rating")
+  powerRating             String?  @map("power_rating")
+  spinRating              String?  @map("spin_rating")
+  touchShotsRating        Int?     @map("touch_shots_rating")
+  paddleRating            String?  @map("paddle_rating")
+  releaseYear             String?  @map("release_year")
+  approvalBody            String?  @map("approval_body")
+  paddleImage             String?  @map("paddle_image")
+  youtubeReview           String?  @map("youtube_review")
+  sourceData              Json?    @map("source_data") // Store raw source data as JSON
+  createdAt               DateTime @default(now()) @map("created_at")
+  updatedAt               DateTime @updatedAt @map("updated_at")
+
+  @@unique([source, company, paddleName])
+  @@index([source])
+  @@index([company])
+  @@index([normalizedCompany])
+  @@map("source_paddles")
+}

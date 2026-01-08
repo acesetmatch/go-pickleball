@@ -1,0 +1,21 @@
+{
+  "name": "pickleball-central-scraper",
+  "version": "1.0.0",
+  "description": "Scraper for Pickleball Central paddle data",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "scrape": "tsx index.ts",
+    "scrape:debug": "node --inspect --loader tsx index.ts",
+    "scrape:prod": "node dist/index.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.6.0",
+    "p-limit": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.2"
+  }
+}

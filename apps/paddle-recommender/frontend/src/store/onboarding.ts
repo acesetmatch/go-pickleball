@@ -28,7 +28,7 @@ interface OnboardingState {
   profile: Partial<Profile>;
   video?: VideoMeta;
   step: number;
-  
+
   // Actions
   setPlayContext: (play: Partial<PlayContext>) => void;
   setStyle: (style: Partial<Style>) => void;
@@ -38,17 +38,24 @@ interface OnboardingState {
   setPreferences: (prefs: Partial<Preferences>) => void;
   setAspirations: (aspirations: Partial<Aspirations>) => void;
   setVideo: (video: VideoMeta) => void;
-  
+
   // Navigation
   next: () => boolean;
   back: () => void;
   reset: () => void;
   goToStep: (step: number) => void;
-  
+
   // Validation
   validateCurrentStep: () => boolean;
   getStepErrors: () => string[];
   isStepComplete: (step: number) => boolean;
+
+  // Skip Logic
+  shouldShowWindQuestions: () => boolean;
+  shouldShowArmSensitivityDetails: () => boolean;
+  shouldShowCustomizationQuestions: () => boolean;
+  shouldShowAdvancedMetrics: () => boolean;
+  shouldShowCompetitiveQuestions: () => boolean;
 }
 
 // Default profile state
@@ -245,9 +252,9 @@ export const useOnboardingStore = create<OnboardingState>()(
       isStepComplete: (step: number) => {
         const state = get();
         const validator = stepValidators[step];
-        
+
         if (!validator) return true;
-        
+
         let dataToValidate;
         switch (step) {
           case 0: dataToValidate = state.profile.play; break;
@@ -261,9 +268,43 @@ export const useOnboardingStore = create<OnboardingState>()(
           // case 8: return true; // Video step is optional - disabled for now
           default: return true;
         }
-        
+
         const result = validator.safeParse(dataToValidate);
         return result.success;
+      },
+
+      // Skip Logic - Conditionally show/hide questions based on previous answers
+      shouldShowWindQuestions: () => {
+        const state = get();
+        // Show wind questions only if user plays outdoors more than 20% of the time
+        return (state.profile.env?.outdoor_pct ?? 0) > 20;
+      },
+
+      shouldShowArmSensitivityDetails: () => {
+        const state = get();
+        // Show arm sensitivity follow-up questions only if they indicated sensitivity
+        return state.profile.physical?.arm_sensitivity === true;
+      },
+
+      shouldShowCustomizationQuestions: () => {
+        const state = get();
+        // Show customization questions for intermediate+ players
+        const skillLevel = state.profile.play?.skill_level;
+        return skillLevel !== 'beginner';
+      },
+
+      shouldShowAdvancedMetrics: () => {
+        const state = get();
+        // Show advanced metrics (twist weight, swing weight, etc.) for advanced+ players
+        const skillLevel = state.profile.play?.skill_level;
+        return skillLevel === 'advanced' || skillLevel === 'expert';
+      },
+
+      shouldShowCompetitiveQuestions: () => {
+        const state = get();
+        // Show tournament/competitive questions if they play tournaments
+        const tournamentLevel = state.profile.play?.tournament_level;
+        return tournamentLevel !== 'none' && tournamentLevel !== undefined;
       }
     }),
     {

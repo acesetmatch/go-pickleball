@@ -48,8 +48,8 @@ export const PlayContextSchema = z.object({
 export const StyleSchema = z.object({
   styles: z.array(z.enum(['aggressive', 'all_court', 'reset_first', 'hand_speed', 'singles', 'driving_banger', 'soft_game', 'flicker']))
     .min(1, "Must select at least one style")
-    .max(2, "Can select maximum 2 styles"),
-  priority: z.enum(['power', 'control', 'spin']),
+    .max(3, "Can select maximum 3 styles"),
+  priority: z.enum(['power', 'control', 'spin', 'balanced']),
 });
 
 // Setup Pain schema

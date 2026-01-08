@@ -8,6 +8,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Badge } from '@/components/ui/badge';
 import { HelpCircle, ExternalLink } from 'lucide-react';
+import { PresetButtons } from '../shared/PresetSlider';
 
 const SKILL_LEVELS = [
     {
@@ -263,49 +264,30 @@ export default function StepPlayContext() {
                     </div>
                 </div>
 
-                {/* Game Format */}
-                <div className="space-y-3">
-                    <Label>What do you primarily play?</Label>
-                    <RadioGroup
-                        value={playContext.plays || ''}
-                        onValueChange={(value) => setPlayContext({ plays: value as 'singles' | 'doubles' | 'both' })}
-                    >
-                        <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="singles" id="singles" />
-                            <Label htmlFor="singles">Singles</Label>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="doubles" id="doubles" />
-                            <Label htmlFor="doubles">Doubles</Label>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="both" id="both" />
-                            <Label htmlFor="both">Both equally</Label>
-                        </div>
-                    </RadioGroup>
-                </div>
+                {/* Game Format - Using PresetButtons */}
+                <PresetButtons
+                    label="What do you primarily play?"
+                    value={playContext.plays || ''}
+                    onChange={(value) => setPlayContext({ plays: value as 'singles' | 'doubles' | 'both' })}
+                    options={[
+                        { value: 'singles', label: 'Singles', description: 'Solo play' },
+                        { value: 'doubles', label: 'Doubles', description: 'Team play' },
+                        { value: 'both', label: 'Both', description: 'Equally' }
+                    ]}
+                />
 
-                {/* Competitive Level */}
-                <div className="space-y-3">
-                    <Label>Competitive Level</Label>
-                    <RadioGroup
-                        value={playContext.competitive || ''}
-                        onValueChange={(value) => setPlayContext({ competitive: value as 'rec' | 'league' | 'tournament' })}
-                    >
-                        <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="rec" id="rec" />
-                            <Label htmlFor="rec">Recreational</Label>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="league" id="league" />
-                            <Label htmlFor="league">League Play</Label>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="tournament" id="tournament" />
-                            <Label htmlFor="tournament">Tournament Play</Label>
-                        </div>
-                    </RadioGroup>
-                </div>
+                {/* Competitive Level - Using PresetButtons */}
+                <PresetButtons
+                    label="Competitive Level"
+                    description="How seriously do you compete?"
+                    value={playContext.competitive || ''}
+                    onChange={(value) => setPlayContext({ competitive: value as 'rec' | 'league' | 'tournament' })}
+                    options={[
+                        { value: 'rec', label: 'Recreational', description: 'For fun' },
+                        { value: 'league', label: 'League Play', description: 'Regular leagues' },
+                        { value: 'tournament', label: 'Tournament', description: 'Competitive play' }
+                    ]}
+                />
             </CardContent>
         </Card>
     );

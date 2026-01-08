@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(timeout 120 npm run scrape -- --test)",
+      "Bash(cat:*)",
+      "WebFetch(domain:pickleballcentral.com)",
+      "Bash(timeout 60 npm run scrape -- --test)",
+      "Bash(npm run scrape -- --test)",
+      "Bash(timeout 3600 npm run scrape)",
+      "Bash(npx prisma migrate:*)",
+      "Read(//Users/shawnhong/Desktop/**)",
+      "Read(//var/folders/11/syz8yjbd6w13d284b42_cts00000gn/T/TemporaryItems/NSIRD_screencaptureui_J1daD7/**)",
+      "Bash(touch:*)",
+      "Bash(python3:*)",
+      "Bash(docker-compose logs:*)",
+      "Bash(docker-compose:*)",
+      "Bash(curl:*)",
+      "Bash(docker ps:*)",
+      "Bash(lsof:*)",
+      "Bash(awk:*)",
+      "Bash(source:*)",
+      "Bash(pytest:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

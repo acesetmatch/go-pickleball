@@ -1,0 +1,147 @@
+version: '3.8'
+
+services:
+  # Main API service
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: paddle-recommendation-api
+    ports:
+      - "8000:8000"
+    environment:
+      # Application
+      - APP_NAME=${APP_NAME:-paddle-recommendation-service}
+      - ENVIRONMENT=${ENVIRONMENT:-production}
+      - DEBUG=${DEBUG:-false}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+
+      # API
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - API_PREFIX=${API_PREFIX:-/api/v1}
+      - CORS_ORIGINS=${CORS_ORIGINS:-["http://localhost:3000"]}
+
+      # Database - connects to postgres service
+      - DATABASE_URL=postgresql://paddle_user:paddle_pass@postgres:5432/paddle_db
+      - DATABASE_POOL_SIZE=20
+      - DATABASE_MAX_OVERFLOW=40
+
+      # Redis - connects to redis service
+      - REDIS_URL=redis://redis:6379/0
+      - REDIS_PASSWORD=
+      - REDIS_MAX_CONNECTIONS=50
+      - CACHE_TTL=3600
+
+      # ChromaDB - uses persistent volume
+      - CHROMA_PERSIST_DIR=/app/chroma_db
+      - CHROMA_COLLECTION_NAME=${CHROMA_COLLECTION_NAME:-paddle_specs_v2}
+
+      # Embedding models
+      - EMBEDDING_MODEL=${EMBEDDING_MODEL:-sentence-transformers/all-MiniLM-L6-v2}
+      - EMBEDDING_DIMENSION=384
+    volumes:
+      # Persist vector store data
+      - chroma_data:/app/chroma_db
+      # Application logs
+      - ./logs:/app/logs
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - paddle-network
+
+  # PostgreSQL database
+  postgres:
+    image: postgres:16-alpine
+    container_name: paddle-postgres
+    ports:
+      - "5433:5432"  # Use 5433 externally to avoid conflicts
+    environment:
+      - POSTGRES_USER=paddle_user
+      - POSTGRES_PASSWORD=paddle_pass
+      - POSTGRES_DB=paddle_db
+      - POSTGRES_INITDB_ARGS=--encoding=UTF-8 --lc-collate=C --lc-ctype=C
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      # Optional: Add init scripts
+      # - ./init-db:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U paddle_user -d paddle_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - paddle-network
+
+  # Redis cache
+  redis:
+    image: redis:7-alpine
+    container_name: paddle-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - paddle-network
+
+  # Optional: pgAdmin for database management
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: paddle-pgadmin
+    ports:
+      - "5050:80"
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@paddle.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+      - PGADMIN_CONFIG_SERVER_MODE=False
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - postgres
+    restart: unless-stopped
+    networks:
+      - paddle-network
+    profiles:
+      - tools  # Only start with: docker-compose --profile tools up
+
+  # Optional: Redis Commander for Redis management
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: paddle-redis-commander
+    ports:
+      - "8081:8081"
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    depends_on:
+      - redis
+    restart: unless-stopped
+    networks:
+      - paddle-network
+    profiles:
+      - tools  # Only start with: docker-compose --profile tools up
+
+networks:
+  paddle-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  chroma_data:
+    driver: local
+  pgadmin_data:
+    driver: local

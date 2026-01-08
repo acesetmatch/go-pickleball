@@ -1,0 +1,12 @@
+{
+  "totalUniquePaddles": 930,
+  "paddlesFromAllThreeSources": 35,
+  "paddlesFromTwoSources": 144,
+  "paddlesFromOneSouce": 750,
+  "sourceBreakdown": {
+    "mattspickleball": 338,
+    "pickleballeffect": 358,
+    "pickleballstudio": 451
+  },
+  "generatedAt": "2025-10-02T20:36:24.027Z"
+}

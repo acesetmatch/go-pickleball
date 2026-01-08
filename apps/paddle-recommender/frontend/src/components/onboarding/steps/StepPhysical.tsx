@@ -8,6 +8,7 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Button } from '@/components/ui/button';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Info } from 'lucide-react';
+import { PresetButtons } from '../shared/PresetSlider';
 
 const GRIP_SIZES = [
     { value: '4_1/8', label: '4 1/8"', description: 'Small' },
@@ -19,8 +20,9 @@ const GRIP_SIZES = [
 ];
 
 export default function StepPhysical() {
-    const { profile, setPhysical } = useOnboardingStore();
+    const { profile, setPhysical, shouldShowArmSensitivityDetails } = useOnboardingStore();
     const physical = profile.physical || {} as any;
+    const showArmDetails = shouldShowArmSensitivityDetails();
 
     const handleGripSize = (size: string) => {
         setPhysical({ grip_size: size as '4' | '4_1/8' | '4_1/4' | '4_3/8' | '4_1/2' | '4_5/8' | '4_3/4' });
@@ -56,11 +58,11 @@ export default function StepPhysical() {
                         />
                     </div>
 
-                    {physical.arm_sensitivity && (
+                    {showArmDetails && (
                         <Alert>
                             <Info className="h-4 w-4" />
                             <AlertDescription>
-                                We'll avoid extreme tip-heaviness & higher vibration builds.
+                                We'll recommend paddles with lower vibration, softer cores, and balanced weight distribution to reduce arm strain.
                             </AlertDescription>
                         </Alert>
                     )}
@@ -188,44 +190,18 @@ export default function StepPhysical() {
                     </p>
                 </div> */}
 
-                {/* Weight Tolerance */}
-                <div className="space-y-3">
-                    <Label>Weight Tolerance (optional)</Label>
-                    <RadioGroup
-                        value={physical.weight_tolerance || ''}
-                        onValueChange={(value) => setPhysical({
-                            weight_tolerance: value as 'light' | 'medium' | 'heavy' || undefined
-                        })}
-                    >
-                        <div className="flex items-start space-x-2 p-3 border rounded-lg">
-                            <RadioGroupItem value="light" id="weight-light" className="mt-1" />
-                            <div className="flex-1">
-                                <Label htmlFor="weight-light" className="font-medium">Light (7.0 - 7.8 oz)</Label>
-                                <p className="text-sm text-muted-foreground mt-1">
-                                    Less fatigue, quicker hands, easier maneuverability
-                                </p>
-                            </div>
-                        </div>
-                        <div className="flex items-start space-x-2 p-3 border rounded-lg">
-                            <RadioGroupItem value="medium" id="weight-medium" className="mt-1" />
-                            <div className="flex-1">
-                                <Label htmlFor="weight-medium" className="font-medium">Medium (7.8 - 8.2 oz)</Label>
-                                <p className="text-sm text-muted-foreground mt-1">
-                                    Balanced feel, good for most players
-                                </p>
-                            </div>
-                        </div>
-                        <div className="flex items-start space-x-2 p-3 border rounded-lg">
-                            <RadioGroupItem value="heavy" id="weight-heavy" className="mt-1" />
-                            <div className="flex-1">
-                                <Label htmlFor="weight-heavy" className="font-medium">Heavy (8.2+ oz)</Label>
-                                <p className="text-sm text-muted-foreground mt-1">
-                                    More power and stability, better for strong players
-                                </p>
-                            </div>
-                        </div>
-                    </RadioGroup>
-                </div>
+                {/* Weight Tolerance - Using PresetButtons */}
+                <PresetButtons
+                    label="Weight Tolerance"
+                    description="What paddle weight feels best to you?"
+                    value={physical.weight_tolerance || ''}
+                    onChange={(value) => setPhysical({ weight_tolerance: value })}
+                    options={[
+                        { value: 'light', label: 'Light', description: '7.0-7.8 oz - Less fatigue, quicker hands' },
+                        { value: 'medium', label: 'Medium', description: '7.8-8.2 oz - Balanced for most players' },
+                        { value: 'heavy', label: 'Heavy', description: '8.2+ oz - More power & stability' }
+                    ]}
+                />
             </CardContent>
         </Card>
     );

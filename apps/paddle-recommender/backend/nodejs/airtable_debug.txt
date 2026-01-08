@@ -1,0 +1,559 @@
+Hide fields
+Filter
+Group
+Sort
+Company
+Paddle Name
+1
+11six24-pickleball
+Hurache-X All-Court 16mm
+2
+11six24-pickleball
+Hurache-X Alpha 16mm
+3
+11six24-pickleball
+Hurache-X Alpha Pro Power 16mm
+4
+11six24-pickleball
+Hurache-X Control+ 16mm
+5
+11six24-pickleball
+Hurache-X Jelly Bean 16mm
+6
+11six24-pickleball
+Hurache-X Power 16mm
+7
+11six24-pickleball
+Monarch All Court 16mm
+8
+11six24-pickleball
+Pegasus All-Court 16mm
+9
+11six24-pickleball
+Pegasus Alpha Pro Power 16mm
+10
+11six24-pickleball
+Pegasus Jelly Bean 16mm
+11
+11six24-pickleball
+Pegasus Power 16mm
+12
+11six24-pickleball
+Vapor All-Court 16mm
+13
+11six24-pickleball
+Vapor Alpha Pro Power 16mm
+14
+11six24-pickleball
+Vapor Jelly Bean 16mm
+15
+11six24-pickleball
+Vapor Power 16mm
+16
+addict-pickleball
+Catalyst 16mm
+17
+addict-pickleball
+Infinity X 14mm
+18
+addict-pickleball
+Infinity X 16mm
+19
+adidas
+Metalbone 14.5mm
+20
+adidas
+Metalbone LP 16mm
+21
+adidas
+Metalbone LP S 16mm
+22
+adidas
+Metalbone LP Team 16mm
+23
+aiso-pickleball
+Ryu 15mm
+24
+ampd-pickleball
+Flux 16mm
+25
+ampd-pickleball
+Spectre 15mm
+26
+avoura-pickleball
+Revaya 13mm
+27
+avoura-pickleball
+Rhapsody 13mm
+28
+avoura-pickleball
+Rivelle 13mm
+29
+body-helix
+FLIK 16mm
+30
+body-helix
+FLIK F1 Elongated 16mm
+31
+body-helix
+FLIK F1 Standard 16mm
+32
+body-helix
+Flik Falcon 13mm
+33
+body-helix
+FLIK TerraCoreXC 16mm
+Drag to adjust the number of frozen columns
+Promo Code
+Firepower
+Swing Weight
+Twist Weight
+Static Weight (oz)
+Serve Speed (MPH)
+Punch Volley Speed MPH (pop)
+Spin RPM
+Swing Weight Percentile
+Twist Weight Percentile
+Static Weight (oz) Percentile
+Serve Speed (MPH) Percentile
+Punch Volley Speed MPH (pop) Percentile
+Spin Percentile
+Balance Point Percentile
+Core Thickness
+Length (in)
+Width (in)
+Balance Point (cm)
+Handle Length (in)
+Handle Circumference (in)
+Honeycomb Cell Size
+Control Rating
+Feel Rating
+Forgiveness Rating
+Power (Drive) Rating
+Pop (Punch Volley) Rating
+Spin Rating
+Shot Resetting Rating
+Touch Shots (Dinking & Dropping) Rating
+Paddle Rating
+Paddle Star Rating
+Status
+Review URL
+Discount Code
+Buy URL
+Paddle Image
+Price
+Release Year
+Type
+Shape
+Manufacturing Process
+Surface Texture
+Surface Material
+Core Material
+Power/Control Profile
+Approval Body
+Delisted
+Created On
+Show in Paddle Finder
+Item ID
+Paddle-Slug
+MPB
+40
+122.10
+6.55
+8.25
+57.4
+37.0
+2227
+92%
+56%
+MPB
+62
+116.32
+5.93
+7.99
+58.2
+37.6
+2220
+63%
+15%
+MPB
+67
+113.60
+6.35
+8.01
+58.4
+37.7
+2282
+41%
+42%
+MPB
+33
+119.20
+6.17
+8.28
+57.1
+36.8
+1972
+84%
+29%
+MPB
+18
+119.80
+6.15
+8.21
+56.5
+36.4
+2287
+86%
+27%
+MPB
+61
+116.40
+6.50
+8.16
+58.9
+37.1
+2316
+63%
+52%
+MPB
+16
+111.03
+7.50
+8.23
+57.0
+35.2
+1914
+24%
+97%
+MPB
+49
+115.20
+7.55
+8.23
+57.8
+37.3
+2223
+54%
+98%
+MPB
+66
+105.60
+7.20
+8.00
+57.9
+38.0
+2308
+6%
+90%
+MPB
+38
+109.60
+7.40
+8.09
+57.2
+37.0
+2202
+17%
+95%
+MPB
+67
+111.15
+7.80
+8.32
+59.0
+37.4
+2306
+25%
+99%
+MPB
+44
+118.10
+7.00
+8.17
+57.7
+37.1
+2275
+75%
+84%
+MPB
+80
+113.65
+6.80
+8.10
+59.7
+37.7
+2218
+42%
+73%
+MPB
+44
+114.75
+6.95
+8.05
+58.3
+36.5
+2237
+50%
+81%
+MPB
+52
+116.30
+7.20
+8.29
+59.0
+36.5
+2366
+63%
+90%
+MPB
+20
+121.30
+6.10
+8.07
+56.1
+36.7
+2173
+90%
+24%
+MPB
+55
+111.90
+5.95
+7.88
+57.9
+37.5
+2199
+30%
+16%
+MPB
+52
+112.85
+6.00
+7.91
+58.0
+37.3
+2217
+37%
+18%
+No Code Use Link
+0
+No Code Use Link
+0
+No Code Use Link
+0
+No Code Use Link
+0
+MPB
+25
+111.50
+7.65
+8.28
+56.9
+36.5
+2136
+27%
+99%
+0
+116.60
+6.70
+66%
+67%
+0
+116.65
+6.70
+67%
+67%
+MPB
+35
+113.85
+5.85
+8.29
+56.5
+37.4
+2140
+44%
+10%
+MPB
+39
+102.40
+7.15
+7.96
+57.7
+36.8
+2173
+2%
+88%
+MPB
+38
+109.90
+6.25
+7.98
+56.9
+37.3
+2181
+18%
+33%
+MPB
+0
+118.75
+6.85
+8.35
+81%
+76%
+MPB
+0
+118.75
+6.80
+8.25
+62.5
+40.2
+2253
+81%
+73%
+MPB
+0
+111.60
+6.95
+8.06
+59.0
+40.1
+28%
+81%
+MPB
+0
+118.60
+6.05
+8.04
+79%
+21%
+MPB
+94
+115.40
+6.10
+7.92
+60.4
+38.5
+2262
+55%
+24%
+357 records
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Sum
+
+14,209%
+
+Sum
+
+15,314%
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Sum
+
+732.0
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Sum
+
+1079
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+Summary
+
+View larger version
+Download CSV

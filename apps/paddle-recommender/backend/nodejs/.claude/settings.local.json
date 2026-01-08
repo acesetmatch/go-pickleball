@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run scrape:airtable:*)",
+      "Bash(cat:*)",
+      "Read(//Users/shawnhong/Downloads/**)",
+      "Read(//Users/shawnhong/Desktop/**)",
+      "Read(//Users/shawnhong/Documents/development/backend/go-pickleball/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

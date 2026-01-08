@@ -162,3 +162,246 @@ export async function getPaddleById(id: string): Promise<Paddle> {
 export async function createPaddle(paddleData: CreatePaddleData): Promise<Paddle> {
   return postData<Paddle, CreatePaddleData>('/api/paddles', paddleData);
 }
+
+// Paddle data from external sources interface
+export interface SourcePaddle {
+  source: 'mattspickleball' | 'pickleballeffect' | 'pickleballstudio';
+  company: string;
+  paddleName: string;
+  price?: string;
+  discountCode?: string;
+  purchaseLink?: string;
+  swingWeight?: number;
+  twistWeight?: number;
+  weight?: number;
+  weightGrams?: number;
+  spinRPM?: number;
+  serveSpeed?: number;
+  punchVolleySpeed?: number;
+  swingWeightPercentile?: string;
+  twistWeightPercentile?: string;
+  powerPercentile?: string;
+  popPercentile?: string;
+  spinPercentile?: string;
+  coreThickness?: number;
+  shape?: string;
+  length?: number;
+  width?: number;
+  gripLength?: number;
+  gripCircumference?: number;
+  gripSize?: number;
+  balancePoint?: string;
+  faceMaterial?: string;
+  coreMaterial?: string;
+  surfaceTexture?: string;
+  paddleType?: string;
+  manufacturingProcess?: string;
+  buildType?: string;
+  controlRating?: number;
+  feelRating?: number;
+  forgivenessRating?: number;
+  powerRating?: number | string;
+  spinRating?: string;
+  touchShotsRating?: number;
+  paddleRating?: string;
+  releaseYear?: string;
+  approvalBody?: string;
+  paddleImage?: string;
+  youtubeReview?: string;
+  [key: string]: any;
+}
+
+export interface AllSourcesResponse {
+  success: boolean;
+  data: {
+    mattspickleball: SourcePaddle[];
+    pickleballeffect: SourcePaddle[];
+    pickleballstudio: SourcePaddle[];
+  };
+  counts: {
+    mattspickleball: number;
+    pickleballeffect: number;
+    pickleballstudio: number;
+    total: number;
+  };
+}
+
+export interface SingleSourceResponse {
+  success: boolean;
+  source: string;
+  data: SourcePaddle[];
+  count: number;
+}
+
+// Get paddle data from all external sources
+export async function getAllSources(): Promise<AllSourcesResponse> {
+  return fetchData<AllSourcesResponse>('/api/paddles/sources/all');
+}
+
+// Get paddle data from a specific source
+export async function getSourcePaddles(source: 'mattspickleball' | 'pickleballeffect' | 'pickleballstudio'): Promise<SingleSourceResponse> {
+  return fetchData<SingleSourceResponse>(`/api/paddles/sources/${source}`);
+}
+
+// Combined paddle data interface
+export interface CombinedPaddle {
+  company: string;
+  paddleName: string;
+  sources: string[];
+  sourceCount: number;
+  swingWeight?: number;
+  twistWeight?: number;
+  weight?: number;
+  weightGrams?: number;
+  spinRPM?: number;
+  serveSpeed?: number;
+  punchVolleySpeed?: number;
+  coreThickness?: number;
+  length?: number;
+  width?: number;
+  gripLength?: number;
+  gripCircumference?: number;
+  gripSize?: number;
+  controlRating?: number;
+  feelRating?: number;
+  forgivenessRating?: number;
+  touchShotsRating?: number;
+  swingWeightPercentile?: string;
+  twistWeightPercentile?: string;
+  powerPercentile?: string;
+  popPercentile?: string;
+  spinPercentile?: string;
+  balancePoint?: string;
+  shape?: string;
+  faceMaterial?: string;
+  coreMaterial?: string;
+  surfaceTexture?: string;
+  paddleType?: string;
+  manufacturingProcess?: string;
+  buildType?: string;
+  powerRating?: string;
+  spinRating?: string;
+  paddleRating?: string;
+  releaseYear?: string;
+  approvalBody?: string;
+  paddleImage?: string;
+  youtubeReview?: string;
+  bestOffer?: {
+    price: string;
+    discountCode?: string;
+    purchaseLink?: string;
+    source: string;
+  };
+  allSourceData: Array<{
+    source: string;
+    price?: string;
+    discountCode?: string;
+    purchaseLink?: string;
+    paddleImage?: string;
+  }>;
+}
+
+export interface CombinedPaddlesResponse {
+  success: boolean;
+  count: number;
+  data: CombinedPaddle[];
+}
+
+// Get combined median paddle data
+export async function getCombinedPaddles(): Promise<CombinedPaddlesResponse> {
+  return fetchData<CombinedPaddlesResponse>('/api/paddles/combined');
+}
+
+// Python RAG Recommendation API types
+export interface UserPreferences {
+  skill_level: 'beginner' | 'intermediate' | 'advanced' | 'expert_pro';
+  game_format: 'singles' | 'doubles' | 'both';
+  competitive_level: 'recreational' | 'league' | 'tournament';
+  playing_styles: Array<
+    'aggressive_finishing' | 'all_court' | 'reset_first' | 'hand_speed' |
+    'singles_specialist' | 'driving_banger' | 'soft_game' | 'flicks_speed_ups'
+  >;
+  game_focus: 'power' | 'control' | 'spin' | 'balanced';
+  arm_sensitivity: boolean;
+  grip_size?: string;
+  handle_length?: string;
+  weight_tolerance: 'light' | 'medium' | 'heavy';
+  paddle_feel: 'more_power' | 'more_control' | 'balanced';
+  customization_preference: boolean;
+  current_paddle?: string;
+  pain_points: Array<
+    'resets_fall_short' | 'pop_ups' | 'blocks_too_shallow' |
+    'not_enough_spin' | 'wrist_hand_speed' | 'vibration_comfort'
+  >;
+  additional_notes?: string;
+  playing_environment: number; // 0-100, 0=outdoor, 100=indoor
+  common_opponents: Array<'bangers' | 'dinkers' | 'mixed'>;
+  budget_min: number;
+  budget_max: number;
+  preferred_brands?: string[];
+  brands_to_avoid?: string[];
+  primary_goal: 'consistency' | 'power' | 'spin' | 'control';
+  target_rating?: number;
+}
+
+export interface PaddleRecommendation {
+  id: number;
+  company: string;
+  paddle_name: string;
+  price?: number;
+  match_score: number;
+  match_reasons: string[];
+  specs: {
+    weight?: number;
+    swing_weight?: number;
+    twist_weight?: number;
+    core_thickness?: number;
+    spin_rpm?: number;
+    control_rating?: number;
+    power_rating?: string;
+    spin_rating?: string;
+    feel_rating?: number;
+    forgiveness_rating?: number;
+    touch_shots_rating?: number;
+  };
+  purchase_link?: string;
+  paddle_image?: string;
+  source: string;
+}
+
+// Get paddle recommendations from Python RAG engine
+const PYTHON_API_BASE_URL = process.env.NEXT_PUBLIC_PYTHON_API_BASE_URL || 'http://localhost:8000';
+
+export async function getPaddleRecommendations(
+  preferences: UserPreferences
+): Promise<PaddleRecommendation[]> {
+  try {
+    const response = await axios.post<PaddleRecommendation[]>(
+      `${PYTHON_API_BASE_URL}/api/recommendations`,
+      preferences,
+      {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        timeout: 30000, // 30 second timeout for RAG processing
+      }
+    );
+    return response.data;
+  } catch (error: unknown) {
+    console.error('Error getting paddle recommendations:', error);
+
+    if (error && typeof error === 'object' && 'code' in error && error.code === 'ERR_NETWORK') {
+      const apiError: ApiError = {
+        message: 'Network error. Please check if the Python recommendation server is running.',
+        status: 0
+      };
+      throw apiError;
+    }
+
+    const apiError: ApiError = {
+      message: 'Failed to get paddle recommendations. Please try again later.',
+      status: undefined
+    };
+    throw apiError;
+  }
+}

@@ -7,6 +7,8 @@ import { Progress } from '@/components/ui/progress';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Import all step components
+import QuickStartProfiles from './QuickStartProfiles';
+import { PaddlePreview } from './shared/PaddlePreview';
 import StepPlayContext from './steps/StepPlayContext';
 import StepStyle from './steps/StepStyle';
 import StepPhysical from './steps/StepPhysical';
@@ -34,27 +36,34 @@ const STEPS = [
 const STORAGE_KEY = 'pickleball-onboarding-profile';
 
 export default function OnboardingWizard() {
-  const { 
-    profile, 
-    video, 
-    step, 
-    next, 
-    back, 
-    goToStep, 
-    validateCurrentStep, 
+  const {
+    profile,
+    video,
+    step,
+    next,
+    back,
+    goToStep,
+    validateCurrentStep,
     getStepErrors,
-    isStepComplete 
+    isStepComplete
   } = useOnboardingStore();
+
+  const [showQuickStart, setShowQuickStart] = React.useState(true);
+  const [hasUsedQuickStart, setHasUsedQuickStart] = React.useState(false);
 
   // Load from localStorage on mount
   useEffect(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) {
       try {
-        const { profile: savedProfile, video: savedVideo, step: savedStep } = JSON.parse(saved);
+        const { profile: savedProfile, video: savedVideo, step: savedStep, hasUsedQuickStart: savedQuickStart } = JSON.parse(saved);
         // You would need to add a method to restore state in the store
         // For now, we'll just note this needs implementation
         console.log('Loaded saved profile:', savedProfile);
+        if (savedStep > 0 || savedQuickStart) {
+          setShowQuickStart(false);
+          setHasUsedQuickStart(savedQuickStart || false);
+        }
       } catch (error) {
         console.error('Failed to load saved profile:', error);
       }
@@ -63,9 +72,19 @@ export default function OnboardingWizard() {
 
   // Save to localStorage whenever profile changes
   useEffect(() => {
-    const dataToSave = { profile, video, step };
+    const dataToSave = { profile, video, step, hasUsedQuickStart };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(dataToSave));
-  }, [profile, video, step]);
+  }, [profile, video, step, hasUsedQuickStart]);
+
+  const handleQuickStartSelect = (profileId: string) => {
+    setHasUsedQuickStart(true);
+    setShowQuickStart(false);
+    console.log('Selected quick start profile:', profileId);
+  };
+
+  const handleQuickStartSkip = () => {
+    setShowQuickStart(false);
+  };
 
   const CurrentStepComponent = STEPS[step];
   const isValid = validateCurrentStep();
@@ -98,6 +117,20 @@ export default function OnboardingWizard() {
     }
   };
 
+  // Show QuickStart if not yet completed
+  if (showQuickStart) {
+    return (
+      <div className="min-h-screen bg-background">
+        <div className="container mx-auto px-4 py-8 max-w-5xl">
+          <QuickStartProfiles
+            onSelect={handleQuickStartSelect}
+            onSkip={handleQuickStartSkip}
+          />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8">
@@ -109,7 +142,7 @@ export default function OnboardingWizard() {
               Step {step + 1} of {STEPS.length}
             </div>
           </div>
-          
+
           {/* Progress Bar */}
           <div className="space-y-2">
             <Progress value={progress} className="w-full" />
@@ -144,62 +177,75 @@ export default function OnboardingWizard() {
           </div>
         </div>
 
-        {/* Current Step Title & Description */}
-        <div className="mb-6 text-center">
-          <h2 className="text-xl font-semibold mb-2">{STEP_TITLES[step]}</h2>
-          <p className="text-muted-foreground">{STEP_DESCRIPTIONS[step]}</p>
-        </div>
-
-        {/* Step Content */}
-        <div className="mb-8">
-          <CurrentStepComponent />
-        </div>
-
-        {/* Validation Errors - only show if user has attempted to proceed */}
-        {hasAttemptedNext && errors.length > 0 && (
-          <div className="mb-6 p-4 bg-destructive/10 border border-destructive/20 rounded-lg">
-            <h3 className="font-medium text-destructive mb-2">Please fix the following:</h3>
-            <ul className="text-sm text-destructive space-y-1">
-              {errors.map((error, index) => (
-                <li key={index}>• {error}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {/* Navigation Buttons */}
-        <div className="flex justify-between">
-          <Button
-            variant="outline"
-            onClick={handleBack}
-            disabled={!canGoBack}
-            className="flex items-center gap-2"
-          >
-            <ChevronLeft className="h-4 w-4" />
-            Back
-          </Button>
-
-          {!isLastStep ? (
-            <Button
-              onClick={handleNext}
-              disabled={!canGoNext}
-              className="flex items-center gap-2"
-            >
-              Next
-              <ChevronRight className="h-4 w-4" />
-            </Button>
-          ) : (
-            <div className="text-sm text-muted-foreground">
-              Complete the form above to finish
+        {/* Two Column Layout: Form + Preview */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Main Content - Left Side */}
+          <div className="lg:col-span-2 space-y-6">
+            {/* Current Step Title & Description */}
+            <div className="text-center lg:text-left">
+              <h2 className="text-xl font-semibold mb-2">{STEP_TITLES[step]}</h2>
+              <p className="text-muted-foreground">{STEP_DESCRIPTIONS[step]}</p>
             </div>
-          )}
-        </div>
 
-        {/* Help Text */}
-        <div className="mt-8 text-center text-sm text-muted-foreground">
-          <p>
-            Your progress is automatically saved. You can come back anytime to complete your profile.
-          </p>
+            {/* Step Content */}
+            <div className="mb-8">
+              <CurrentStepComponent />
+            </div>
+
+            {/* Validation Errors - only show if user has attempted to proceed */}
+            {hasAttemptedNext && errors.length > 0 && (
+              <div className="mb-6 p-4 bg-destructive/10 border border-destructive/20 rounded-lg">
+                <h3 className="font-medium text-destructive mb-2">Please fix the following:</h3>
+                <ul className="text-sm text-destructive space-y-1">
+                  {errors.map((error, index) => (
+                    <li key={index}>• {error}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Navigation Buttons */}
+            <div className="flex justify-between">
+              <Button
+                variant="outline"
+                onClick={handleBack}
+                disabled={!canGoBack}
+                className="flex items-center gap-2"
+              >
+                <ChevronLeft className="h-4 w-4" />
+                Back
+              </Button>
+
+              {!isLastStep ? (
+                <Button
+                  onClick={handleNext}
+                  disabled={!canGoNext}
+                  className="flex items-center gap-2"
+                >
+                  Next
+                  <ChevronRight className="h-4 w-4" />
+                </Button>
+              ) : (
+                <div className="text-sm text-muted-foreground">
+                  Complete the form above to finish
+                </div>
+              )}
+            </div>
+
+            {/* Help Text */}
+            <div className="mt-8 text-center lg:text-left text-sm text-muted-foreground">
+              <p>
+                Your progress is automatically saved. You can come back anytime to complete your profile.
+              </p>
+            </div>
+          </div>
+
+          {/* Paddle Preview - Right Sidebar */}
+          <div className="lg:col-span-1">
+            <div className="sticky top-8">
+              <PaddlePreview maxPaddles={5} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
