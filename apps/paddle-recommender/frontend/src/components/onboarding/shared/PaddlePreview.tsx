@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Skeleton } from '@/components/ui/skeleton';
 import { TrendingUp, Sparkles, Award } from 'lucide-react';
 import { useOnboardingStore } from '@/store/onboarding';
-import { CombinedPaddle } from '@/services/fetch';
+import { useFetchRecommendations } from '@/hooks/useFetchRecommendations';
 
 interface PaddlePreviewProps {
   className?: string;
@@ -15,9 +15,12 @@ interface PaddlePreviewProps {
 
 export function PaddlePreview({ className, maxPaddles = 3 }: PaddlePreviewProps) {
   const { profile } = useOnboardingStore();
-  const [topPaddles, setTopPaddles] = useState<CombinedPaddle[]>([]);
-  const [loading, setLoading] = useState(false);
   const [completeness, setCompleteness] = useState(0);
+  const { topPaddles, loading } = useFetchRecommendations({
+    profile,
+    completeness,
+    maxPaddles,
+  });
 
   // Calculate profile completeness (0-100%)
   useEffect(() => {
@@ -69,58 +72,6 @@ export function PaddlePreview({ className, maxPaddles = 3 }: PaddlePreviewProps)
     const percentage = Math.round((filledFields / totalFields) * 100);
     setCompleteness(percentage);
   }, [profile]);
-
-  // Fetch top paddle recommendations whenever profile changes
-  useEffect(() => {
-    const fetchRecommendations = async () => {
-      // Only fetch if we have at least 20% profile completeness
-      if (completeness < 20) {
-        setTopPaddles([]);
-        return;
-      }
-
-      setLoading(true);
-      try {
-        // TODO: Replace with actual recommendation API call
-        // For now, we'll fetch random paddles from the combined paddles endpoint
-        const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001';
-        const response = await fetch(`${backendUrl}/api/paddles/combined`);
-
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const data = await response.json();
-
-        // Handle both array and object responses
-        const allPaddles: CombinedPaddle[] = Array.isArray(data) ? data : [];
-
-        if (allPaddles.length === 0) {
-          console.warn('No paddles returned from API');
-          setTopPaddles([]);
-          return;
-        }
-
-        // Mock recommendation logic - just take top-rated paddles
-        // In production, this would call a recommendation engine with the profile
-        const sorted = allPaddles
-          .filter(p => p.averageRating !== null)
-          .sort((a, b) => (b.averageRating || 0) - (a.averageRating || 0))
-          .slice(0, maxPaddles);
-
-        setTopPaddles(sorted);
-      } catch (error) {
-        console.error('Failed to fetch recommendations:', error);
-        setTopPaddles([]);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    // Debounce the API call to avoid too many requests
-    const timeoutId = setTimeout(fetchRecommendations, 500);
-    return () => clearTimeout(timeoutId);
-  }, [profile, completeness, maxPaddles]);
 
   if (completeness < 20) {
     return (

@@ -249,6 +249,8 @@ export interface CombinedPaddle {
   paddleName: string;
   sources: string[];
   sourceCount: number;
+  averageRating?: number | null;
+  price?: number | string | null;
   swingWeight?: number;
   twistWeight?: number;
   weight?: number;
