@@ -5,9 +5,24 @@
       "Bash(cat:*)",
       "Read(//Users/shawnhong/Downloads/**)",
       "Read(//Users/shawnhong/Desktop/**)",
-      "Read(//Users/shawnhong/Documents/development/backend/go-pickleball/**)"
+      "Read(//Users/shawnhong/Documents/development/backend/go-pickleball/**)",
+      "Bash(echo:*)",
+      "Bash(claude whoami:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(chmod:*)",
+      "Bash(git add:*)",
+      "Bash(EDITOR=true git commit:*)",
+      "Bash(git checkout:*)",
+      "Bash(git push:*)",
+      "Bash(git rm:*)",
+      "Bash(gh pr create:*)",
+      "Bash(open:*)",
+      "Bash(gh pr view:*)",
+      "Bash(gh pr diff:*)",
+      "Bash(npm test)"
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "rules": "always follow the rules in ../.claude/rules.md"
 }

@@ -189,6 +189,39 @@ async function importSourceData(source: 'mattspickleball' | 'pickleballeffect' |
   return { inserted, updated, errors };
 }
 
+function parseSourcesFromArgs(): Array<'mattspickleball' | 'pickleballeffect' | 'pickleballstudio'> {
+  const sourceFlagIndex = process.argv.findIndex(arg => arg === '--source' || arg === '--sources');
+  if (sourceFlagIndex === -1) {
+    return ['mattspickleball', 'pickleballeffect', 'pickleballstudio'];
+  }
+
+  const rawValue = process.argv[sourceFlagIndex + 1];
+  if (!rawValue) {
+    console.error('Missing value for --source/--sources. Example: --source pickleballeffect');
+    process.exit(1);
+  }
+
+  const allowedSources = new Set(['mattspickleball', 'pickleballeffect', 'pickleballstudio']);
+  const sources = rawValue
+    .split(',')
+    .map(source => source.trim())
+    .filter(Boolean)
+    .filter(source => {
+      if (!allowedSources.has(source)) {
+        console.error(`Invalid source: ${source}. Allowed: mattspickleball, pickleballeffect, pickleballstudio`);
+        process.exit(1);
+      }
+      return true;
+    }) as Array<'mattspickleball' | 'pickleballeffect' | 'pickleballstudio'>;
+
+  if (sources.length === 0) {
+    console.error('No valid sources provided for --source/--sources.');
+    process.exit(1);
+  }
+
+  return sources;
+}
+
 async function main() {
   console.log('🎾 Starting Harmonized Data Import to PostgreSQL\n');
 
@@ -203,12 +236,7 @@ async function main() {
       console.log('   ✓ Cleared existing data\n');
     }
 
-    // Import all three sources
-    const sources: Array<'mattspickleball' | 'pickleballeffect' | 'pickleballstudio'> = [
-      'mattspickleball',
-      'pickleballeffect',
-      'pickleballstudio'
-    ];
+    const sources = parseSourcesFromArgs();
 
     let totalInserted = 0;
     let totalUpdated = 0;
@@ -222,22 +250,25 @@ async function main() {
     }
 
     // Get final counts
-    const finalCounts = await Promise.all([
-      prisma.sourcePaddle.count({ where: { source: 'mattspickleball' } }),
-      prisma.sourcePaddle.count({ where: { source: 'pickleballeffect' } }),
-      prisma.sourcePaddle.count({ where: { source: 'pickleballstudio' } }),
-      prisma.sourcePaddle.count()
-    ]);
+    const countBySource = await Promise.all(
+      sources.map(source => prisma.sourcePaddle.count({ where: { source } }))
+    );
+    const totalCount = await prisma.sourcePaddle.count();
 
     const endTime = Date.now();
     const duration = ((endTime - startTime) / 1000).toFixed(2);
 
     console.log('\n✨ Import completed!\n');
     console.log('📊 Statistics:');
-    console.log(`   - Matt's Pickleball: ${finalCounts[0]} paddles`);
-    console.log(`   - Pickleball Effect: ${finalCounts[1]} paddles`);
-    console.log(`   - Pickleball Studio: ${finalCounts[2]} paddles`);
-    console.log(`   - Total: ${finalCounts[3]} paddles`);
+    sources.forEach((source, index) => {
+      const label = source === 'mattspickleball'
+        ? "Matt's Pickleball"
+        : source === 'pickleballeffect'
+          ? 'Pickleball Effect'
+          : 'Pickleball Studio';
+      console.log(`   - ${label}: ${countBySource[index]} paddles`);
+    });
+    console.log(`   - Total: ${totalCount} paddles`);
     console.log(`   - Duration: ${duration} seconds`);
 
     if (totalErrors > 0) {

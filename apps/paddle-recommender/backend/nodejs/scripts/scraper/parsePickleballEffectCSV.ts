@@ -1,5 +1,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import { fileURLToPath } from 'url';
+
+const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 
 interface PaddleData {
   paddleName?: string;
@@ -181,11 +184,7 @@ function parseCSVLine(line: string): string[] {
 function main() {
   // Look for CSV file
   const possiblePaths = [
-    './pickleballeffect.csv',
-    './Grid view.csv',
-    './grid_view.csv',
-    '/Users/shawnhong/Downloads/Grid view.csv',
-    '/Users/shawnhong/Downloads/pickleballeffect.csv'
+    path.join(scriptDir, 'csv', 'pickleballeffect.csv')
   ];
 
   let csvPath: string | null = null;
@@ -198,32 +197,8 @@ function main() {
   }
 
   if (!csvPath) {
-    // Check Downloads for any recent Grid view CSV
-    const homeDir = process.env.HOME || process.env.USERPROFILE || '';
-    const downloadsPath = path.join(homeDir, 'Downloads');
-
-    if (fs.existsSync(downloadsPath)) {
-      const files = fs.readdirSync(downloadsPath);
-      const csvFiles = files.filter(f => (f.toLowerCase().includes('grid') || f.toLowerCase().includes('pickleballeffect')) && f.endsWith('.csv'));
-
-      if (csvFiles.length > 0) {
-        // Use most recent file
-        csvFiles.sort((a, b) => {
-          const aPath = path.join(downloadsPath, a);
-          const bPath = path.join(downloadsPath, b);
-          return fs.statSync(bPath).mtime.getTime() - fs.statSync(aPath).mtime.getTime();
-        });
-        csvPath = path.join(downloadsPath, csvFiles[0]);
-        console.log(`Found CSV in Downloads: ${csvFiles[0]}`);
-      }
-    }
-  }
-
-  if (!csvPath) {
     console.error('CSV file not found!');
-    console.log('\nPlease download the PickleballEffect CSV and either:');
-    console.log('1. Save it as "pickleballeffect.csv" in the project root directory');
-    console.log('2. Save it in your Downloads folder');
+    console.log('\nExpected location: scripts/scraper/csv/pickleballeffect.csv');
     process.exit(1);
   }
 

@@ -1,0 +1,8 @@
+# Environment files
+.env
+
+# Python virtual environments
+legacy/**/.venv/**
+legacy/**/__pycache__/**
+legacy/**/*.pyc
+legacy/**/.pytest_cache/**

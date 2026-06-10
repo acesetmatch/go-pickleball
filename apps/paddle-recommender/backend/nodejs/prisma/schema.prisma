@@ -63,6 +63,16 @@ model PaddlePerformance {
   @@map("paddle_performance")
 }
 
+model User {
+  id           Int      @id @default(autoincrement())
+  username     String   @unique
+  passwordHash String   @map("password_hash")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  @@map("users")
+}
+
 model SourcePaddle {
   id                      Int      @id @default(autoincrement())
   source                  String   // mattspickleball, pickleballeffect, pickleballstudio

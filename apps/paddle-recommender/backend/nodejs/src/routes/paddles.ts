@@ -1,169 +1,48 @@
-import { FastifyPluginAsync } from 'fastify';
-import fs from 'fs/promises';
-import path from 'path';
-import { PrismaService } from '../services/prismaService';
+import { FastifyPluginAsync } from "fastify";
+import fs from "fs/promises";
+import path from "path";
+import { prismaService } from "../services/prismaService";
+import { authMiddleware } from "../middleware/auth";
+import type {
+  CombinedPaginationCursor,
+  CombinedPaddle,
+  ErrorResponse,
+  HarmonizedDataResponse,
+  HarmonizedPaddle,
+  PaddleSource,
+  SingleSourceResponse,
+} from "../types";
+import { decodeCombinedCursor, encodeCombinedCursor } from "../utils/combinedPaddles";
+import {
+  loadCombinedMedianDataFromDB,
+  loadCombinedMedianDataFromFile,
+  loadHarmonizedDataFromDB,
+} from "../utils/paddleDataLoaders";
 
-interface HarmonizedPaddle {
-  source: 'mattspickleball' | 'pickleballeffect' | 'pickleballstudio';
-  company: string;
-  paddleName: string;
-  price?: string;
-  discountCode?: string;
-  purchaseLink?: string;
-  swingWeight?: number;
-  twistWeight?: number;
-  weight?: number;
-  weightGrams?: number;
-  spinRPM?: number;
-  serveSpeed?: number;
-  punchVolleySpeed?: number;
-  swingWeightPercentile?: string;
-  twistWeightPercentile?: string;
-  powerPercentile?: string;
-  popPercentile?: string;
-  spinPercentile?: string;
-  coreThickness?: number;
-  shape?: string;
-  length?: number;
-  width?: number;
-  gripLength?: number;
-  gripCircumference?: number;
-  gripSize?: number;
-  balancePoint?: string;
-  faceMaterial?: string;
-  coreMaterial?: string;
-  surfaceTexture?: string;
-  paddleType?: string;
-  manufacturingProcess?: string;
-  buildType?: string;
-  controlRating?: number;
-  feelRating?: number;
-  forgivenessRating?: number;
-  powerRating?: number | string;
-  spinRating?: string;
-  touchShotsRating?: number;
-  paddleRating?: string;
-  releaseYear?: string;
-  approvalBody?: string;
-  paddleImage?: string;
-  youtubeReview?: string;
-  [key: string]: any; // For sourceData and other dynamic fields
-}
-
-interface HarmonizedDataResponse {
-  success: boolean;
-  data: {
-    mattspickleball: HarmonizedPaddle[];
-    pickleballeffect: HarmonizedPaddle[];
-    pickleballstudio: HarmonizedPaddle[];
-  };
-  counts: {
-    mattspickleball: number;
-    pickleballeffect: number;
-    pickleballstudio: number;
-    total: number;
-  };
-}
-
-interface SingleSourceResponse {
-  success: boolean;
-  source: string;
-  data: HarmonizedPaddle[];
-  count: number;
-}
+const COMBINED_DEFAULT_LIMIT = 25;
+const COMBINED_MAX_LIMIT = 100;
+const COMBINED_CACHE_TTL_MS = 5 * 60 * 1000;
+let combinedCache: { data: CombinedPaddle[]; expiresAt: number } | null = null;
 
 const paddleRoutes: FastifyPluginAsync = async (fastify) => {
-  const outputDir = path.join(process.cwd(), 'output', 'harmonized');
-  const prismaService = new PrismaService();
-
-  // Helper function to load harmonized data from database
-  async function loadHarmonizedDataFromDB(source: string): Promise<HarmonizedPaddle[]> {
-    const paddles = await prismaService.prisma.sourcePaddle.findMany({
-      where: { source },
-      orderBy: [
-        { company: 'asc' },
-        { paddleName: 'asc' }
-      ]
-    });
-
-    return paddles.map(paddle => ({
-      source: paddle.source as 'mattspickleball' | 'pickleballeffect' | 'pickleballstudio',
-      company: paddle.company,
-      paddleName: paddle.paddleName,
-      price: paddle.price || undefined,
-      discountCode: paddle.discountCode || undefined,
-      purchaseLink: paddle.purchaseLink || undefined,
-      swingWeight: paddle.swingWeight || undefined,
-      twistWeight: paddle.twistWeight || undefined,
-      weight: paddle.weight || undefined,
-      weightGrams: paddle.weightGrams || undefined,
-      spinRPM: paddle.spinRPM || undefined,
-      serveSpeed: paddle.serveSpeed || undefined,
-      punchVolleySpeed: paddle.punchVolleySpeed || undefined,
-      swingWeightPercentile: paddle.swingWeightPercentile || undefined,
-      twistWeightPercentile: paddle.twistWeightPercentile || undefined,
-      powerPercentile: paddle.powerPercentile || undefined,
-      popPercentile: paddle.popPercentile || undefined,
-      spinPercentile: paddle.spinPercentile || undefined,
-      coreThickness: paddle.coreThickness || undefined,
-      shape: paddle.shape || undefined,
-      length: paddle.length || undefined,
-      width: paddle.width || undefined,
-      gripLength: paddle.gripLength || undefined,
-      gripCircumference: paddle.gripCircumference || undefined,
-      gripSize: paddle.gripSize || undefined,
-      balancePoint: paddle.balancePoint || undefined,
-      faceMaterial: paddle.faceMaterial || undefined,
-      coreMaterial: paddle.coreMaterial || undefined,
-      surfaceTexture: paddle.surfaceTexture || undefined,
-      paddleType: paddle.paddleType || undefined,
-      manufacturingProcess: paddle.manufacturingProcess || undefined,
-      buildType: paddle.buildType || undefined,
-      controlRating: paddle.controlRating || undefined,
-      feelRating: paddle.feelRating || undefined,
-      forgivenessRating: paddle.forgivenessRating || undefined,
-      powerRating: paddle.powerRating || undefined,
-      spinRating: paddle.spinRating || undefined,
-      touchShotsRating: paddle.touchShotsRating || undefined,
-      paddleRating: paddle.paddleRating || undefined,
-      releaseYear: paddle.releaseYear || undefined,
-      approvalBody: paddle.approvalBody || undefined,
-      paddleImage: paddle.paddleImage || undefined,
-      youtubeReview: paddle.youtubeReview || undefined,
-      sourceData: paddle.sourceData
-    }));
-  }
-
-  // Helper function to load harmonized data from file (fallback)
-  async function loadHarmonizedDataFromFile(source: string): Promise<HarmonizedPaddle[]> {
-    const filePath = path.join(outputDir, `harmonized_${source}.json`);
-    const fileContent = await fs.readFile(filePath, 'utf-8');
-    return JSON.parse(fileContent);
-  }
-
-  // Helper function to load combined median data
-  async function loadCombinedMedianData(): Promise<any[]> {
-    const filePath = path.join(outputDir, 'harmonized_combined_median.json');
-    const fileContent = await fs.readFile(filePath, 'utf-8');
-    return JSON.parse(fileContent);
-  }
+  const outputDir = path.join(process.cwd(), "output", "harmonized");
 
   // GET /api/paddles - Get all paddles with basic info (from database)
-  fastify.get('/', async (request, reply) => {
+  fastify.get("/", async (request, reply) => {
     try {
-      const paddles = await prismaService.getAllPaddles();
+      const paddles = await prismaService.getPaddles();
       reply.send(paddles);
     } catch (error) {
-      fastify.log.error(error, 'Error getting all paddles');
+      fastify.log.error(error, "Error getting all paddles");
       reply.status(500).send({
         success: false,
-        error: 'Failed to fetch paddles'
+        error: "Failed to fetch paddles",
       });
     }
   });
 
   // GET /api/paddles/:id - Get complete details for a specific paddle
-  fastify.get<{ Params: { id: string } }>('/:id', async (request, reply) => {
+  fastify.get<{ Params: { id: string } }>("/:id", async (request, reply) => {
     try {
       const { id } = request.params;
       const paddle = await prismaService.getPaddleById(id);
@@ -171,17 +50,17 @@ const paddleRoutes: FastifyPluginAsync = async (fastify) => {
       if (!paddle) {
         reply.status(404).send({
           success: false,
-          error: 'Paddle not found'
+          error: "Paddle not found",
         });
         return;
       }
 
       reply.send(paddle);
     } catch (error) {
-      fastify.log.error(error, 'Error getting paddle by ID');
+      fastify.log.error(error, "Error getting paddle by ID");
       reply.status(500).send({
         success: false,
-        error: 'Failed to fetch paddle details'
+        error: "Failed to fetch paddle details",
       });
     }
   });
@@ -189,26 +68,30 @@ const paddleRoutes: FastifyPluginAsync = async (fastify) => {
   // POST /api/paddles - Upload paddle stats (harmonized data)
   fastify.post<{
     Body: {
-      source: 'mattspickleball' | 'pickleballeffect' | 'pickleballstudio';
+      source: PaddleSource;
       data: HarmonizedPaddle[];
     };
-  }>('/', async (request, reply) => {
+  }>("/", { preHandler: [authMiddleware] }, async (request, reply) => {
     try {
       const { source, data } = request.body;
 
       if (!source || !data || !Array.isArray(data)) {
         reply.status(400).send({
           success: false,
-          error: 'Invalid request body. Expected { source, data }'
+          error: "Invalid request body. Expected { source, data }",
         });
         return;
       }
 
-      const validSources = ['mattspickleball', 'pickleballeffect', 'pickleballstudio'];
+      const validSources: PaddleSource[] = [
+        "mattspickleball",
+        "pickleballeffect",
+        "pickleballstudio",
+      ];
       if (!validSources.includes(source)) {
         reply.status(400).send({
           success: false,
-          error: `Invalid source. Must be one of: ${validSources.join(', ')}`
+          error: `Invalid source. Must be one of: ${validSources.join(", ")}`,
         });
         return;
       }
@@ -221,66 +104,154 @@ const paddleRoutes: FastifyPluginAsync = async (fastify) => {
       reply.send({
         success: true,
         message: `Successfully uploaded ${data.length} paddles for source: ${source}`,
-        count: data.length
+        count: data.length,
       });
     } catch (error) {
-      fastify.log.error(error, 'Error uploading paddle stats');
+      fastify.log.error(error, "Error uploading paddle stats");
       reply.status(500).send({
         success: false,
-        error: 'Failed to upload paddle stats'
+        error: "Failed to upload paddle stats",
       });
     }
   });
 
   // GET /api/paddles/sources/all - Get all harmonized paddle data from all sources
-  fastify.get<{ Reply: HarmonizedDataResponse }>('/sources/all', async (request, reply) => {
-    try {
-      const [mattData, effectData, studioData] = await Promise.all([
-        loadHarmonizedDataFromDB('mattspickleball'),
-        loadHarmonizedDataFromDB('pickleballeffect'),
-        loadHarmonizedDataFromDB('pickleballstudio')
-      ]);
+  fastify.get<{ Reply: HarmonizedDataResponse | ErrorResponse }>(
+    "/sources/all",
+    async (request, reply) => {
+      try {
+        const [mattData, effectData, studioData] = await Promise.all([
+          loadHarmonizedDataFromDB(prismaService, "mattspickleball"),
+          loadHarmonizedDataFromDB(prismaService, "pickleballeffect"),
+          loadHarmonizedDataFromDB(prismaService, "pickleballstudio"),
+        ]);
 
-      const response: HarmonizedDataResponse = {
-        success: true,
-        data: {
-          mattspickleball: mattData,
-          pickleballeffect: effectData,
-          pickleballstudio: studioData
-        },
-        counts: {
-          mattspickleball: mattData.length,
-          pickleballeffect: effectData.length,
-          pickleballstudio: studioData.length,
-          total: mattData.length + effectData.length + studioData.length
-        }
-      };
+        const response: HarmonizedDataResponse = {
+          success: true,
+          data: {
+            mattspickleball: mattData,
+            pickleballeffect: effectData,
+            pickleballstudio: studioData,
+          },
+          counts: {
+            mattspickleball: mattData.length,
+            pickleballeffect: effectData.length,
+            pickleballstudio: studioData.length,
+            total: mattData.length + effectData.length + studioData.length,
+          },
+        };
 
-      reply.send(response);
-    } catch (error) {
-      fastify.log.error(error, 'Error loading harmonized paddle data');
-      reply.status(500).send({
-        success: false,
-        error: 'Failed to load harmonized paddle data'
-      });
-    }
-  });
+        reply.send(response);
+      } catch (error) {
+        fastify.log.error(error, "Error loading harmonized paddle data");
+        reply.status(500).send({
+          success: false,
+          error: "Failed to load harmonized paddle data",
+        });
+      }
+    },
+  );
 
   // GET /api/paddles/combined - Get combined median paddle data
-  fastify.get('/combined', async (request, reply) => {
+  fastify.get("/combined", async (request, reply) => {
     try {
-      const combinedData = await loadCombinedMedianData();
+      let combinedData: CombinedPaddle[];
+      const query = request.query as
+        | { refresh?: string; limit?: string; cursor?: string }
+        | undefined;
+      const refresh = query?.refresh;
+      const limitParam = query?.limit;
+      const cursorParam = query?.cursor;
+      const shouldBypassCache = refresh === "1" || refresh === "true";
+      const parsedLimit = limitParam ? Number(limitParam) : COMBINED_DEFAULT_LIMIT;
+
+      if (!Number.isFinite(parsedLimit) || parsedLimit <= 0) {
+        reply.status(400).send({
+          success: false,
+          error: "Invalid limit",
+        });
+        return;
+      }
+
+      const limit = Math.min(parsedLimit, COMBINED_MAX_LIMIT);
+
+      if (!shouldBypassCache && combinedCache && combinedCache.expiresAt > Date.now()) {
+        combinedData = combinedCache.data;
+      } else {
+        try {
+          combinedData = await loadCombinedMedianDataFromDB(prismaService);
+        } catch (error) {
+          fastify.log.error(error, "Error loading combined data from DB, falling back to file");
+          combinedData = await loadCombinedMedianDataFromFile(outputDir);
+        }
+
+        combinedCache = {
+          data: combinedData,
+          expiresAt: Date.now() + COMBINED_CACHE_TTL_MS,
+        };
+      }
+
+      const normalizedData = combinedData.map((paddle) => {
+        if (typeof paddle.company !== "string") {
+          return paddle;
+        }
+
+        const company =
+          paddle.company === paddle.company.toLowerCase()
+            ? paddle.company
+                .split(" ")
+                .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
+                .join(" ")
+            : paddle.company;
+
+        return { ...paddle, company };
+      });
+
+      let startIndex = 0;
+      if (cursorParam) {
+        let cursor: CombinedPaginationCursor;
+        try {
+          cursor = decodeCombinedCursor(cursorParam);
+        } catch (error) {
+          reply.status(400).send({
+            success: false,
+            error: "Invalid cursor",
+          });
+          return;
+        }
+
+        const cursorIndex = normalizedData.findIndex(
+          (paddle) => paddle.company === cursor.company && paddle.paddleName === cursor.paddleName,
+        );
+        if (cursorIndex === -1) {
+          reply.status(400).send({
+            success: false,
+            error: "Cursor not found",
+          });
+          return;
+        }
+        startIndex = cursorIndex + 1;
+      }
+
+      const pageItems = normalizedData.slice(startIndex, startIndex + limit);
+      const lastItem = pageItems[pageItems.length - 1];
+      const nextCursor =
+        pageItems.length > 0 && startIndex + pageItems.length < normalizedData.length
+          ? encodeCombinedCursor(lastItem)
+          : undefined;
 
       reply.send({
         success: true,
-        count: combinedData.length,
-        data: combinedData
+        count: pageItems.length,
+        totalCount: normalizedData.length,
+        nextCursor,
+        data: pageItems,
       });
     } catch (error) {
-      fastify.log.error(error, 'Error loading combined median data');
+      fastify.log.error(error, "Error loading combined median data");
       reply.status(500).send({
         success: false,
-        error: 'Failed to load combined paddle data'
+        error: "Failed to load combined paddle data",
       });
     }
   });
@@ -288,27 +259,31 @@ const paddleRoutes: FastifyPluginAsync = async (fastify) => {
   // GET /api/paddles/sources/:source - Get harmonized data from a specific source
   fastify.get<{
     Params: { source: string };
-    Reply: SingleSourceResponse;
-  }>('/sources/:source', async (request, reply) => {
+    Reply: SingleSourceResponse | ErrorResponse;
+  }>("/sources/:source", async (request, reply) => {
     const { source } = request.params;
 
-    const validSources = ['mattspickleball', 'pickleballeffect', 'pickleballstudio'];
-    if (!validSources.includes(source)) {
+    const validSources: PaddleSource[] = [
+      "mattspickleball",
+      "pickleballeffect",
+      "pickleballstudio",
+    ];
+    if (!validSources.includes(source as PaddleSource)) {
       reply.status(400).send({
         success: false,
-        error: `Invalid source. Must be one of: ${validSources.join(', ')}`
+        error: `Invalid source. Must be one of: ${validSources.join(", ")}`,
       });
       return;
     }
 
     try {
-      const data = await loadHarmonizedDataFromDB(source);
+      const data = await loadHarmonizedDataFromDB(prismaService, source as PaddleSource);
 
       const response: SingleSourceResponse = {
         success: true,
         source,
         data,
-        count: data.length
+        count: data.length,
       };
 
       reply.send(response);
@@ -316,7 +291,7 @@ const paddleRoutes: FastifyPluginAsync = async (fastify) => {
       fastify.log.error(error, `Error loading harmonized data for source: ${source}`);
       reply.status(500).send({
         success: false,
-        error: `Failed to load harmonized data for source: ${source}`
+        error: `Failed to load harmonized data for source: ${source}`,
       });
     }
   });

@@ -55,6 +55,13 @@ logs/
 tmp/
 temp/
 
+# Scraped images (regeneratable artifacts)
+legacy/**/images/
+**/legacy/**/*.jpg
+**/legacy/**/*.jpeg
+**/legacy/**/*.png
+**/legacy/**/*.gif
+
 # Frontend build artifacts
 frontend/dist/
 frontend/.next/
@@ -63,3 +70,13 @@ frontend/.nuxt/
 # Docker
 .dockerignore
 docker-compose.override.yml
+
+# Husky
+.husky/_
+.husky/husky.sh
+
+# Tooling
+.prettierignore
+
+# Claude (local overrides only)
+.claude/settings.local.json

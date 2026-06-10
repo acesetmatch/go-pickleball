@@ -18,14 +18,14 @@
     "swingweight": "121",
     "swingweightPercentile": "85%",
     "twistweight": "6.33",
-    "twistweightPercentile": "48%",
+    "twistweightPercentile": "49%",
     "balancePoint": "245",
     "spinRating": "Very High",
     "spinRPM": "2027",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "36.0",
-    "popPercentile": "48%"
+    "popPercentile": "43%"
   },
   {
     "paddleName": "All Court Pegasus",
@@ -46,14 +46,14 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "7.26",
-    "twistweightPercentile": "95%",
+    "twistweightPercentile": "94%",
     "balancePoint": "237",
     "spinRating": "Very High",
     "spinRPM": "2032",
     "powerMPH": "55.2",
-    "powerPercentile": "36%",
+    "powerPercentile": "31%",
     "popMPH": "35.5",
-    "popPercentile": "28%"
+    "popPercentile": "24%"
   },
   {
     "paddleName": "All Court Vapor",
@@ -79,9 +79,9 @@
     "spinRating": "Very High",
     "spinRPM": "2059",
     "powerMPH": "55.3",
-    "powerPercentile": "39%",
+    "powerPercentile": "34%",
     "popMPH": "35.4",
-    "popPercentile": "24%"
+    "popPercentile": "21%"
   },
   {
     "paddleName": "Alpha Pro Power Hurache-X",
@@ -124,7 +124,7 @@
     "swingweight": "107",
     "swingweightPercentile": "7%",
     "twistweight": "7.12",
-    "twistweightPercentile": "92%",
+    "twistweightPercentile": "91%",
     "balancePoint": "229"
   },
   {
@@ -144,7 +144,7 @@
     "gripSize": "4.13",
     "weight": "8.00",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "6.76",
     "twistweightPercentile": "77%",
     "balancePoint": "236"
@@ -168,7 +168,7 @@
     "swingweight": "122",
     "swingweightPercentile": "88%",
     "twistweight": "6.36",
-    "twistweightPercentile": "50%",
+    "twistweightPercentile": "51%",
     "balancePoint": "242"
   },
   {
@@ -190,7 +190,7 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "6.67",
-    "twistweightPercentile": "70%",
+    "twistweightPercentile": "71%",
     "balancePoint": "240"
   },
   {
@@ -217,9 +217,9 @@
     "spinRating": "Very High",
     "spinRPM": "2033",
     "powerMPH": "56.3",
-    "powerPercentile": "77%",
+    "powerPercentile": "70%",
     "popMPH": "36.0",
-    "popPercentile": "48%"
+    "popPercentile": "43%"
   },
   {
     "paddleName": "Power Pegasus",
@@ -245,9 +245,9 @@
     "spinRating": "Very High",
     "spinRPM": "2085",
     "powerMPH": "55.8",
-    "powerPercentile": "57%",
+    "powerPercentile": "50%",
     "popMPH": "36.2",
-    "popPercentile": "59%"
+    "popPercentile": "53%"
   },
   {
     "paddleName": "Power Vapor",
@@ -268,14 +268,14 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "7.10",
-    "twistweightPercentile": "91%",
+    "twistweightPercentile": "90%",
     "balancePoint": "237",
     "spinRating": "Very High",
     "spinRPM": "2065",
     "powerMPH": "56.0",
-    "powerPercentile": "67%",
+    "powerPercentile": "59%",
     "popMPH": "36.1",
-    "popPercentile": "53%"
+    "popPercentile": "48%"
   },
   {
     "paddleName": "Metalbone EVA 16mm (red no weights)",
@@ -296,14 +296,14 @@
     "swingweight": "124",
     "swingweightPercentile": "94%",
     "twistweight": "5.63",
-    "twistweightPercentile": "9%",
+    "twistweightPercentile": "8%",
     "balancePoint": "247",
     "spinRating": "Very High",
     "spinRPM": "2085",
     "powerMPH": "58.2",
     "powerPercentile": "100%",
     "popMPH": "37.6",
-    "popPercentile": "98%"
+    "popPercentile": "99%"
   },
   {
     "paddleName": "Metalbone PP 14.5mm (no weights)",
@@ -329,9 +329,9 @@
     "spinRating": "Very High",
     "spinRPM": "2011",
     "powerMPH": "54.1",
-    "powerPercentile": "16%",
+    "powerPercentile": "14%",
     "popMPH": "35.1",
-    "popPercentile": "19%"
+    "popPercentile": "16%"
   },
   {
     "paddleName": "Metalbone PP 16mm (no weights)",
@@ -357,9 +357,9 @@
     "spinRating": "Very High",
     "spinRPM": "2086",
     "powerMPH": "54.2",
-    "powerPercentile": "18%",
+    "powerPercentile": "16%",
     "popMPH": "35.4",
-    "popPercentile": "24%"
+    "popPercentile": "21%"
   },
   {
     "paddleName": "Metalbone Team EVA 16mm (blue)",
@@ -385,9 +385,121 @@
     "spinRating": "High",
     "spinRPM": "1978",
     "powerMPH": "57.8",
-    "powerPercentile": "98%",
+    "powerPercentile": "99%",
     "popMPH": "37.3",
     "popPercentile": "97%"
+  },
+  {
+    "paddleName": "PRO-EDT 14",
+    "brand": "Adidas",
+    "price": "$189.00",
+    "discountCode": "N/A",
+    "linkToPaddle": "https://a8qh.short.gy/edt14",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "All-Court",
+    "coreThickness": "14",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "8.00",
+    "swingweight": "122",
+    "swingweightPercentile": "88%",
+    "twistweight": "6.48",
+    "twistweightPercentile": "58%",
+    "balancePoint": "242",
+    "spinRating": "Very High",
+    "spinRPM": "2022",
+    "powerMPH": "56.5",
+    "powerPercentile": "79%",
+    "popMPH": "36.4",
+    "popPercentile": "64%"
+  },
+  {
+    "paddleName": "PRO-EDT 16",
+    "brand": "Adidas",
+    "price": "$189.00",
+    "discountCode": "N/A",
+    "linkToPaddle": "https://a8qh.short.gy/edt16",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "All-Court",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.50",
+    "weight": "7.95",
+    "swingweight": "126",
+    "swingweightPercentile": "98%",
+    "twistweight": "6.30",
+    "twistweightPercentile": "46%",
+    "balancePoint": "246",
+    "spinRating": "Very High",
+    "spinRPM": "2078",
+    "powerMPH": "57.0",
+    "powerPercentile": "93%",
+    "popMPH": "35.8",
+    "popPercentile": "36%"
+  },
+  {
+    "paddleName": "PRO-EDT 16 C",
+    "brand": "Adidas",
+    "price": "$189.00",
+    "discountCode": "N/A",
+    "linkToPaddle": "https://a8qh.short.gy/edtc",
+    "yearReleased": "2025",
+    "shape": "Widebody",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "All-Court",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.50",
+    "weight": "8.05",
+    "swingweight": "119",
+    "swingweightPercentile": "77%",
+    "twistweight": "7.26",
+    "twistweightPercentile": "94%",
+    "balancePoint": "241",
+    "spinRating": "Very High",
+    "spinRPM": "2089",
+    "powerMPH": "56.4",
+    "powerPercentile": "75%",
+    "popMPH": "36.0",
+    "popPercentile": "43%"
+  },
+  {
+    "paddleName": "Cyclone",
+    "brand": "Aireo",
+    "price": "$189.00",
+    "discountCode": "N/A",
+    "linkToPaddle": "https://a8qh.short.gy/cyc",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "Power",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "7.67",
+    "swingweight": "114",
+    "swingweightPercentile": "42%",
+    "twistweight": "6.41",
+    "twistweightPercentile": "55%",
+    "balancePoint": "243",
+    "spinRating": "Very High",
+    "spinRPM": "2054",
+    "powerMPH": "57.0",
+    "powerPercentile": "93%",
+    "popMPH": "37.0",
+    "popPercentile": "89%"
   },
   {
     "paddleName": "Baller +",
@@ -408,14 +520,14 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "6.08",
-    "twistweightPercentile": "31%",
+    "twistweightPercentile": "30%",
     "balancePoint": "234",
     "spinRating": "High",
     "spinRPM": "1932",
     "powerMPH": "56.0",
-    "powerPercentile": "67%",
+    "powerPercentile": "59%",
     "popMPH": "35.8",
-    "popPercentile": "41%"
+    "popPercentile": "36%"
   },
   {
     "paddleName": "Strkr+",
@@ -434,16 +546,16 @@
     "gripSize": "4.00",
     "weight": "8.05",
     "swingweight": "120",
-    "swingweightPercentile": "81%",
+    "swingweightPercentile": "82%",
     "twistweight": "5.43",
-    "twistweightPercentile": "5%",
+    "twistweightPercentile": "4%",
     "balancePoint": "240",
     "spinRating": "Low",
     "spinRPM": "1815",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "36.0",
-    "popPercentile": "48%"
+    "popPercentile": "43%"
   },
   {
     "paddleName": "WZRD",
@@ -469,9 +581,9 @@
     "spinRating": "High",
     "spinRPM": "1952",
     "powerMPH": "55.8",
-    "powerPercentile": "57%",
+    "powerPercentile": "50%",
     "popMPH": "35.6",
-    "popPercentile": "33%"
+    "popPercentile": "28%"
   },
   {
     "paddleName": "Flik F1 TerraCore XC Elongated",
@@ -490,9 +602,9 @@
     "gripSize": "4.25",
     "weight": "7.86",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.07",
-    "twistweightPercentile": "30%",
+    "twistweightPercentile": "29%",
     "balancePoint": "240",
     "spinRating": "Very High",
     "spinRPM": "2088",
@@ -518,9 +630,9 @@
     "gripSize": "4.25",
     "weight": "8.12",
     "swingweight": "123",
-    "swingweightPercentile": "91%",
+    "swingweightPercentile": "92%",
     "twistweight": "6.32",
-    "twistweightPercentile": "47%",
+    "twistweightPercentile": "48%",
     "balancePoint": "245",
     "spinRating": "Low",
     "spinRPM": "1842",
@@ -546,16 +658,16 @@
     "gripSize": "4.25",
     "weight": "8.88",
     "swingweight": "134",
-    "swingweightPercentile": "99%",
+    "swingweightPercentile": "100%",
     "twistweight": "6.74",
-    "twistweightPercentile": "75%",
+    "twistweightPercentile": "76%",
     "balancePoint": "246",
     "spinRating": "High",
     "spinRPM": "1981",
     "powerMPH": "54.9",
-    "powerPercentile": "27%",
+    "powerPercentile": "23%",
     "popMPH": "34.8",
-    "popPercentile": "10%"
+    "popPercentile": "9%"
   },
   {
     "paddleName": "X3 Lite",
@@ -576,14 +688,14 @@
     "swingweight": "125",
     "swingweightPercentile": "96%",
     "twistweight": "6.03",
-    "twistweightPercentile": "29%",
+    "twistweightPercentile": "28%",
     "balancePoint": "245",
     "spinRating": "Medium",
     "spinRPM": "1920",
     "powerMPH": "52.8",
     "powerPercentile": "2%",
     "popMPH": "34.8",
-    "popPercentile": "10%"
+    "popPercentile": "9%"
   },
   {
     "paddleName": "X3 Pro",
@@ -604,14 +716,14 @@
     "swingweight": "132",
     "swingweightPercentile": "99%",
     "twistweight": "6.65",
-    "twistweightPercentile": "69%",
+    "twistweightPercentile": "70%",
     "balancePoint": "246",
     "spinRating": "High",
     "spinRPM": "1949",
     "powerMPH": "54.7",
-    "powerPercentile": "24%",
+    "powerPercentile": "21%",
     "popMPH": "34.2",
-    "popPercentile": "4%"
+    "popPercentile": "3%"
   },
   {
     "paddleName": "X4 Gold Kevlar",
@@ -637,9 +749,9 @@
     "spinRating": "High",
     "spinRPM": "1972",
     "powerMPH": "56.0",
-    "powerPercentile": "67%",
+    "powerPercentile": "59%",
     "popMPH": "36.5",
-    "popPercentile": "72%"
+    "popPercentile": "70%"
   },
   {
     "paddleName": "Fat Boy",
@@ -658,16 +770,16 @@
     "gripSize": "4.25",
     "weight": "8.17",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "7.29",
-    "twistweightPercentile": "96%",
+    "twistweightPercentile": "95%",
     "balancePoint": "236",
     "spinRating": "High",
     "spinRPM": "1935",
     "powerMPH": "54.9",
-    "powerPercentile": "27%",
+    "powerPercentile": "23%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Filth Elongated",
@@ -686,16 +798,16 @@
     "gripSize": "4.13",
     "weight": "8.18",
     "swingweight": "123",
-    "swingweightPercentile": "91%",
+    "swingweightPercentile": "92%",
     "twistweight": "6.24",
-    "twistweightPercentile": "42%",
+    "twistweightPercentile": "41%",
     "balancePoint": "243",
     "spinRating": "Medium",
     "spinRPM": "1905",
     "powerMPH": "55.8",
-    "powerPercentile": "57%",
+    "powerPercentile": "50%",
     "popMPH": "35.7",
-    "popPercentile": "37%"
+    "popPercentile": "33%"
   },
   {
     "paddleName": "Filth Hybrid",
@@ -721,9 +833,9 @@
     "spinRating": "Medium",
     "spinRPM": "1908",
     "powerMPH": "55.4",
-    "powerPercentile": "41%",
+    "powerPercentile": "36%",
     "popMPH": "35.9",
-    "popPercentile": "43%"
+    "popPercentile": "38%"
   },
   {
     "paddleName": "Filth Standard",
@@ -749,9 +861,9 @@
     "spinRating": "Medium",
     "spinRPM": "1919",
     "powerMPH": "55.6",
-    "powerPercentile": "47%",
+    "powerPercentile": "41%",
     "popMPH": "35.8",
-    "popPercentile": "41%"
+    "popPercentile": "36%"
   },
   {
     "paddleName": "Invader",
@@ -777,9 +889,9 @@
     "spinRating": "High",
     "spinRPM": "1985",
     "powerMPH": "55.8",
-    "powerPercentile": "57%",
+    "powerPercentile": "50%",
     "popMPH": "36.2",
-    "popPercentile": "59%"
+    "popPercentile": "53%"
   },
   {
     "paddleName": "Loco Elongated",
@@ -798,14 +910,14 @@
     "gripSize": "4.25",
     "weight": "7.90",
     "swingweight": "120",
-    "swingweightPercentile": "81%",
+    "swingweightPercentile": "82%",
     "twistweight": "6.18",
-    "twistweightPercentile": "38%",
+    "twistweightPercentile": "37%",
     "balancePoint": "245",
     "spinRating": "Very High",
     "spinRPM": "2010",
     "powerMPH": "56.9",
-    "powerPercentile": "93%",
+    "powerPercentile": "92%",
     "popMPH": "36.8",
     "popPercentile": "84%"
   },
@@ -828,14 +940,14 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "6.67",
-    "twistweightPercentile": "70%",
+    "twistweightPercentile": "71%",
     "balancePoint": "238",
     "spinRating": "Very High",
     "spinRPM": "2032",
     "powerMPH": "56.7",
-    "powerPercentile": "89%",
+    "powerPercentile": "86%",
     "popMPH": "37.0",
-    "popPercentile": "90%"
+    "popPercentile": "89%"
   },
   {
     "paddleName": "Loco Standard",
@@ -854,16 +966,16 @@
     "gripSize": "4.25",
     "weight": "8.06",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "7.33",
     "twistweightPercentile": "96%",
     "balancePoint": "235",
     "spinRating": "Very High",
     "spinRPM": "2004",
     "powerMPH": "56.4",
-    "powerPercentile": "82%",
+    "powerPercentile": "75%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Shogun",
@@ -884,14 +996,14 @@
     "swingweight": "122",
     "swingweightPercentile": "88%",
     "twistweight": "6.20",
-    "twistweightPercentile": "40%",
+    "twistweightPercentile": "38%",
     "balancePoint": "244",
     "spinRating": "Medium",
     "spinRPM": "1928",
     "powerMPH": "54.4",
-    "powerPercentile": "21%",
+    "powerPercentile": "18%",
     "popMPH": "35.4",
-    "popPercentile": "24%"
+    "popPercentile": "21%"
   },
   {
     "paddleName": "Wild Thing",
@@ -912,14 +1024,14 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "5.91",
-    "twistweightPercentile": "22%",
+    "twistweightPercentile": "21%",
     "balancePoint": "239",
     "spinRating": "Medium",
     "spinRPM": "1907",
     "powerMPH": "55.8",
-    "powerPercentile": "57%",
+    "powerPercentile": "50%",
     "popMPH": "35.6",
-    "popPercentile": "33%"
+    "popPercentile": "28%"
   },
   {
     "paddleName": "Shapeshifter EX",
@@ -940,14 +1052,14 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "6.18",
-    "twistweightPercentile": "38%",
+    "twistweightPercentile": "37%",
     "balancePoint": "242",
     "spinRating": "Very High",
     "spinRPM": "2104",
     "powerMPH": "56.0",
-    "powerPercentile": "67%",
+    "powerPercentile": "59%",
     "popMPH": "35.9",
-    "popPercentile": "43%"
+    "popPercentile": "38%"
   },
   {
     "paddleName": "Shapeshifter HX",
@@ -966,16 +1078,16 @@
     "gripSize": "4.25",
     "weight": "7.80",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.46",
-    "twistweightPercentile": "56%",
+    "twistweightPercentile": "57%",
     "balancePoint": "240",
     "spinRating": "Very High",
     "spinRPM": "2071",
     "powerMPH": "55.8",
-    "powerPercentile": "57%",
+    "powerPercentile": "50%",
     "popMPH": "35.6",
-    "popPercentile": "33%"
+    "popPercentile": "28%"
   },
   {
     "paddleName": "Shapeshifter SX",
@@ -996,14 +1108,14 @@
     "swingweight": "107",
     "swingweightPercentile": "7%",
     "twistweight": "6.83",
-    "twistweightPercentile": "82%",
+    "twistweightPercentile": "81%",
     "balancePoint": "235",
     "spinRating": "Very High",
     "spinRPM": "2063",
     "powerMPH": "54.5",
-    "powerPercentile": "22%",
+    "powerPercentile": "19%",
     "popMPH": "35.1",
-    "popPercentile": "19%"
+    "popPercentile": "16%"
   },
   {
     "paddleName": "Supercourt EX",
@@ -1029,9 +1141,9 @@
     "spinRating": "Very High",
     "spinRPM": "2020",
     "powerMPH": "56.2",
-    "powerPercentile": "75%",
+    "powerPercentile": "67%",
     "popMPH": "36.0",
-    "popPercentile": "48%"
+    "popPercentile": "43%"
   },
   {
     "paddleName": "Supercourt HX",
@@ -1057,9 +1169,9 @@
     "spinRating": "High",
     "spinRPM": "1969",
     "powerMPH": "56.0",
-    "powerPercentile": "67%",
+    "powerPercentile": "59%",
     "popMPH": "35.8",
-    "popPercentile": "41%"
+    "popPercentile": "36%"
   },
   {
     "paddleName": "Supercourt SX",
@@ -1085,9 +1197,9 @@
     "spinRating": "High",
     "spinRPM": "1986",
     "powerMPH": "56.0",
-    "powerPercentile": "67%",
+    "powerPercentile": "59%",
     "popMPH": "35.7",
-    "popPercentile": "37%"
+    "popPercentile": "33%"
   },
   {
     "paddleName": "CRBN 1 Orginal (16 mm)",
@@ -1108,7 +1220,7 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "5.77",
-    "twistweightPercentile": "13%",
+    "twistweightPercentile": "12%",
     "balancePoint": "238"
   },
   {
@@ -1130,14 +1242,14 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "5.88",
-    "twistweightPercentile": "19%",
+    "twistweightPercentile": "17%",
     "balancePoint": "243",
     "spinRating": "Medium",
     "spinRPM": "1917",
     "powerMPH": "54.3",
-    "powerPercentile": "19%",
+    "powerPercentile": "17%",
     "popMPH": "35.4",
-    "popPercentile": "24%"
+    "popPercentile": "21%"
   },
   {
     "paddleName": "CRBN 1X Power Series (16 mm)",
@@ -1158,14 +1270,14 @@
     "swingweight": "124",
     "swingweightPercentile": "94%",
     "twistweight": "6.18",
-    "twistweightPercentile": "38%",
+    "twistweightPercentile": "37%",
     "balancePoint": "244",
     "spinRating": "Medium",
     "spinRPM": "1915",
     "powerMPH": "55.0",
-    "powerPercentile": "31%",
+    "powerPercentile": "27%",
     "popMPH": "34.9",
-    "popPercentile": "14%"
+    "popPercentile": "12%"
   },
   {
     "paddleName": "CRBN 2 Orignal (16 mm)",
@@ -1186,7 +1298,7 @@
     "swingweight": "109",
     "swingweightPercentile": "14%",
     "twistweight": "7.03",
-    "twistweightPercentile": "89%",
+    "twistweightPercentile": "88%",
     "balancePoint": "236"
   },
   {
@@ -1208,7 +1320,7 @@
     "swingweight": "105",
     "swingweightPercentile": "4%",
     "twistweight": "6.88",
-    "twistweightPercentile": "84%",
+    "twistweightPercentile": "83%",
     "balancePoint": "232"
   },
   {
@@ -1228,7 +1340,7 @@
     "gripSize": "4.25",
     "weight": "8.20",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "7.75",
     "twistweightPercentile": "100%",
     "balancePoint": "237"
@@ -1272,16 +1384,16 @@
     "gripSize": "4.25",
     "weight": "8.18",
     "swingweight": "119",
-    "swingweightPercentile": "78%",
+    "swingweightPercentile": "77%",
     "twistweight": "6.79",
     "twistweightPercentile": "79%",
     "balancePoint": "241",
     "spinRating": "Medium",
     "spinRPM": "1920",
     "powerMPH": "54.9",
-    "powerPercentile": "27%",
+    "powerPercentile": "23%",
     "popMPH": "35.6",
-    "popPercentile": "33%"
+    "popPercentile": "28%"
   },
   {
     "paddleName": "TruFoam Genesis 1",
@@ -1302,14 +1414,14 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "5.51",
-    "twistweightPercentile": "6%",
+    "twistweightPercentile": "5%",
     "balancePoint": "244",
     "spinRating": "Very High",
     "spinRPM": "2036",
     "powerMPH": "55.8",
-    "powerPercentile": "57%",
+    "powerPercentile": "50%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "TruFoam Genesis 2",
@@ -1330,12 +1442,12 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "6.70",
-    "twistweightPercentile": "73%",
+    "twistweightPercentile": "74%",
     "balancePoint": "238",
     "spinRating": "High",
     "spinRPM": "1992",
     "powerMPH": "55.5",
-    "powerPercentile": "44%",
+    "powerPercentile": "39%",
     "popMPH": "36.8",
     "popPercentile": "84%"
   },
@@ -1363,9 +1475,9 @@
     "spinRating": "Very High",
     "spinRPM": "2030",
     "powerMPH": "55.9",
-    "powerPercentile": "61%",
+    "powerPercentile": "54%",
     "popMPH": "36.4",
-    "popPercentile": "69%"
+    "popPercentile": "64%"
   },
   {
     "paddleName": "TruFoam Genesis 4",
@@ -1391,9 +1503,9 @@
     "spinRating": "Very High",
     "spinRPM": "2040",
     "powerMPH": "55.8",
-    "powerPercentile": "57%",
+    "powerPercentile": "50%",
     "popMPH": "36.2",
-    "popPercentile": "59%"
+    "popPercentile": "53%"
   },
   {
     "paddleName": "TruFoam Waves 1",
@@ -1412,16 +1524,16 @@
     "gripSize": "4.25",
     "weight": "7.90",
     "swingweight": "119",
-    "swingweightPercentile": "78%",
+    "swingweightPercentile": "77%",
     "twistweight": "5.93",
-    "twistweightPercentile": "24%",
+    "twistweightPercentile": "22%",
     "balancePoint": "245",
     "spinRating": "High",
     "spinRPM": "1995",
     "powerMPH": "56.5",
-    "powerPercentile": "84%",
+    "powerPercentile": "79%",
     "popMPH": "36.2",
-    "popPercentile": "59%"
+    "popPercentile": "53%"
   },
   {
     "paddleName": "TruFoam Waves 2",
@@ -1440,16 +1552,16 @@
     "gripSize": "4.25",
     "weight": "8.12",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "7.02",
-    "twistweightPercentile": "88%",
+    "twistweightPercentile": "87%",
     "balancePoint": "235",
     "spinRating": "Very High",
     "spinRPM": "2021",
     "powerMPH": "56.2",
-    "powerPercentile": "75%",
+    "powerPercentile": "67%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "TruFoam Waves 3",
@@ -1468,16 +1580,16 @@
     "gripSize": "4.25",
     "weight": "8.18",
     "swingweight": "119",
-    "swingweightPercentile": "78%",
+    "swingweightPercentile": "77%",
     "twistweight": "6.61",
     "twistweightPercentile": "67%",
     "balancePoint": "240",
     "spinRating": "High",
     "spinRPM": "1988",
     "powerMPH": "56.4",
-    "powerPercentile": "81%",
+    "powerPercentile": "75%",
     "popMPH": "36.4",
-    "popPercentile": "69%"
+    "popPercentile": "64%"
   },
   {
     "paddleName": "TruFoam Waves 4",
@@ -1496,16 +1608,16 @@
     "gripSize": "4.25",
     "weight": "8.00",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "6.68",
-    "twistweightPercentile": "72%",
+    "twistweightPercentile": "73%",
     "balancePoint": "237",
     "spinRating": "Very High",
     "spinRPM": "2056",
     "powerMPH": "56.0",
-    "powerPercentile": "67%",
+    "powerPercentile": "59%",
     "popMPH": "36.5",
-    "popPercentile": "72%"
+    "popPercentile": "70%"
   },
   {
     "paddleName": "BluCore Max 19mm",
@@ -1524,16 +1636,16 @@
     "gripSize": "4.25",
     "weight": "8.40",
     "swingweight": "108",
-    "swingweightPercentile": "11%",
+    "swingweightPercentile": "10%",
     "twistweight": "7.45",
     "twistweightPercentile": "98%",
     "balancePoint": "228",
     "spinRating": "Medium",
     "spinRPM": "1926",
     "powerMPH": "54.9",
-    "powerPercentile": "27%",
+    "powerPercentile": "23%",
     "popMPH": "36.2",
-    "popPercentile": "59%"
+    "popPercentile": "53%"
   },
   {
     "paddleName": "BluCore Pro 16mm",
@@ -1552,16 +1664,16 @@
     "gripSize": "4.25",
     "weight": "8.10",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "5.81",
-    "twistweightPercentile": "15%",
+    "twistweightPercentile": "14%",
     "balancePoint": "234",
     "spinRating": "High",
     "spinRPM": "1936",
     "powerMPH": "53.4",
-    "powerPercentile": "9%",
+    "powerPercentile": "8%",
     "popMPH": "35.0",
-    "popPercentile": "15%"
+    "popPercentile": "13%"
   },
   {
     "paddleName": "BluCore Standard 14mm",
@@ -1582,14 +1694,14 @@
     "swingweight": "107",
     "swingweightPercentile": "7%",
     "twistweight": "5.58",
-    "twistweightPercentile": "7%",
+    "twistweightPercentile": "6%",
     "balancePoint": "232",
     "spinRating": "High",
     "spinRPM": "1935",
     "powerMPH": "53.4",
-    "powerPercentile": "9%",
+    "powerPercentile": "8%",
     "popMPH": "36.0",
-    "popPercentile": "48%"
+    "popPercentile": "43%"
   },
   {
     "paddleName": "Edge 18k",
@@ -1610,7 +1722,7 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "6.21",
-    "twistweightPercentile": "40%",
+    "twistweightPercentile": "39%",
     "balancePoint": "244"
   },
   {
@@ -1654,7 +1766,7 @@
     "swingweight": "124",
     "swingweightPercentile": "94%",
     "twistweight": "6.31",
-    "twistweightPercentile": "47%",
+    "twistweightPercentile": "48%",
     "balancePoint": "249"
   },
   {
@@ -1674,16 +1786,16 @@
     "gripSize": "4.13",
     "weight": "8.00",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "6.40",
     "twistweightPercentile": "53%",
     "balancePoint": "232",
     "spinRating": "Very High",
     "spinRPM": "2081",
     "powerMPH": "56.1",
-    "powerPercentile": "71%",
+    "powerPercentile": "63%",
     "popMPH": "36.5",
-    "popPercentile": "72%"
+    "popPercentile": "70%"
   },
   {
     "paddleName": "Edge Blucore Hybrid 16",
@@ -1709,9 +1821,9 @@
     "spinRating": "Very High",
     "spinRPM": "2112",
     "powerMPH": "56.3",
-    "powerPercentile": "77%",
+    "powerPercentile": "70%",
     "popMPH": "36.1",
-    "popPercentile": "53%"
+    "popPercentile": "48%"
   },
   {
     "paddleName": "Edge Blucore Pro 14",
@@ -1732,7 +1844,7 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "6.10",
-    "twistweightPercentile": "31%",
+    "twistweightPercentile": "30%",
     "balancePoint": "241"
   },
   {
@@ -1754,7 +1866,7 @@
     "swingweight": "122",
     "swingweightPercentile": "88%",
     "twistweight": "6.65",
-    "twistweightPercentile": "69%",
+    "twistweightPercentile": "70%",
     "balancePoint": "243"
   },
   {
@@ -1780,10 +1892,39 @@
     "balancePoint": "236"
   },
   {
+    "paddleName": "Zephyr",
+    "brand": "Element 6",
+    "price": "$139.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/zephyr",
+    "yearReleased": "2025",
+    "shape": "Hybrid",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "Power",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "7.82",
+    "swingweight": "108",
+    "swingweightPercentile": "10%",
+    "twistweight": "6.84",
+    "twistweightPercentile": "82%",
+    "balancePoint": "234",
+    "spinRating": "Very High",
+    "spinRPM": "2021",
+    "powerMPH": "58.0",
+    "powerPercentile": "99%",
+    "popMPH": "37.4",
+    "popPercentile": "98%"
+  },
+  {
     "paddleName": "Fuego",
     "brand": "Element6",
     "price": "$199.99",
-    "discountCode": "N/A",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/fuego",
     "yearReleased": "2025",
     "shape": "Elongated",
     "faceMaterial": "Carbon",
@@ -1802,15 +1943,16 @@
     "spinRating": "Very High",
     "spinRPM": "2016",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "35.4",
-    "popPercentile": "24%"
+    "popPercentile": "21%"
   },
   {
     "paddleName": "Surtr",
     "brand": "Element6",
     "price": "$199.00",
-    "discountCode": "N/A",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/surtr",
     "yearReleased": "2025",
     "shape": "Hybrid",
     "faceMaterial": "Carbon",
@@ -1818,18 +1960,104 @@
     "buildType": "Gen 4",
     "paddleType": "Power",
     "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
     "weight": "8.10",
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "6.54",
-    "twistweightPercentile": "61%",
+    "twistweightPercentile": "62%",
     "balancePoint": "240",
     "spinRating": "High",
     "spinRPM": "1961",
     "powerMPH": "57.2",
     "powerPercentile": "96%",
     "popMPH": "36.3",
-    "popPercentile": "65%"
+    "popPercentile": "60%"
+  },
+  {
+    "paddleName": "Alpha Pro 14",
+    "brand": "Engage",
+    "price": "$259.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/14AP",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "Power",
+    "coreThickness": "14",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "8.00",
+    "swingweight": "112",
+    "swingweightPercentile": "28%",
+    "twistweight": "5.96",
+    "twistweightPercentile": "24%",
+    "balancePoint": "240",
+    "spinRating": "Very High",
+    "spinRPM": "2097",
+    "powerMPH": "56.6",
+    "powerPercentile": "83%",
+    "popMPH": "36.3",
+    "popPercentile": "60%"
+  },
+  {
+    "paddleName": "Alpha Pro 16",
+    "brand": "Engage",
+    "price": "$259.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/AP16",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "All-Court",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "8.00",
+    "swingweight": "113",
+    "swingweightPercentile": "35%",
+    "twistweight": "6.21",
+    "twistweightPercentile": "39%",
+    "balancePoint": "238",
+    "spinRating": "Very High",
+    "spinRPM": "2085",
+    "powerMPH": "56.4",
+    "powerPercentile": "75%",
+    "popMPH": "36.2",
+    "popPercentile": "53%"
+  },
+  {
+    "paddleName": "Profoam",
+    "brand": "Engage",
+    "price": "$229.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/profoam",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "All-Court",
+    "coreThickness": "14",
+    "gripLength": "5.25",
+    "gripSize": "4.25",
+    "weight": "8.06",
+    "swingweight": "122",
+    "swingweightPercentile": "88%",
+    "twistweight": "6.40",
+    "twistweightPercentile": "53%",
+    "balancePoint": "247",
+    "spinRating": "High",
+    "spinRPM": "1955",
+    "powerMPH": "56.5",
+    "powerPercentile": "79%",
+    "popMPH": "36.0",
+    "popPercentile": "43%"
   },
   {
     "paddleName": "Pursuit Pro EX",
@@ -1848,16 +2076,16 @@
     "gripSize": "4.25",
     "weight": "8.00",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "6.77",
     "twistweightPercentile": "77%",
     "balancePoint": "236",
     "spinRating": "High",
     "spinRPM": "1952",
     "powerMPH": "55.2",
-    "powerPercentile": "36%",
+    "powerPercentile": "31%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Pursuit Pro EX 6.0",
@@ -1883,9 +2111,9 @@
     "spinRating": "High",
     "spinRPM": "1946",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "36.1",
-    "popPercentile": "53%"
+    "popPercentile": "48%"
   },
   {
     "paddleName": "Pursuit Pro MX",
@@ -1904,14 +2132,14 @@
     "gripSize": "4.25",
     "weight": "8.06",
     "swingweight": "119",
-    "swingweightPercentile": "78%",
+    "swingweightPercentile": "77%",
     "twistweight": "5.88",
-    "twistweightPercentile": "19%",
+    "twistweightPercentile": "17%",
     "balancePoint": "239",
     "powerMPH": "56.1",
-    "powerPercentile": "71%",
+    "powerPercentile": "63%",
     "popMPH": "36.5",
-    "popPercentile": "72%"
+    "popPercentile": "70%"
   },
   {
     "paddleName": "Pursuit Pro MX 6.0",
@@ -1932,12 +2160,12 @@
     "swingweight": "125",
     "swingweightPercentile": "96%",
     "twistweight": "6.57",
-    "twistweightPercentile": "63%",
+    "twistweightPercentile": "64%",
     "balancePoint": "254",
     "powerMPH": "56.8",
-    "powerPercentile": "90%",
+    "powerPercentile": "87%",
     "popMPH": "35.7",
-    "popPercentile": "37%"
+    "popPercentile": "33%"
   },
   {
     "paddleName": "Pursuit Pro1 (Lite)",
@@ -1956,16 +2184,16 @@
     "gripSize": "4.25",
     "weight": "7.85",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "5.83",
-    "twistweightPercentile": "17%",
+    "twistweightPercentile": "15%",
     "balancePoint": "234",
     "spinRating": "High",
     "spinRPM": "1964",
     "powerMPH": "55.4",
-    "powerPercentile": "41%",
+    "powerPercentile": "36%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Pursuit Pro1 (Standard)",
@@ -1984,16 +2212,16 @@
     "gripSize": "4.25",
     "weight": "8.04",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "5.94",
-    "twistweightPercentile": "24%",
+    "twistweightPercentile": "22%",
     "balancePoint": "232",
     "spinRating": "High",
     "spinRPM": "1956",
     "powerMPH": "55.9",
-    "powerPercentile": "61%",
+    "powerPercentile": "54%",
     "popMPH": "36.4",
-    "popPercentile": "69%"
+    "popPercentile": "64%"
   },
   {
     "paddleName": "Pursuit Pro1 6.0 (Lite)",
@@ -2014,12 +2242,12 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "5.81",
-    "twistweightPercentile": "15%",
+    "twistweightPercentile": "14%",
     "balancePoint": "241",
     "spinRating": "High",
     "spinRPM": "1948",
     "powerMPH": "55.8",
-    "powerPercentile": "57%",
+    "powerPercentile": "50%",
     "popMPH": "37.1",
     "popPercentile": "93%"
   },
@@ -2042,14 +2270,14 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "5.83",
-    "twistweightPercentile": "17%",
+    "twistweightPercentile": "15%",
     "balancePoint": "235",
     "spinRating": "High",
     "spinRPM": "1959",
     "powerMPH": "55.6",
-    "powerPercentile": "47%",
+    "powerPercentile": "41%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Pursuit Pro1 6.0 Hybrid",
@@ -2075,9 +2303,9 @@
     "spinRating": "High",
     "spinRPM": "1961",
     "powerMPH": "54.1",
-    "powerPercentile": "16%",
+    "powerPercentile": "14%",
     "popMPH": "35.0",
-    "popPercentile": "15%"
+    "popPercentile": "13%"
   },
   {
     "paddleName": "Pursuit Pro1 6.0 Widebody",
@@ -2103,9 +2331,9 @@
     "spinRating": "High",
     "spinRPM": "1980",
     "powerMPH": "54.8",
-    "powerPercentile": "26%",
+    "powerPercentile": "22%",
     "popMPH": "35.0",
-    "popPercentile": "15%"
+    "popPercentile": "13%"
   },
   {
     "paddleName": "Pursuit Pro1 Hybrid",
@@ -2126,14 +2354,14 @@
     "swingweight": "101",
     "swingweightPercentile": "1%",
     "twistweight": "5.50",
-    "twistweightPercentile": "6%",
+    "twistweightPercentile": "5%",
     "balancePoint": "220",
     "spinRating": "Very High",
     "spinRPM": "2026",
     "powerMPH": "53.4",
-    "powerPercentile": "9%",
+    "powerPercentile": "8%",
     "popMPH": "36.0",
-    "popPercentile": "48%"
+    "popPercentile": "43%"
   },
   {
     "paddleName": "Pursuit Pro1 Innovation 12.7",
@@ -2152,16 +2380,16 @@
     "gripSize": "4.25",
     "weight": "7.90",
     "swingweight": "120",
-    "swingweightPercentile": "81%",
+    "swingweightPercentile": "82%",
     "twistweight": "5.90",
-    "twistweightPercentile": "21%",
+    "twistweightPercentile": "19%",
     "balancePoint": "244",
     "spinRating": "Very High",
     "spinRPM": "2059",
     "powerMPH": "56.1",
-    "powerPercentile": "71%",
+    "powerPercentile": "63%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Pursuit Pro1 Innovation 15.2",
@@ -2182,14 +2410,14 @@
     "swingweight": "125",
     "swingweightPercentile": "96%",
     "twistweight": "6.31",
-    "twistweightPercentile": "47%",
+    "twistweightPercentile": "48%",
     "balancePoint": "252",
     "spinRating": "Very High",
     "spinRPM": "2020",
     "powerMPH": "55.8",
-    "powerPercentile": "57%",
+    "powerPercentile": "50%",
     "popMPH": "36.0",
-    "popPercentile": "48%"
+    "popPercentile": "43%"
   },
   {
     "paddleName": "Pursuit Pro1 Widebody",
@@ -2215,9 +2443,9 @@
     "spinRating": "Very High",
     "spinRPM": "2019",
     "powerMPH": "53.2",
-    "powerPercentile": "8%",
+    "powerPercentile": "7%",
     "popMPH": "35.5",
-    "popPercentile": "28%"
+    "popPercentile": "24%"
   },
   {
     "paddleName": "Pursuit V2",
@@ -2238,14 +2466,42 @@
     "swingweight": "111",
     "swingweightPercentile": "23%",
     "twistweight": "5.94",
-    "twistweightPercentile": "24%",
+    "twistweightPercentile": "22%",
     "balancePoint": "235",
     "spinRating": "Very High",
     "spinRPM": "2119",
     "powerMPH": "55.2",
-    "powerPercentile": "36%",
+    "powerPercentile": "31%",
     "popMPH": "36.3",
-    "popPercentile": "65%"
+    "popPercentile": "60%"
+  },
+  {
+    "paddleName": "Duo",
+    "brand": "Enhance",
+    "price": "$174.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/duo-e",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "Power",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "8.10",
+    "swingweight": "119",
+    "swingweightPercentile": "77%",
+    "twistweight": "6.30",
+    "twistweightPercentile": "46%",
+    "balancePoint": "243",
+    "spinRating": "Very High",
+    "spinRPM": "2063",
+    "powerMPH": "56.9",
+    "powerPercentile": "92%",
+    "popMPH": "36.7",
+    "popPercentile": "82%"
   },
   {
     "paddleName": "Gen 4.5",
@@ -2266,14 +2522,98 @@
     "swingweight": "122",
     "swingweightPercentile": "88%",
     "twistweight": "6.20",
-    "twistweightPercentile": "40%",
+    "twistweightPercentile": "38%",
     "balancePoint": "241",
     "spinRating": "Very High",
     "spinRPM": "2036",
     "powerMPH": "56.3",
-    "powerPercentile": "77%",
+    "powerPercentile": "70%",
     "popMPH": "36.3",
-    "popPercentile": "65%"
+    "popPercentile": "60%"
+  },
+  {
+    "paddleName": "Runout E",
+    "brand": "F+B",
+    "price": "$199.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/ROE",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 1.5",
+    "paddleType": "All-Court",
+    "coreThickness": "13",
+    "gripLength": "5.50",
+    "gripSize": "4.10",
+    "weight": "8.00",
+    "swingweight": "114",
+    "swingweightPercentile": "42%",
+    "twistweight": "5.76",
+    "twistweightPercentile": "12%",
+    "balancePoint": "239",
+    "spinRating": "Very High",
+    "spinRPM": "2001",
+    "powerMPH": "56.0",
+    "powerPercentile": "59%",
+    "popMPH": "35.9",
+    "popPercentile": "38%"
+  },
+  {
+    "paddleName": "Runout H",
+    "brand": "F+B",
+    "price": "$199.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/ROH",
+    "yearReleased": "2025",
+    "shape": "Hybrid",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 1.5",
+    "paddleType": "All-Court",
+    "coreThickness": "13",
+    "gripLength": "5.50",
+    "gripSize": "4.10",
+    "weight": "8.10",
+    "swingweight": "113",
+    "swingweightPercentile": "35%",
+    "twistweight": "6.25",
+    "twistweightPercentile": "42%",
+    "balancePoint": "237",
+    "spinRating": "Very High",
+    "spinRPM": "2010",
+    "powerMPH": "55.7",
+    "powerPercentile": "44%",
+    "popMPH": "36.0",
+    "popPercentile": "43%"
+  },
+  {
+    "paddleName": "Runout S",
+    "brand": "F+B",
+    "price": "$199.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/ROS",
+    "yearReleased": "2025",
+    "shape": "Widebody",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 1.5",
+    "paddleType": "All-Court",
+    "coreThickness": "13",
+    "gripLength": "5.50",
+    "gripSize": "4.10",
+    "weight": "8.18",
+    "swingweight": "110",
+    "swingweightPercentile": "18%",
+    "twistweight": "6.65",
+    "twistweightPercentile": "70%",
+    "balancePoint": "234",
+    "spinRating": "Very High",
+    "spinRPM": "2018",
+    "powerMPH": "55.4",
+    "powerPercentile": "36%",
+    "popMPH": "36.2",
+    "popPercentile": "53%"
   },
   {
     "paddleName": "C45 Dynasty 14",
@@ -2294,14 +2634,14 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "5.94",
-    "twistweightPercentile": "24%",
+    "twistweightPercentile": "22%",
     "balancePoint": "231",
     "spinRating": "Very High",
     "spinRPM": "2068",
     "powerMPH": "56.6",
-    "powerPercentile": "87%",
+    "powerPercentile": "83%",
     "popMPH": "36.4",
-    "popPercentile": "69%"
+    "popPercentile": "64%"
   },
   {
     "paddleName": "C45 Dynasty 16",
@@ -2322,14 +2662,14 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "5.94",
-    "twistweightPercentile": "24%",
+    "twistweightPercentile": "22%",
     "balancePoint": "232",
     "spinRating": "Very High",
     "spinRPM": "2034",
     "powerMPH": "56.4",
-    "powerPercentile": "82%",
+    "powerPercentile": "75%",
     "popMPH": "35.9",
-    "popPercentile": "43%"
+    "popPercentile": "38%"
   },
   {
     "paddleName": "C45 Hybrid",
@@ -2350,18 +2690,19 @@
     "swingweight": "106",
     "swingweightPercentile": "6%",
     "twistweight": "5.60",
-    "twistweightPercentile": "8%",
+    "twistweightPercentile": "7%",
     "balancePoint": "237",
     "spinRating": "High",
     "spinRPM": "1982",
     "powerMPH": "54.8",
-    "powerPercentile": "26%",
+    "powerPercentile": "22%",
     "popMPH": "35.3",
-    "popPercentile": "21%"
+    "popPercentile": "19%"
   },
   {
     "paddleName": "C45 Parris Todd",
     "brand": "Franklin",
+    "price": "$229.99",
     "discountCode": "PBEFFECT",
     "linkToPaddle": "https://a8qh.short.gy/pt",
     "yearReleased": "2025",
@@ -2370,6 +2711,7 @@
     "gritType": "Raw Texture/Peel Ply",
     "buildType": "Gen 3",
     "coreThickness": "13",
+    "gripSize": "4.13",
     "weight": "7.50",
     "swingweight": "104",
     "swingweightPercentile": "3%",
@@ -2396,14 +2738,14 @@
     "swingweight": "105",
     "swingweightPercentile": "4%",
     "twistweight": "6.34",
-    "twistweightPercentile": "48%",
+    "twistweightPercentile": "49%",
     "balancePoint": "242",
     "spinRating": "Very High",
     "spinRPM": "2016",
     "powerMPH": "56.1",
-    "powerPercentile": "71%",
+    "powerPercentile": "63%",
     "popMPH": "36.0",
-    "popPercentile": "48%"
+    "popPercentile": "43%"
   },
   {
     "paddleName": "C45 Tempo 16",
@@ -2424,14 +2766,14 @@
     "swingweight": "105",
     "swingweightPercentile": "4%",
     "twistweight": "6.53",
-    "twistweightPercentile": "60%",
+    "twistweightPercentile": "61%",
     "balancePoint": "243",
     "spinRating": "Very High",
     "spinRPM": "2037",
     "powerMPH": "55.9",
-    "powerPercentile": "61%",
+    "powerPercentile": "54%",
     "popMPH": "35.8",
-    "popPercentile": "41%"
+    "popPercentile": "36%"
   },
   {
     "paddleName": "Dynasty 12 Feather Weight",
@@ -2452,14 +2794,14 @@
     "swingweight": "109",
     "swingweightPercentile": "14%",
     "twistweight": "5.70",
-    "twistweightPercentile": "11%",
+    "twistweightPercentile": "10%",
     "balancePoint": "242",
     "spinRating": "High",
     "spinRPM": "1936",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "35.2",
-    "popPercentile": "20%"
+    "popPercentile": "17%"
   },
   {
     "paddleName": "FS Tour Dynasty (14mm)",
@@ -2485,9 +2827,9 @@
     "spinRating": "High",
     "spinRPM": "1975",
     "powerMPH": "55.6",
-    "powerPercentile": "47%",
+    "powerPercentile": "41%",
     "popMPH": "35.4",
-    "popPercentile": "24%"
+    "popPercentile": "21%"
   },
   {
     "paddleName": "FS Tour Dynasty (16mm)",
@@ -2506,16 +2848,16 @@
     "gripSize": "4.30",
     "weight": "8.69",
     "swingweight": "134",
-    "swingweightPercentile": "99%",
+    "swingweightPercentile": "100%",
     "twistweight": "7.22",
-    "twistweightPercentile": "94%",
+    "twistweightPercentile": "93%",
     "balancePoint": "246",
     "spinRating": "Medium",
     "spinRPM": "1864",
     "powerMPH": "56.1",
-    "powerPercentile": "71%",
+    "powerPercentile": "63%",
     "popMPH": "34.4",
-    "popPercentile": "6%"
+    "popPercentile": "5%"
   },
   {
     "paddleName": "FS Tour Tempo (14mm)",
@@ -2536,14 +2878,14 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "7.23",
-    "twistweightPercentile": "94%",
+    "twistweightPercentile": "93%",
     "balancePoint": "235",
     "spinRating": "Medium",
     "spinRPM": "1920",
     "powerMPH": "55.9",
-    "powerPercentile": "61%",
+    "powerPercentile": "54%",
     "popMPH": "35.2",
-    "popPercentile": "20%"
+    "popPercentile": "17%"
   },
   {
     "paddleName": "FS Tour Tempo (16mm)",
@@ -2562,14 +2904,14 @@
     "gripSize": "4.30",
     "weight": "8.90",
     "swingweight": "123",
-    "swingweightPercentile": "91%",
+    "swingweightPercentile": "92%",
     "twistweight": "7.68",
     "twistweightPercentile": "99%",
     "balancePoint": "234",
     "spinRating": "Medium",
     "spinRPM": "1925",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "33.7",
     "popPercentile": "2%"
   },
@@ -2590,16 +2932,16 @@
     "gripSize": "4.25",
     "weight": "7.70",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "5.80",
-    "twistweightPercentile": "14%",
+    "twistweightPercentile": "13%",
     "balancePoint": "238",
     "spinRating": "Medium",
     "spinRPM": "1889",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "36.2",
-    "popPercentile": "59%"
+    "popPercentile": "53%"
   },
   {
     "paddleName": "Fever",
@@ -2620,14 +2962,42 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "5.66",
-    "twistweightPercentile": "10%",
+    "twistweightPercentile": "9%",
     "balancePoint": "241",
     "spinRating": "Very High",
     "spinRPM": "2035",
     "powerMPH": "56.3",
-    "powerPercentile": "77%",
+    "powerPercentile": "70%",
     "popMPH": "36.1",
-    "popPercentile": "53%"
+    "popPercentile": "48%"
+  },
+  {
+    "paddleName": "Fever 2",
+    "brand": "Friday",
+    "price": "$99.00",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/Fever102",
+    "yearReleased": "2025",
+    "shape": "Widebody",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "All-Court",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "8.03",
+    "swingweight": "112",
+    "swingweightPercentile": "28%",
+    "twistweight": "6.95",
+    "twistweightPercentile": "86%",
+    "balancePoint": "238",
+    "spinRating": "Very High",
+    "spinRPM": "2015",
+    "powerMPH": "55.9",
+    "powerPercentile": "54%",
+    "popMPH": "35.6",
+    "popPercentile": "28%"
   },
   {
     "paddleName": "Original",
@@ -2653,9 +3023,9 @@
     "spinRating": "Medium",
     "spinRPM": "1926",
     "powerMPH": "56.3",
-    "powerPercentile": "77%",
+    "powerPercentile": "70%",
     "popMPH": "35.3",
-    "popPercentile": "21%"
+    "popPercentile": "19%"
   },
   {
     "paddleName": "RCF-Airbender 16",
@@ -2676,13 +3046,13 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "5.80",
-    "twistweightPercentile": "14%",
+    "twistweightPercentile": "13%",
     "spinRating": "Medium",
     "spinRPM": "1896",
     "powerMPH": "54.9",
-    "powerPercentile": "27%",
+    "powerPercentile": "23%",
     "popMPH": "34.9",
-    "popPercentile": "14%"
+    "popPercentile": "12%"
   },
   {
     "paddleName": "RCF-Obsidian 10",
@@ -2703,14 +3073,14 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "5.87",
-    "twistweightPercentile": "18%",
+    "twistweightPercentile": "17%",
     "balancePoint": "243",
     "spinRating": "Low",
     "spinRPM": "1813",
     "powerMPH": "55.0",
-    "powerPercentile": "31%",
+    "powerPercentile": "27%",
     "popMPH": "36.1",
-    "popPercentile": "53%"
+    "popPercentile": "48%"
   },
   {
     "paddleName": "RCF-Obsidian 13",
@@ -2731,14 +3101,14 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "6.18",
-    "twistweightPercentile": "38%",
+    "twistweightPercentile": "37%",
     "balancePoint": "240",
     "spinRating": "Medium",
     "spinRPM": "1893",
     "powerMPH": "54.4",
-    "powerPercentile": "21%",
+    "powerPercentile": "18%",
     "popMPH": "34.8",
-    "popPercentile": "10%"
+    "popPercentile": "9%"
   },
   {
     "paddleName": "RCF-Obsidian 16",
@@ -2757,16 +3127,16 @@
     "gripSize": "4.13",
     "weight": "8.13",
     "swingweight": "120",
-    "swingweightPercentile": "81%",
+    "swingweightPercentile": "82%",
     "twistweight": "6.53",
-    "twistweightPercentile": "60%",
+    "twistweightPercentile": "61%",
     "balancePoint": "244",
     "spinRating": "Medium",
     "spinRPM": "1897",
     "powerMPH": "55.2",
-    "powerPercentile": "36%",
+    "powerPercentile": "31%",
     "popMPH": "34.6",
-    "popPercentile": "7%"
+    "popPercentile": "6%"
   },
   {
     "paddleName": "CX14H Ultimate Power",
@@ -2787,7 +3157,7 @@
     "swingweight": "96",
     "swingweightPercentile": "0%",
     "twistweight": "5.31",
-    "twistweightPercentile": "3%",
+    "twistweightPercentile": "2%",
     "balancePoint": "203"
   },
   {
@@ -2807,16 +3177,16 @@
     "gripSize": "4.13",
     "weight": "7.94",
     "swingweight": "120",
-    "swingweightPercentile": "81%",
+    "swingweightPercentile": "82%",
     "twistweight": "5.65",
-    "twistweightPercentile": "10%",
+    "twistweightPercentile": "9%",
     "balancePoint": "250",
     "spinRating": "Very High",
     "spinRPM": "2047",
     "powerMPH": "56.0",
-    "powerPercentile": "67%",
+    "powerPercentile": "59%",
     "popMPH": "36.1",
-    "popPercentile": "53%"
+    "popPercentile": "48%"
   },
   {
     "paddleName": "GX2 Hyper",
@@ -2837,14 +3207,14 @@
     "swingweight": "109",
     "swingweightPercentile": "14%",
     "twistweight": "6.51",
-    "twistweightPercentile": "59%",
+    "twistweightPercentile": "60%",
     "balancePoint": "240",
     "spinRating": "Very High",
     "spinRPM": "2009",
     "powerMPH": "55.4",
-    "powerPercentile": "41%",
+    "powerPercentile": "36%",
     "popMPH": "36.1",
-    "popPercentile": "53%"
+    "popPercentile": "48%"
   },
   {
     "paddleName": "GX2 Integra XL",
@@ -2865,14 +3235,14 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "5.69",
-    "twistweightPercentile": "11%",
+    "twistweightPercentile": "10%",
     "balancePoint": "248",
     "spinRating": "Very High",
     "spinRPM": "2025",
     "powerMPH": "55.9",
-    "powerPercentile": "61%",
+    "powerPercentile": "54%",
     "popMPH": "35.9",
-    "popPercentile": "43%"
+    "popPercentile": "38%"
   },
   {
     "paddleName": "GX2 Power Elongated",
@@ -2898,9 +3268,9 @@
     "spinRating": "Very High",
     "spinRPM": "2021",
     "powerMPH": "56.9",
-    "powerPercentile": "93%",
+    "powerPercentile": "92%",
     "popMPH": "36.5",
-    "popPercentile": "72%"
+    "popPercentile": "70%"
   },
   {
     "paddleName": "GX2 Power Hybrid",
@@ -2926,9 +3296,9 @@
     "spinRating": "Very High",
     "spinRPM": "2049",
     "powerMPH": "56.8",
-    "powerPercentile": "90%",
+    "powerPercentile": "87%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Pro Control Elongated",
@@ -2947,16 +3317,16 @@
     "gripSize": "4.00",
     "weight": "8.07",
     "swingweight": "123",
-    "swingweightPercentile": "91%",
+    "swingweightPercentile": "92%",
     "twistweight": "5.01",
     "twistweightPercentile": "0%",
     "balancePoint": "247",
     "spinRating": "Medium",
     "spinRPM": "1914",
     "powerMPH": "54.1",
-    "powerPercentile": "16%",
+    "powerPercentile": "14%",
     "popMPH": "34.2",
-    "popPercentile": "4%"
+    "popPercentile": "3%"
   },
   {
     "paddleName": "Pro Control Integra",
@@ -2982,9 +3352,9 @@
     "spinRating": "High",
     "spinRPM": "1954",
     "powerMPH": "53.9",
-    "powerPercentile": "14%",
+    "powerPercentile": "12%",
     "popMPH": "34.8",
-    "popPercentile": "10%"
+    "popPercentile": "9%"
   },
   {
     "paddleName": "Pro Power Elongated",
@@ -3012,7 +3382,7 @@
     "powerMPH": "57.4",
     "powerPercentile": "97%",
     "popMPH": "36.9",
-    "popPercentile": "87%"
+    "popPercentile": "86%"
   },
   {
     "paddleName": "Pro Power Integra",
@@ -3031,16 +3401,16 @@
     "gripSize": "4.00",
     "weight": "7.98",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "4.96",
     "twistweightPercentile": "0%",
     "balancePoint": "241",
     "spinRating": "High",
     "spinRPM": "1951",
     "powerMPH": "56.1",
-    "powerPercentile": "71%",
+    "powerPercentile": "63%",
     "popMPH": "36.1",
-    "popPercentile": "53%"
+    "popPercentile": "48%"
   },
   {
     "paddleName": "Pro Ultimate Elongated 14",
@@ -3066,9 +3436,9 @@
     "spinRating": "High",
     "spinRPM": "1993",
     "powerMPH": "56.8",
-    "powerPercentile": "90%",
+    "powerPercentile": "87%",
     "popMPH": "36.0",
-    "popPercentile": "48%"
+    "popPercentile": "43%"
   },
   {
     "paddleName": "Pro Ultimate Elongated 16",
@@ -3094,9 +3464,9 @@
     "spinRating": "High",
     "spinRPM": "1987",
     "powerMPH": "56.8",
-    "powerPercentile": "90%",
+    "powerPercentile": "87%",
     "popMPH": "35.9",
-    "popPercentile": "43%"
+    "popPercentile": "38%"
   },
   {
     "paddleName": "Pro Ultimate Hyper",
@@ -3117,14 +3487,14 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "6.36",
-    "twistweightPercentile": "50%",
+    "twistweightPercentile": "51%",
     "balancePoint": "248",
     "spinRating": "High",
     "spinRPM": "1986",
     "powerMPH": "56.1",
-    "powerPercentile": "71%",
+    "powerPercentile": "63%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Nightshade E",
@@ -3145,7 +3515,7 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "6.01",
-    "twistweightPercentile": "28%",
+    "twistweightPercentile": "26%",
     "balancePoint": "242"
   },
   {
@@ -3167,14 +3537,98 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "6.15",
-    "twistweightPercentile": "36%",
+    "twistweightPercentile": "35%",
     "balancePoint": "238",
     "spinRating": "Very High",
     "spinRPM": "2007",
     "powerMPH": "54.6",
-    "powerPercentile": "24%",
+    "powerPercentile": "20%",
     "popMPH": "36.2",
-    "popPercentile": "59%"
+    "popPercentile": "53%"
+  },
+  {
+    "paddleName": "Wraith E",
+    "brand": "Gherkin",
+    "price": "$135.00",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/wraithE",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "All-Court",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "8.00",
+    "swingweight": "116",
+    "swingweightPercentile": "56%",
+    "twistweight": "5.96",
+    "twistweightPercentile": "24%",
+    "balancePoint": "241",
+    "spinRating": "Very High",
+    "spinRPM": "2061",
+    "powerMPH": "56.7",
+    "powerPercentile": "86%",
+    "popMPH": "36.2",
+    "popPercentile": "53%"
+  },
+  {
+    "paddleName": "Wraith H",
+    "brand": "Gherkin",
+    "price": "$135.00",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/wraithH",
+    "yearReleased": "2025",
+    "shape": "Hybrid",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "All-Court",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "8.00",
+    "swingweight": "111",
+    "swingweightPercentile": "23%",
+    "twistweight": "6.10",
+    "twistweightPercentile": "30%",
+    "balancePoint": "236",
+    "spinRating": "Very High",
+    "spinRPM": "2035",
+    "powerMPH": "56.7",
+    "powerPercentile": "86%",
+    "popMPH": "36.4",
+    "popPercentile": "64%"
+  },
+  {
+    "paddleName": "Wraith S",
+    "brand": "Gherkin",
+    "price": "$135.00",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/wraithS",
+    "yearReleased": "2025",
+    "shape": "Widebody",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "All-Court",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "7.96",
+    "swingweight": "107",
+    "swingweightPercentile": "7%",
+    "twistweight": "6.50",
+    "twistweightPercentile": "59%",
+    "balancePoint": "232",
+    "spinRating": "Very High",
+    "spinRPM": "2043",
+    "powerMPH": "56.6",
+    "powerPercentile": "83%",
+    "popMPH": "36.5",
+    "popPercentile": "70%"
   },
   {
     "paddleName": "LAZR-16D Solid Foam",
@@ -3202,7 +3656,7 @@
     "powerMPH": "57.1",
     "powerPercentile": "95%",
     "popMPH": "37.0",
-    "popPercentile": "90%"
+    "popPercentile": "89%"
   },
   {
     "paddleName": "LAZR-16S",
@@ -3221,9 +3675,9 @@
     "gripSize": "4.13",
     "weight": "8.00",
     "swingweight": "108",
-    "swingweightPercentile": "11%",
+    "swingweightPercentile": "10%",
     "twistweight": "7.13",
-    "twistweightPercentile": "92%",
+    "twistweightPercentile": "91%",
     "balancePoint": "234"
   },
   {
@@ -3245,8 +3699,36 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "6.41",
-    "twistweightPercentile": "54%",
+    "twistweightPercentile": "55%",
     "balancePoint": "241"
+  },
+  {
+    "paddleName": "LAZR-16X Full Foam",
+    "brand": "Gruvn",
+    "price": "$169.00",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/lfm",
+    "yearReleased": "2026",
+    "shape": "Elongated",
+    "faceMaterial": "Kevlar",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "Power",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.13",
+    "weight": "7.98",
+    "swingweight": "118",
+    "swingweightPercentile": "70%",
+    "twistweight": "6.34",
+    "twistweightPercentile": "49%",
+    "balancePoint": "245",
+    "spinRating": "Very High",
+    "spinRPM": "2023",
+    "powerMPH": "56.6",
+    "powerPercentile": "83%",
+    "popMPH": "36.5",
+    "popPercentile": "70%"
   },
   {
     "paddleName": "MUVN-13S",
@@ -3271,6 +3753,34 @@
     "balancePoint": "224"
   },
   {
+    "paddleName": "MUVN-16HD Full Foam",
+    "brand": "Gruvn",
+    "price": "$169.00",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/mff",
+    "yearReleased": "2026",
+    "shape": "Hybrid",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "Power",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.13",
+    "weight": "8.20",
+    "swingweight": "115",
+    "swingweightPercentile": "48%",
+    "twistweight": "6.67",
+    "twistweightPercentile": "71%",
+    "balancePoint": "240",
+    "spinRating": "Very High",
+    "spinRPM": "2031",
+    "powerMPH": "55.3",
+    "powerPercentile": "34%",
+    "popMPH": "35.8",
+    "popPercentile": "36%"
+  },
+  {
     "paddleName": "Boom Tour EX",
     "brand": "Head",
     "price": "$200.00",
@@ -3289,12 +3799,12 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "5.46",
-    "twistweightPercentile": "5%",
+    "twistweightPercentile": "4%",
     "balancePoint": "244",
     "spinRating": "Very High",
     "spinRPM": "2074",
     "powerMPH": "56.5",
-    "powerPercentile": "84%",
+    "powerPercentile": "79%",
     "popMPH": "38.2",
     "popPercentile": "100%"
   },
@@ -3317,7 +3827,7 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "5.91",
-    "twistweightPercentile": "22%",
+    "twistweightPercentile": "21%",
     "balancePoint": "236"
   },
   {
@@ -3339,7 +3849,7 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "5.56",
-    "twistweightPercentile": "7%",
+    "twistweightPercentile": "6%",
     "balancePoint": "236"
   },
   {
@@ -3361,14 +3871,14 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "5.85",
-    "twistweightPercentile": "18%",
+    "twistweightPercentile": "17%",
     "balancePoint": "240",
     "spinRating": "High",
     "spinRPM": "1982",
     "powerMPH": "55.3",
-    "powerPercentile": "39%",
+    "powerPercentile": "34%",
     "popMPH": "35.5",
-    "popPercentile": "28%"
+    "popPercentile": "24%"
   },
   {
     "paddleName": "Aero S (16mm)",
@@ -3411,14 +3921,14 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "5.70",
-    "twistweightPercentile": "11%",
+    "twistweightPercentile": "10%",
     "balancePoint": "241",
     "spinRating": "High",
     "spinRPM": "1968",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "36.3",
-    "popPercentile": "65%"
+    "popPercentile": "60%"
   },
   {
     "paddleName": "Aero T (16mm)",
@@ -3439,14 +3949,14 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "5.69",
-    "twistweightPercentile": "11%",
+    "twistweightPercentile": "10%",
     "balancePoint": "238",
     "spinRating": "Very High",
     "spinRPM": "2016",
     "powerMPH": "55.9",
-    "powerPercentile": "61%",
+    "powerPercentile": "54%",
     "popMPH": "36.2",
-    "popPercentile": "59%"
+    "popPercentile": "53%"
   },
   {
     "paddleName": "Aero X (14mm)",
@@ -3465,16 +3975,16 @@
     "gripSize": "4.25",
     "weight": "7.80",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "5.83",
-    "twistweightPercentile": "17%",
+    "twistweightPercentile": "15%",
     "balancePoint": "239",
     "spinRating": "High",
     "spinRPM": "1974",
     "powerMPH": "55.2",
-    "powerPercentile": "36%",
+    "powerPercentile": "31%",
     "popMPH": "36.2",
-    "popPercentile": "59%"
+    "popPercentile": "53%"
   },
   {
     "paddleName": "Aero X (16mm)",
@@ -3495,14 +4005,14 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "5.82",
-    "twistweightPercentile": "16%",
+    "twistweightPercentile": "14%",
     "balancePoint": "238",
     "spinRating": "High",
     "spinRPM": "1974",
     "powerMPH": "55.8",
-    "powerPercentile": "57%",
+    "powerPercentile": "50%",
     "popMPH": "36.1",
-    "popPercentile": "53%"
+    "popPercentile": "48%"
   },
   {
     "paddleName": "Arma S",
@@ -3517,9 +4027,10 @@
     "buildType": "Gen 3",
     "paddleType": "Power",
     "coreThickness": "14",
+    "gripSize": "4.25",
     "weight": "8.10",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "7.11",
     "twistweightPercentile": "91%",
     "balancePoint": "236"
@@ -3538,11 +4049,12 @@
     "paddleType": "Power",
     "coreThickness": "14",
     "gripLength": "5.50",
+    "gripSize": "4.25",
     "weight": "8.00",
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "6.23",
-    "twistweightPercentile": "41%",
+    "twistweightPercentile": "40%",
     "balancePoint": "242"
   },
   {
@@ -3558,6 +4070,7 @@
     "buildType": "Gen 3",
     "paddleType": "Power",
     "coreThickness": "14",
+    "gripSize": "4.25",
     "weight": "8.20",
     "swingweight": "118",
     "swingweightPercentile": "70%",
@@ -3582,9 +4095,9 @@
     "gripSize": "4.25",
     "weight": "8.17",
     "swingweight": "123",
-    "swingweightPercentile": "91%",
+    "swingweightPercentile": "92%",
     "twistweight": "6.10",
-    "twistweightPercentile": "31%",
+    "twistweightPercentile": "30%",
     "balancePoint": "245"
   },
   {
@@ -3628,7 +4141,7 @@
     "swingweight": "122",
     "swingweightPercentile": "88%",
     "twistweight": "6.68",
-    "twistweightPercentile": "72%",
+    "twistweightPercentile": "73%",
     "balancePoint": "241"
   },
   {
@@ -3650,36 +4163,14 @@
     "swingweight": "111",
     "swingweightPercentile": "23%",
     "twistweight": "6.70",
-    "twistweightPercentile": "73%",
-    "balancePoint": "235"
-  },
-  {
-    "paddleName": "J2FC+",
-    "brand": "Honolulu Pickleball",
-    "price": "$195.00",
-    "discountCode": "PBEFFECT",
-    "linkToPaddle": "https://a8qh.short.gy/NFC+",
-    "yearReleased": "2025",
-    "shape": "Hybrid",
-    "faceMaterial": "Carbon",
-    "gritType": "Raw Texture/Peel Ply",
-    "buildType": "Gen 4",
-    "paddleType": "Power",
-    "coreThickness": "16",
-    "gripLength": "5.30",
-    "gripSize": "4.13",
-    "weight": "8.00",
-    "swingweight": "111",
-    "swingweightPercentile": "23%",
-    "twistweight": "6.70",
-    "twistweightPercentile": "73%",
+    "twistweightPercentile": "74%",
     "balancePoint": "235",
     "spinRating": "Very High",
     "spinRPM": "2002",
     "powerMPH": "56.3",
-    "powerPercentile": "77%",
+    "powerPercentile": "70%",
     "popMPH": "36.5",
-    "popPercentile": "72%"
+    "popPercentile": "70%"
   },
   {
     "paddleName": "J2NF",
@@ -3698,15 +4189,15 @@
     "gripSize": "4.13",
     "weight": "7.95",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "6.67",
-    "twistweightPercentile": "70%",
+    "twistweightPercentile": "71%",
     "balancePoint": "236",
     "spinRating": "Very High",
     "spinRPM": "2054",
     "powerMPH": "56.1",
-    "powerPercentile": "71%",
-    "popMPH": "36.1",
+    "powerPercentile": "63%",
+    "popMPH": "36.2",
     "popPercentile": "53%"
   },
   {
@@ -3733,9 +4224,9 @@
     "spinRating": "Very High",
     "spinRPM": "2060",
     "powerMPH": "56.2",
-    "powerPercentile": "75%",
+    "powerPercentile": "67%",
     "popMPH": "36.3",
-    "popPercentile": "65%"
+    "popPercentile": "60%"
   },
   {
     "paddleName": "J2NFK",
@@ -3754,16 +4245,16 @@
     "gripSize": "4.13",
     "weight": "8.10",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "6.81",
     "twistweightPercentile": "80%",
     "balancePoint": "236",
     "spinRating": "Very High",
     "spinRPM": "2041",
     "powerMPH": "56.4",
-    "powerPercentile": "82%",
+    "powerPercentile": "75%",
     "popMPH": "36.3",
-    "popPercentile": "65%"
+    "popPercentile": "60%"
   },
   {
     "paddleName": "J2NFT",
@@ -3782,16 +4273,16 @@
     "gripSize": "4.13",
     "weight": "8.30",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.89",
     "twistweightPercentile": "84%",
     "balancePoint": "236",
     "spinRating": "Very High",
     "spinRPM": "2084",
     "powerMPH": "56.3",
-    "powerPercentile": "77%",
+    "powerPercentile": "70%",
     "popMPH": "36.0",
-    "popPercentile": "48%"
+    "popPercentile": "43%"
   },
   {
     "paddleName": "J3NF",
@@ -3810,16 +4301,16 @@
     "gripSize": "4.13",
     "weight": "7.98",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "6.70",
-    "twistweightPercentile": "73%",
+    "twistweightPercentile": "74%",
     "balancePoint": "235",
     "spinRating": "Very High",
     "spinRPM": "2073",
     "powerMPH": "56.3",
-    "powerPercentile": "77%",
+    "powerPercentile": "70%",
     "popMPH": "36.5",
-    "popPercentile": "72%"
+    "popPercentile": "70%"
   },
   {
     "paddleName": "J6FC+",
@@ -3862,8 +4353,14 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "6.57",
-    "twistweightPercentile": "63%",
-    "balancePoint": "240"
+    "twistweightPercentile": "64%",
+    "balancePoint": "240",
+    "spinRating": "Very High",
+    "spinRPM": "2050",
+    "powerMPH": "56.3",
+    "powerPercentile": "70%",
+    "popMPH": "36.4",
+    "popPercentile": "64%"
   },
   {
     "paddleName": "J7NF",
@@ -3884,7 +4381,7 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "5.91",
-    "twistweightPercentile": "22%",
+    "twistweightPercentile": "21%",
     "balancePoint": "239"
   },
   {
@@ -3904,7 +4401,7 @@
     "gripSize": "4.13",
     "weight": "7.95",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "6.81",
     "twistweightPercentile": "80%",
     "balancePoint": "236"
@@ -3928,14 +4425,14 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "7.10",
-    "twistweightPercentile": "91%",
+    "twistweightPercentile": "90%",
     "balancePoint": "237",
     "spinRating": "High",
     "spinRPM": "1948",
     "powerMPH": "55.1",
-    "powerPercentile": "34%",
+    "powerPercentile": "29%",
     "popMPH": "36.4",
-    "popPercentile": "69%"
+    "popPercentile": "64%"
   },
   {
     "paddleName": "Sword & Shield J2K+",
@@ -3956,14 +4453,14 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "7.10",
-    "twistweightPercentile": "91%",
+    "twistweightPercentile": "90%",
     "balancePoint": "238",
     "spinRating": "High",
     "spinRPM": "1983",
     "powerMPH": "55.0",
-    "powerPercentile": "31%",
+    "powerPercentile": "27%",
     "popMPH": "36.0",
-    "popPercentile": "48%"
+    "popPercentile": "43%"
   },
   {
     "paddleName": "Sword & Shield J2Ti",
@@ -4028,7 +4525,7 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "7.22",
-    "twistweightPercentile": "94%",
+    "twistweightPercentile": "93%",
     "balancePoint": "239"
   },
   {
@@ -4048,9 +4545,9 @@
     "gripSize": "4.13",
     "weight": "8.25",
     "swingweight": "123",
-    "swingweightPercentile": "91%",
+    "swingweightPercentile": "92%",
     "twistweight": "6.36",
-    "twistweightPercentile": "50%",
+    "twistweightPercentile": "51%",
     "balancePoint": "242"
   },
   {
@@ -4072,7 +4569,7 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "6.13",
-    "twistweightPercentile": "35%",
+    "twistweightPercentile": "33%",
     "balancePoint": "241"
   },
   {
@@ -4094,14 +4591,14 @@
     "swingweight": "125",
     "swingweightPercentile": "96%",
     "twistweight": "6.43",
-    "twistweightPercentile": "54%",
+    "twistweightPercentile": "55%",
     "balancePoint": "251",
     "spinRating": "Medium",
     "spinRPM": "1854",
     "powerMPH": "55.5",
-    "powerPercentile": "44%",
+    "powerPercentile": "39%",
     "popMPH": "35.4",
-    "popPercentile": "24%"
+    "popPercentile": "21%"
   },
   {
     "paddleName": "Viva Pro Gen 3",
@@ -4120,9 +4617,9 @@
     "gripSize": "4.13",
     "weight": "7.76",
     "swingweight": "119",
-    "swingweightPercentile": "78%",
+    "swingweightPercentile": "77%",
     "twistweight": "6.16",
-    "twistweightPercentile": "37%",
+    "twistweightPercentile": "36%",
     "balancePoint": "250"
   },
   {
@@ -4166,12 +4663,12 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "6.02",
-    "twistweightPercentile": "28%",
+    "twistweightPercentile": "27%",
     "balancePoint": "240",
     "spinRating": "Very High",
     "spinRPM": "2026",
     "powerMPH": "56.4",
-    "powerPercentile": "82%",
+    "powerPercentile": "75%",
     "popMPH": "36.8",
     "popPercentile": "84%"
   },
@@ -4193,7 +4690,7 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "6.14",
-    "twistweightPercentile": "35%",
+    "twistweightPercentile": "34%",
     "balancePoint": "238",
     "spinRating": "Very High",
     "spinRPM": "2014"
@@ -4217,14 +4714,14 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "6.01",
-    "twistweightPercentile": "28%",
+    "twistweightPercentile": "26%",
     "balancePoint": "245",
     "spinRating": "High",
     "spinRPM": "1967",
     "powerMPH": "55.9",
-    "powerPercentile": "61%",
+    "powerPercentile": "54%",
     "popMPH": "36.2",
-    "popPercentile": "59%"
+    "popPercentile": "53%"
   },
   {
     "paddleName": "Hyperion 3S (16mm)",
@@ -4245,14 +4742,14 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "6.12",
-    "twistweightPercentile": "34%",
+    "twistweightPercentile": "32%",
     "balancePoint": "244",
     "spinRating": "High",
     "spinRPM": "1989",
     "powerMPH": "57.2",
     "powerPercentile": "96%",
     "popMPH": "36.9",
-    "popPercentile": "87%"
+    "popPercentile": "86%"
   },
   {
     "paddleName": "Magnus 3S (14mm)",
@@ -4273,7 +4770,7 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "6.13",
-    "twistweightPercentile": "35%",
+    "twistweightPercentile": "33%",
     "balancePoint": "240"
   },
   {
@@ -4319,12 +4816,12 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "6.10",
-    "twistweightPercentile": "31%",
+    "twistweightPercentile": "30%",
     "balancePoint": "244",
     "spinRating": "Very High",
     "spinRPM": "2014",
     "powerMPH": "57.8",
-    "powerPercentile": "98%",
+    "powerPercentile": "99%",
     "popMPH": "37.2",
     "popPercentile": "95%"
   },
@@ -4345,9 +4842,9 @@
     "gripSize": "4.13",
     "weight": "7.56",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "5.77",
-    "twistweightPercentile": "13%",
+    "twistweightPercentile": "12%",
     "balancePoint": "243",
     "spinRating": "Very High",
     "spinRPM": "2044",
@@ -4375,7 +4872,7 @@
     "swingweight": "121",
     "swingweightPercentile": "85%",
     "twistweight": "5.77",
-    "twistweightPercentile": "13%",
+    "twistweightPercentile": "12%",
     "balancePoint": "247"
   },
   {
@@ -4397,14 +4894,14 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "5.87",
-    "twistweightPercentile": "18%",
+    "twistweightPercentile": "17%",
     "balancePoint": "244",
     "spinRating": "Low",
     "spinRPM": "1818",
     "powerMPH": "52.8",
     "powerPercentile": "2%",
     "popMPH": "34.8",
-    "popPercentile": "10%"
+    "popPercentile": "9%"
   },
   {
     "paddleName": "Perseus 3S (14mm)",
@@ -4425,12 +4922,12 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "6.00",
-    "twistweightPercentile": "27%",
+    "twistweightPercentile": "25%",
     "balancePoint": "244",
     "powerMPH": "56.4",
-    "powerPercentile": "82%",
+    "powerPercentile": "75%",
     "popMPH": "37.0",
-    "popPercentile": "90%"
+    "popPercentile": "89%"
   },
   {
     "paddleName": "Perseus Pro IV (14mm)",
@@ -4451,12 +4948,12 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "6.08",
-    "twistweightPercentile": "31%",
+    "twistweightPercentile": "30%",
     "balancePoint": "241",
     "spinRating": "High",
     "spinRPM": "1964",
     "powerMPH": "56.1",
-    "powerPercentile": "71%",
+    "powerPercentile": "63%",
     "popMPH": "37.1",
     "popPercentile": "93%"
   },
@@ -4484,9 +4981,9 @@
     "spinRating": "High",
     "spinRPM": "1971",
     "powerMPH": "56.5",
-    "powerPercentile": "84%",
+    "powerPercentile": "79%",
     "popMPH": "36.9",
-    "popPercentile": "87%"
+    "popPercentile": "86%"
   },
   {
     "paddleName": "Scorpeus (14 mm)",
@@ -4505,7 +5002,7 @@
     "gripSize": "4.13",
     "weight": "7.65",
     "swingweight": "108",
-    "swingweightPercentile": "11%",
+    "swingweightPercentile": "10%",
     "twistweight": "6.45",
     "twistweightPercentile": "56%",
     "balancePoint": "238",
@@ -4514,7 +5011,7 @@
     "powerMPH": "52.8",
     "powerPercentile": "2%",
     "popMPH": "35.6",
-    "popPercentile": "33%"
+    "popPercentile": "28%"
   },
   {
     "paddleName": "Scorpeus (16 mm)",
@@ -4535,14 +5032,14 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "6.86",
-    "twistweightPercentile": "83%",
+    "twistweightPercentile": "82%",
     "balancePoint": "238",
     "spinRating": "Low",
     "spinRPM": "1845",
     "powerMPH": "52.6",
     "powerPercentile": "2%",
     "popMPH": "34.6",
-    "popPercentile": "7%"
+    "popPercentile": "6%"
   },
   {
     "paddleName": "Scorpeus 3S (14mm)",
@@ -4568,9 +5065,9 @@
     "spinRating": "Very High",
     "spinRPM": "2068",
     "powerMPH": "56.0",
-    "powerPercentile": "67%",
+    "powerPercentile": "59%",
     "popMPH": "36.5",
-    "popPercentile": "72%"
+    "popPercentile": "70%"
   },
   {
     "paddleName": "Scorpeus 3S (16mm)",
@@ -4591,12 +5088,12 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "7.23",
-    "twistweightPercentile": "94%",
+    "twistweightPercentile": "93%",
     "balancePoint": "241",
     "spinRating": "Very High",
     "spinRPM": "2011",
     "powerMPH": "56.2",
-    "powerPercentile": "75%",
+    "powerPercentile": "67%",
     "popMPH": "37.2",
     "popPercentile": "95%"
   },
@@ -4619,14 +5116,14 @@
     "swingweight": "111",
     "swingweightPercentile": "23%",
     "twistweight": "7.04",
-    "twistweightPercentile": "89%",
+    "twistweightPercentile": "88%",
     "balancePoint": "237",
     "spinRating": "Very High",
     "spinRPM": "2002",
     "powerMPH": "56.7",
-    "powerPercentile": "89%",
+    "powerPercentile": "86%",
     "popMPH": "36.4",
-    "popPercentile": "69%"
+    "popPercentile": "64%"
   },
   {
     "paddleName": "Scorpeus Pro IV (16 mm)",
@@ -4647,14 +5144,14 @@
     "swingweight": "111",
     "swingweightPercentile": "23%",
     "twistweight": "7.09",
-    "twistweightPercentile": "90%",
+    "twistweightPercentile": "89%",
     "balancePoint": "236",
     "spinRating": "Very High",
     "spinRPM": "2027",
     "powerMPH": "56.6",
-    "powerPercentile": "87%",
+    "powerPercentile": "83%",
     "popMPH": "36.7",
-    "popPercentile": "83%"
+    "popPercentile": "82%"
   },
   {
     "paddleName": "Hyperion 3S (16mm)",
@@ -4675,14 +5172,14 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "6.10",
-    "twistweightPercentile": "31%",
+    "twistweightPercentile": "30%",
     "balancePoint": "243",
     "spinRating": "Very High",
     "spinRPM": "2010",
     "powerMPH": "56.6",
-    "powerPercentile": "87%",
+    "powerPercentile": "83%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Perseus 3S (16mm)",
@@ -4703,14 +5200,98 @@
     "swingweight": "121",
     "swingweightPercentile": "85%",
     "twistweight": "6.27",
-    "twistweightPercentile": "44%",
+    "twistweightPercentile": "43%",
     "balancePoint": "245",
     "spinRating": "High",
     "spinRPM": "1983",
     "powerMPH": "56.4",
-    "powerPercentile": "82%",
+    "powerPercentile": "75%",
     "popMPH": "36.7",
-    "popPercentile": "83%"
+    "popPercentile": "82%"
+  },
+  {
+    "paddleName": "Pro Cannon",
+    "brand": "Luzz",
+    "price": "$109.00",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/cannon",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "Power",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "7.90",
+    "swingweight": "119",
+    "swingweightPercentile": "77%",
+    "twistweight": "6.21",
+    "twistweightPercentile": "39%",
+    "balancePoint": "244",
+    "spinRating": "Very High",
+    "spinRPM": "2076",
+    "powerMPH": "56.8",
+    "powerPercentile": "87%",
+    "popMPH": "36.6",
+    "popPercentile": "74%"
+  },
+  {
+    "paddleName": "Pro-4 Inferno",
+    "brand": "Luzz",
+    "price": "$229.00",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/inferno",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "Power",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "7.88",
+    "swingweight": "119",
+    "swingweightPercentile": "77%",
+    "twistweight": "6.17",
+    "twistweightPercentile": "36%",
+    "balancePoint": "244",
+    "spinRating": "Very High",
+    "spinRPM": "2027",
+    "powerMPH": "57.1",
+    "powerPercentile": "95%",
+    "popMPH": "37.1",
+    "popPercentile": "93%"
+  },
+  {
+    "paddleName": "Tornazo",
+    "brand": "Luzz",
+    "price": "$229.00",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/tornazo",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "Power",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "7.90",
+    "swingweight": "118",
+    "swingweightPercentile": "70%",
+    "twistweight": "6.05",
+    "twistweightPercentile": "28%",
+    "balancePoint": "245",
+    "spinRating": "Very High",
+    "spinRPM": "2111",
+    "powerMPH": "56.9",
+    "powerPercentile": "92%",
+    "popMPH": "36.9",
+    "popPercentile": "86%"
   },
   {
     "paddleName": "One",
@@ -4729,9 +5310,9 @@
     "gripSize": "4.13",
     "weight": "8.18",
     "swingweight": "119",
-    "swingweightPercentile": "78%",
+    "swingweightPercentile": "77%",
     "twistweight": "6.57",
-    "twistweightPercentile": "63%",
+    "twistweightPercentile": "64%",
     "balancePoint": "242"
   },
   {
@@ -4753,7 +5334,7 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "6.46",
-    "twistweightPercentile": "56%",
+    "twistweightPercentile": "57%",
     "balancePoint": "244"
   },
   {
@@ -4773,7 +5354,7 @@
     "gripSize": "4.13",
     "weight": "8.24",
     "swingweight": "123",
-    "swingweightPercentile": "91%",
+    "swingweightPercentile": "92%",
     "twistweight": "6.66",
     "twistweightPercentile": "70%",
     "balancePoint": "245"
@@ -4797,14 +5378,14 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "6.57",
-    "twistweightPercentile": "63%",
+    "twistweightPercentile": "64%",
     "balancePoint": "239",
     "spinRating": "Medium",
     "spinRPM": "1893",
     "powerMPH": "55.2",
-    "powerPercentile": "36%",
+    "powerPercentile": "31%",
     "popMPH": "36.1",
-    "popPercentile": "53%"
+    "popPercentile": "48%"
   },
   {
     "paddleName": "Havik-15 Pro",
@@ -4825,14 +5406,14 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "6.46",
-    "twistweightPercentile": "56%",
+    "twistweightPercentile": "57%",
     "balancePoint": "240",
     "spinRating": "Medium",
     "spinRPM": "1889",
     "powerMPH": "55.5",
-    "powerPercentile": "44%",
+    "powerPercentile": "39%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Flare Prime X",
@@ -4845,6 +5426,7 @@
     "faceMaterial": "Carbon",
     "gritType": "Raw Texture/Peel Ply",
     "buildType": "Gen 2",
+    "paddleType": "All-Court",
     "coreThickness": "14",
     "gripLength": "5.50",
     "gripSize": "4.13",
@@ -4857,9 +5439,9 @@
     "spinRating": "Very High",
     "spinRPM": "2003",
     "powerMPH": "55.6",
-    "powerPercentile": "47%",
+    "powerPercentile": "41%",
     "popMPH": "35.6",
-    "popPercentile": "33%"
+    "popPercentile": "28%"
   },
   {
     "paddleName": "Flare Titanium 16mm",
@@ -4878,16 +5460,16 @@
     "gripSize": "4.13",
     "weight": "8.15",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "7.06",
     "twistweightPercentile": "89%",
     "balancePoint": "239",
     "spinRating": "Very High",
     "spinRPM": "2015",
     "powerMPH": "55.2",
-    "powerPercentile": "36%",
+    "powerPercentile": "31%",
     "popMPH": "35.5",
-    "popPercentile": "28%"
+    "popPercentile": "24%"
   },
   {
     "paddleName": "Flow",
@@ -4913,9 +5495,9 @@
     "spinRating": "Medium",
     "spinRPM": "1914",
     "powerMPH": "54.2",
-    "powerPercentile": "18%",
+    "powerPercentile": "16%",
     "popMPH": "34.7",
-    "popPercentile": "9%"
+    "popPercentile": "8%"
   },
   {
     "paddleName": "Flow Prime X",
@@ -4931,11 +5513,12 @@
     "paddleType": "All-Court",
     "coreThickness": "16",
     "gripLength": "5.50",
+    "gripSize": "4.13",
     "weight": "7.80",
     "swingweight": "111",
     "swingweightPercentile": "23%",
     "twistweight": "6.11",
-    "twistweightPercentile": "33%",
+    "twistweightPercentile": "32%",
     "balancePoint": "240"
   },
   {
@@ -4957,14 +5540,14 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "6.35",
-    "twistweightPercentile": "49%",
+    "twistweightPercentile": "50%",
     "balancePoint": "238",
     "spinRating": "Low",
     "spinRPM": "1814",
     "powerMPH": "54.3",
-    "powerPercentile": "19%",
+    "powerPercentile": "17%",
     "popMPH": "34.8",
-    "popPercentile": "10%"
+    "popPercentile": "9%"
   },
   {
     "paddleName": "Bantam ALW-C 12.7",
@@ -4985,12 +5568,12 @@
     "swingweight": "102",
     "swingweightPercentile": "1%",
     "twistweight": "6.54",
-    "twistweightPercentile": "61%",
+    "twistweightPercentile": "62%",
     "balancePoint": "234",
     "spinRating": "Very High",
     "spinRPM": "2083",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "37.1",
     "popPercentile": "93%"
   },
@@ -5013,14 +5596,14 @@
     "swingweight": "105",
     "swingweightPercentile": "4%",
     "twistweight": "6.50",
-    "twistweightPercentile": "58%",
+    "twistweightPercentile": "59%",
     "balancePoint": "237",
     "spinRating": "Very High",
     "spinRPM": "2056",
     "powerMPH": "55.4",
-    "powerPercentile": "41%",
+    "powerPercentile": "36%",
     "popMPH": "36.3",
-    "popPercentile": "65%"
+    "popPercentile": "60%"
   },
   {
     "paddleName": "Bantam ESQ-C 12.7",
@@ -5046,7 +5629,7 @@
     "spinRating": "Very High",
     "spinRPM": "2071",
     "powerMPH": "55.9",
-    "powerPercentile": "61%",
+    "powerPercentile": "54%",
     "popMPH": "37.2",
     "popPercentile": "95%"
   },
@@ -5074,9 +5657,9 @@
     "spinRating": "Very High",
     "spinRPM": "2059",
     "powerMPH": "55.6",
-    "powerPercentile": "47%",
+    "powerPercentile": "41%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Bantam GTO-C 12.7",
@@ -5097,7 +5680,7 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "7.55",
-    "twistweightPercentile": "98%",
+    "twistweightPercentile": "99%",
     "balancePoint": "247"
   },
   {
@@ -5139,14 +5722,14 @@
     "gripSize": "4.25",
     "weight": "7.78",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.60",
     "twistweightPercentile": "66%",
     "balancePoint": "243",
     "spinRating": "Medium",
     "spinRPM": "1903",
     "powerMPH": "56.6",
-    "powerPercentile": "87%",
+    "powerPercentile": "83%",
     "popMPH": "37.7",
     "popPercentile": "99%"
   },
@@ -5169,12 +5752,12 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "6.48",
-    "twistweightPercentile": "57%",
+    "twistweightPercentile": "58%",
     "balancePoint": "245",
     "spinRating": "Medium",
     "spinRPM": "1910",
     "powerMPH": "56.8",
-    "powerPercentile": "90%",
+    "powerPercentile": "87%",
     "popMPH": "37.4",
     "popPercentile": "98%"
   },
@@ -5197,7 +5780,7 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "6.97",
-    "twistweightPercentile": "87%",
+    "twistweightPercentile": "86%",
     "balancePoint": "247"
   },
   {
@@ -5217,7 +5800,7 @@
     "gripSize": "4.25",
     "weight": "8.06",
     "swingweight": "123",
-    "swingweightPercentile": "91%",
+    "swingweightPercentile": "92%",
     "twistweight": "7.35",
     "twistweightPercentile": "96%",
     "balancePoint": "250"
@@ -5239,16 +5822,100 @@
     "gripSize": "4.25",
     "weight": "7.92",
     "swingweight": "108",
-    "swingweightPercentile": "11%",
+    "swingweightPercentile": "10%",
     "twistweight": "6.98",
     "twistweightPercentile": "87%",
     "balancePoint": "236",
     "spinRating": "Low",
     "spinRPM": "1835",
     "powerMPH": "54.5",
-    "powerPercentile": "22%",
+    "powerPercentile": "19%",
     "popMPH": "35.7",
-    "popPercentile": "37%"
+    "popPercentile": "33%"
+  },
+  {
+    "paddleName": "Charm S",
+    "brand": "Pickleball Apes",
+    "price": "$199.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/charm-s",
+    "yearReleased": "2025",
+    "shape": "Hybrid",
+    "faceMaterial": "Kevlar",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "All-Court",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "8.10",
+    "swingweight": "115",
+    "swingweightPercentile": "48%",
+    "twistweight": "6.32",
+    "twistweightPercentile": "48%",
+    "balancePoint": "240",
+    "spinRating": "Very High",
+    "spinRPM": "2051",
+    "powerMPH": "56.5",
+    "powerPercentile": "79%",
+    "popMPH": "36.3",
+    "popPercentile": "60%"
+  },
+  {
+    "paddleName": "Charm V",
+    "brand": "Pickleball Apes",
+    "price": "$199.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/charm-v",
+    "yearReleased": "2025",
+    "shape": "Widebody",
+    "faceMaterial": "Kevlar",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "All-Court",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "8.14",
+    "swingweight": "111",
+    "swingweightPercentile": "23%",
+    "twistweight": "7.36",
+    "twistweightPercentile": "97%",
+    "balancePoint": "236",
+    "spinRating": "Very High",
+    "spinRPM": "2012",
+    "powerMPH": "56.5",
+    "powerPercentile": "79%",
+    "popMPH": "36.4",
+    "popPercentile": "64%"
+  },
+  {
+    "paddleName": "Charm X",
+    "brand": "Pickleball Apes",
+    "price": "$199.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/charm-x",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Kevlar",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "All-Court",
+    "coreThickness": "16",
+    "gripLength": "5.75",
+    "gripSize": "4.25",
+    "weight": "8.18",
+    "swingweight": "124",
+    "swingweightPercentile": "94%",
+    "twistweight": "6.30",
+    "twistweightPercentile": "46%",
+    "balancePoint": "246",
+    "spinRating": "Very High",
+    "spinRPM": "2075",
+    "powerMPH": "56.3",
+    "powerPercentile": "70%",
+    "popMPH": "36.5",
+    "popPercentile": "70%"
   },
   {
     "paddleName": "Harmony S",
@@ -5267,9 +5934,9 @@
     "gripSize": "4.25",
     "weight": "7.90",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.25",
-    "twistweightPercentile": "43%",
+    "twistweightPercentile": "42%",
     "balancePoint": "240"
   },
   {
@@ -5291,7 +5958,7 @@
     "swingweight": "109",
     "swingweightPercentile": "14%",
     "twistweight": "7.23",
-    "twistweightPercentile": "94%",
+    "twistweightPercentile": "93%",
     "balancePoint": "234"
   },
   {
@@ -5311,16 +5978,16 @@
     "gripSize": "4.25",
     "weight": "8.00",
     "swingweight": "120",
-    "swingweightPercentile": "81%",
+    "swingweightPercentile": "82%",
     "twistweight": "6.12",
-    "twistweightPercentile": "34%",
+    "twistweightPercentile": "32%",
     "balancePoint": "245",
     "spinRating": "Very High",
     "spinRPM": "2035",
     "powerMPH": "53.7",
-    "powerPercentile": "12%",
+    "powerPercentile": "11%",
     "popMPH": "35.5",
-    "popPercentile": "28%"
+    "popPercentile": "24%"
   },
   {
     "paddleName": "Pro Line Energy",
@@ -5341,10 +6008,10 @@
     "swingweight": "127",
     "swingweightPercentile": "98%",
     "twistweight": "5.89",
-    "twistweightPercentile": "20%",
+    "twistweightPercentile": "18%",
     "balancePoint": "248",
     "powerMPH": "54.9",
-    "powerPercentile": "27%",
+    "powerPercentile": "23%",
     "popMPH": "0.0"
   },
   {
@@ -5391,14 +6058,14 @@
     "swingweight": "127",
     "swingweightPercentile": "98%",
     "twistweight": "5.89",
-    "twistweightPercentile": "20%",
+    "twistweightPercentile": "18%",
     "balancePoint": "247",
     "spinRating": "High",
     "spinRPM": "1986",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "35.9",
-    "popPercentile": "43%"
+    "popPercentile": "38%"
   },
   {
     "paddleName": "Pulse S",
@@ -5417,16 +6084,16 @@
     "gripSize": "4.25",
     "weight": "7.98",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.24",
-    "twistweightPercentile": "42%",
+    "twistweightPercentile": "41%",
     "balancePoint": "240",
     "spinRating": "High",
     "spinRPM": "1971",
     "powerMPH": "54.9",
-    "powerPercentile": "27%",
+    "powerPercentile": "23%",
     "popMPH": "36.2",
-    "popPercentile": "59%"
+    "popPercentile": "53%"
   },
   {
     "paddleName": "Pulse V",
@@ -5445,16 +6112,16 @@
     "gripSize": "4.25",
     "weight": "8.13",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "7.37",
     "twistweightPercentile": "97%",
     "balancePoint": "237",
     "spinRating": "High",
     "spinRPM": "1978",
     "powerMPH": "54.7",
-    "powerPercentile": "24%",
+    "powerPercentile": "21%",
     "popMPH": "36.1",
-    "popPercentile": "53%"
+    "popPercentile": "48%"
   },
   {
     "paddleName": "Pulse X",
@@ -5470,11 +6137,12 @@
     "paddleType": "All-Court",
     "coreThickness": "16",
     "gripLength": "5.50",
+    "gripSize": "4.25",
     "weight": "8.10",
     "swingweight": "121",
     "swingweightPercentile": "85%",
     "twistweight": "6.14",
-    "twistweightPercentile": "35%",
+    "twistweightPercentile": "34%",
     "balancePoint": "245"
   },
   {
@@ -5494,16 +6162,16 @@
     "gripSize": "4.25",
     "weight": "7.83",
     "swingweight": "108",
-    "swingweightPercentile": "11%",
+    "swingweightPercentile": "10%",
     "twistweight": "6.67",
-    "twistweightPercentile": "70%",
+    "twistweightPercentile": "71%",
     "balancePoint": "237",
     "spinRating": "High",
     "spinRPM": "1979",
     "powerMPH": "53.1",
-    "powerPercentile": "7%",
+    "powerPercentile": "6%",
     "popMPH": "35.5",
-    "popPercentile": "28%"
+    "popPercentile": "24%"
   },
   {
     "paddleName": "Hurricane Pro 16mm",
@@ -5531,7 +6199,7 @@
     "powerMPH": "52.8",
     "powerPercentile": "2%",
     "popMPH": "35.3",
-    "popPercentile": "21%"
+    "popPercentile": "19%"
   },
   {
     "paddleName": "Vantage Pro 14mm",
@@ -5557,7 +6225,7 @@
     "spinRating": "High",
     "spinRPM": "1998",
     "powerMPH": "53.2",
-    "powerPercentile": "8%"
+    "powerPercentile": "7%"
   },
   {
     "paddleName": "Vantage Pro 16mm",
@@ -5583,7 +6251,7 @@
     "spinRating": "High",
     "spinRPM": "1996",
     "powerMPH": "53.7",
-    "powerPercentile": "12%"
+    "powerPercentile": "11%"
   },
   {
     "paddleName": "Black Ace 14",
@@ -5604,12 +6272,12 @@
     "swingweight": "102",
     "swingweightPercentile": "1%",
     "twistweight": "6.57",
-    "twistweightPercentile": "63%",
+    "twistweightPercentile": "64%",
     "balancePoint": "224",
     "spinRating": "Very High",
     "spinRPM": "2042",
     "powerMPH": "54.9",
-    "powerPercentile": "27%",
+    "powerPercentile": "23%",
     "popMPH": "37.1",
     "popPercentile": "93%"
   },
@@ -5637,9 +6305,9 @@
     "spinRating": "Very High",
     "spinRPM": "2056",
     "powerMPH": "55.4",
-    "powerPercentile": "41%",
+    "powerPercentile": "36%",
     "popMPH": "36.3",
-    "popPercentile": "65%"
+    "popPercentile": "60%"
   },
   {
     "paddleName": "Black Ace LG 14",
@@ -5660,12 +6328,12 @@
     "swingweight": "107",
     "swingweightPercentile": "7%",
     "twistweight": "5.60",
-    "twistweightPercentile": "8%",
+    "twistweightPercentile": "7%",
     "balancePoint": "229",
     "spinRating": "Very High",
     "spinRPM": "2056",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "37.1",
     "popPercentile": "93%"
   },
@@ -5688,14 +6356,14 @@
     "swingweight": "101",
     "swingweightPercentile": "1%",
     "twistweight": "5.40",
-    "twistweightPercentile": "4%",
+    "twistweightPercentile": "3%",
     "balancePoint": "221",
     "spinRating": "High",
     "spinRPM": "1993",
     "powerMPH": "54.7",
-    "powerPercentile": "24%",
+    "powerPercentile": "21%",
     "popMPH": "36.4",
-    "popPercentile": "69%"
+    "popPercentile": "64%"
   },
   {
     "paddleName": "Project Flamingo",
@@ -5721,9 +6389,37 @@
     "spinRating": "High",
     "spinRPM": "1982",
     "powerMPH": "55.9",
-    "powerPercentile": "61%",
+    "powerPercentile": "54%",
     "popMPH": "37.4",
     "popPercentile": "98%"
+  },
+  {
+    "paddleName": "Project Peacock",
+    "brand": "Proton",
+    "price": "$280.00",
+    "discountCode": "N/A",
+    "linkToPaddle": "https://a8qh.short.gy/pp",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "Power",
+    "coreThickness": "15",
+    "gripLength": "5.25",
+    "gripSize": "4.25",
+    "weight": "8.00",
+    "swingweight": "116",
+    "swingweightPercentile": "56%",
+    "twistweight": "6.27",
+    "twistweightPercentile": "43%",
+    "balancePoint": "243",
+    "spinRating": "Very High",
+    "spinRPM": "2093",
+    "powerMPH": "56.8",
+    "powerPercentile": "87%",
+    "popMPH": "36.9",
+    "popPercentile": "86%"
   },
   {
     "paddleName": "Series 1 Type A Elongated 11mm",
@@ -5743,7 +6439,7 @@
     "swingweight": "124",
     "swingweightPercentile": "94%",
     "twistweight": "5.91",
-    "twistweightPercentile": "22%",
+    "twistweightPercentile": "21%",
     "balancePoint": "247"
   },
   {
@@ -5764,14 +6460,14 @@
     "swingweight": "135",
     "swingweightPercentile": "100%",
     "twistweight": "6.52",
-    "twistweightPercentile": "59%",
+    "twistweightPercentile": "60%",
     "balancePoint": "251",
     "spinRating": "High",
     "spinRPM": "1938",
     "powerMPH": "55.9",
-    "powerPercentile": "61%",
+    "powerPercentile": "54%",
     "popMPH": "35.9",
-    "popPercentile": "43%"
+    "popPercentile": "38%"
   },
   {
     "paddleName": "Series 1 Type A Square Shape 11mm",
@@ -5789,16 +6485,16 @@
     "gripSize": "4.25",
     "weight": "7.96",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.59",
-    "twistweightPercentile": "65%",
+    "twistweightPercentile": "66%",
     "balancePoint": "242",
     "spinRating": "High",
     "spinRPM": "2000",
     "powerMPH": "54.4",
-    "powerPercentile": "21%",
+    "powerPercentile": "18%",
     "popMPH": "36.1",
-    "popPercentile": "53%"
+    "popPercentile": "48%"
   },
   {
     "paddleName": "Series 2",
@@ -5818,7 +6514,7 @@
     "swingweight": "121",
     "swingweightPercentile": "85%",
     "twistweight": "5.92",
-    "twistweightPercentile": "24%",
+    "twistweightPercentile": "22%",
     "balancePoint": "240"
   },
   {
@@ -5839,7 +6535,7 @@
     "swingweight": "124",
     "swingweightPercentile": "94%",
     "twistweight": "6.88",
-    "twistweightPercentile": "84%",
+    "twistweightPercentile": "83%",
     "balancePoint": "245"
   },
   {
@@ -5860,14 +6556,14 @@
     "swingweight": "111",
     "swingweightPercentile": "23%",
     "twistweight": "5.51",
-    "twistweightPercentile": "6%",
+    "twistweightPercentile": "5%",
     "balancePoint": "237",
     "spinRating": "High",
     "spinRPM": "1944",
     "powerMPH": "54.9",
-    "powerPercentile": "27%",
+    "powerPercentile": "23%",
     "popMPH": "34.6",
-    "popPercentile": "7%"
+    "popPercentile": "6%"
   },
   {
     "paddleName": "Sweet Spot 13",
@@ -5909,7 +6605,7 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "5.71",
-    "twistweightPercentile": "12%",
+    "twistweightPercentile": "11%",
     "balancePoint": "233"
   },
   {
@@ -5936,9 +6632,9 @@
     "spinRating": "High",
     "spinRPM": "1973",
     "powerMPH": "55.5",
-    "powerPercentile": "44%",
+    "powerPercentile": "39%",
     "popMPH": "35.1",
-    "popPercentile": "19%"
+    "popPercentile": "16%"
   },
   {
     "paddleName": "Zeus",
@@ -5959,7 +6655,7 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "6.35",
-    "twistweightPercentile": "49%",
+    "twistweightPercentile": "50%",
     "balancePoint": "239"
   },
   {
@@ -5981,12 +6677,14 @@
     "swingweight": "109",
     "swingweightPercentile": "14%",
     "twistweight": "6.55",
-    "twistweightPercentile": "62%",
+    "twistweightPercentile": "63%",
     "balancePoint": "232",
     "spinRating": "Very High",
     "spinRPM": "2072",
     "powerMPH": "55.6",
-    "popMPH": "35.9"
+    "powerPercentile": "41%",
+    "popMPH": "35.9",
+    "popPercentile": "38%"
   },
   {
     "paddleName": "Drift Reach",
@@ -6007,12 +6705,14 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "5.72",
-    "twistweightPercentile": "12%",
+    "twistweightPercentile": "11%",
     "balancePoint": "237",
     "spinRating": "High",
     "spinRPM": "1980",
     "powerMPH": "55.7",
-    "popMPH": "36.1"
+    "powerPercentile": "44%",
+    "popMPH": "36.1",
+    "popPercentile": "48%"
   },
   {
     "paddleName": "Revo Pro Pure",
@@ -6033,12 +6733,12 @@
     "swingweight": "103",
     "swingweightPercentile": "2%",
     "twistweight": "6.53",
-    "twistweightPercentile": "60%",
+    "twistweightPercentile": "61%",
     "balancePoint": "226",
     "spinRating": "High",
     "spinRPM": "1958",
     "powerMPH": "56.0",
-    "powerPercentile": "67%",
+    "powerPercentile": "59%",
     "popMPH": "37.1",
     "popPercentile": "93%"
   },
@@ -6066,9 +6766,9 @@
     "spinRating": "Medium",
     "spinRPM": "1851",
     "powerMPH": "56.3",
-    "powerPercentile": "77%",
+    "powerPercentile": "70%",
     "popMPH": "36.9",
-    "popPercentile": "87%"
+    "popPercentile": "86%"
   },
   {
     "paddleName": "Pulsar FX.R1",
@@ -6087,16 +6787,16 @@
     "gripSize": "4.13",
     "weight": "8.21",
     "swingweight": "120",
-    "swingweightPercentile": "81%",
+    "swingweightPercentile": "82%",
     "twistweight": "6.23",
-    "twistweightPercentile": "41%",
+    "twistweightPercentile": "40%",
     "balancePoint": "243",
     "spinRating": "Medium",
     "spinRPM": "1907",
     "powerMPH": "55.0",
-    "powerPercentile": "31%",
+    "powerPercentile": "27%",
     "popMPH": "35.9",
-    "popPercentile": "43%"
+    "popPercentile": "38%"
   },
   {
     "paddleName": "Pulsar FX.R2",
@@ -6122,9 +6822,9 @@
     "spinRating": "Medium",
     "spinRPM": "1900",
     "powerMPH": "54.9",
-    "powerPercentile": "27%",
+    "powerPercentile": "23%",
     "popMPH": "35.5",
-    "popPercentile": "28%"
+    "popPercentile": "24%"
   },
   {
     "paddleName": "Pulsar FX.R3",
@@ -6143,16 +6843,16 @@
     "gripSize": "4.13",
     "weight": "8.22",
     "swingweight": "123",
-    "swingweightPercentile": "91%",
+    "swingweightPercentile": "92%",
     "twistweight": "6.27",
-    "twistweightPercentile": "44%",
+    "twistweightPercentile": "43%",
     "balancePoint": "245",
     "spinRating": "High",
     "spinRPM": "1946",
     "powerMPH": "55.4",
-    "powerPercentile": "41%",
+    "powerPercentile": "36%",
     "popMPH": "35.6",
-    "popPercentile": "33%"
+    "popPercentile": "28%"
   },
   {
     "paddleName": "Quanta R1",
@@ -6173,7 +6873,7 @@
     "swingweight": "107",
     "swingweightPercentile": "7%",
     "twistweight": "5.60",
-    "twistweightPercentile": "8%",
+    "twistweightPercentile": "7%",
     "balancePoint": "236"
   },
   {
@@ -6195,7 +6895,7 @@
     "swingweight": "103",
     "swingweightPercentile": "2%",
     "twistweight": "6.25",
-    "twistweightPercentile": "43%",
+    "twistweightPercentile": "42%",
     "balancePoint": "232"
   },
   {
@@ -6217,7 +6917,7 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "5.64",
-    "twistweightPercentile": "10%",
+    "twistweightPercentile": "9%",
     "balancePoint": "240"
   },
   {
@@ -6239,14 +6939,14 @@
     "swingweight": "105",
     "swingweightPercentile": "4%",
     "twistweight": "5.90",
-    "twistweightPercentile": "21%",
+    "twistweightPercentile": "19%",
     "balancePoint": "235",
     "spinRating": "Very High",
     "spinRPM": "2065",
     "powerMPH": "56.5",
-    "powerPercentile": "84%",
+    "powerPercentile": "79%",
     "popMPH": "37.0",
-    "popPercentile": "90%"
+    "popPercentile": "89%"
   },
   {
     "paddleName": "Quanta R5",
@@ -6267,14 +6967,14 @@
     "swingweight": "103",
     "swingweightPercentile": "2%",
     "twistweight": "6.15",
-    "twistweightPercentile": "36%",
+    "twistweightPercentile": "35%",
     "balancePoint": "232",
     "spinRating": "Very High",
     "spinRPM": "2110",
     "powerMPH": "56.6",
-    "powerPercentile": "87%",
+    "powerPercentile": "83%",
     "popMPH": "36.9",
-    "popPercentile": "87%"
+    "popPercentile": "86%"
   },
   {
     "paddleName": "R1 Nova",
@@ -6295,14 +6995,14 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "6.00",
-    "twistweightPercentile": "27%",
+    "twistweightPercentile": "25%",
     "balancePoint": "242",
     "spinRating": "Medium",
     "spinRPM": "1883",
     "powerMPH": "54.4",
-    "powerPercentile": "21%",
+    "powerPercentile": "18%",
     "popMPH": "34.2",
-    "popPercentile": "4%"
+    "popPercentile": "3%"
   },
   {
     "paddleName": "R1 Pulsar",
@@ -6321,9 +7021,9 @@
     "gripSize": "4.13",
     "weight": "7.87",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.12",
-    "twistweightPercentile": "34%",
+    "twistweightPercentile": "32%",
     "balancePoint": "237"
   },
   {
@@ -6345,12 +7045,12 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "6.11",
-    "twistweightPercentile": "33%",
+    "twistweightPercentile": "32%",
     "balancePoint": "242",
     "spinRating": "High",
     "spinRPM": "1950",
     "powerMPH": "53.7",
-    "powerPercentile": "12%",
+    "powerPercentile": "11%",
     "popMPH": "33.7",
     "popPercentile": "2%"
   },
@@ -6371,14 +7071,14 @@
     "gripSize": "4.13",
     "weight": "8.07",
     "swingweight": "120",
-    "swingweightPercentile": "81%",
+    "swingweightPercentile": "82%",
     "twistweight": "6.04",
-    "twistweightPercentile": "29%",
+    "twistweightPercentile": "28%",
     "balancePoint": "245",
     "powerMPH": "55.0",
-    "powerPercentile": "31%",
+    "powerPercentile": "27%",
     "popMPH": "34.8",
-    "popPercentile": "10%"
+    "popPercentile": "9%"
   },
   {
     "paddleName": "R3 Pulsar",
@@ -6399,14 +7099,14 @@
     "swingweight": "122",
     "swingweightPercentile": "88%",
     "twistweight": "6.15",
-    "twistweightPercentile": "36%",
+    "twistweightPercentile": "35%",
     "balancePoint": "245",
     "spinRating": "Medium",
     "spinRPM": "1903",
     "powerMPH": "55.2",
-    "powerPercentile": "36%",
+    "powerPercentile": "31%",
     "popMPH": "35.4",
-    "popPercentile": "24%"
+    "popPercentile": "21%"
   },
   {
     "paddleName": "R3.16",
@@ -6425,9 +7125,9 @@
     "gripSize": "4.13",
     "weight": "7.73",
     "swingweight": "119",
-    "swingweightPercentile": "78%",
+    "swingweightPercentile": "77%",
     "twistweight": "5.84",
-    "twistweightPercentile": "18%",
+    "twistweightPercentile": "16%",
     "balancePoint": "247"
   },
   {
@@ -6449,14 +7149,14 @@
     "swingweight": "128",
     "swingweightPercentile": "99%",
     "twistweight": "5.88",
-    "twistweightPercentile": "19%",
+    "twistweightPercentile": "17%",
     "balancePoint": "250",
     "spinRating": "Very High",
     "spinRPM": "2023",
     "powerMPH": "57.6",
     "powerPercentile": "98%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Ripple V2 R2.14",
@@ -6475,14 +7175,14 @@
     "gripSize": "4.13",
     "weight": "8.20",
     "swingweight": "119",
-    "swingweightPercentile": "78%",
+    "swingweightPercentile": "77%",
     "twistweight": "6.60",
     "twistweightPercentile": "66%",
     "balancePoint": "244",
     "spinRating": "Very High",
     "spinRPM": "2005",
     "powerMPH": "56.9",
-    "powerPercentile": "93%",
+    "powerPercentile": "92%",
     "popMPH": "37.2",
     "popPercentile": "95%"
   },
@@ -6505,14 +7205,126 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "5.90",
-    "twistweightPercentile": "21%",
+    "twistweightPercentile": "19%",
     "balancePoint": "245",
     "spinRating": "Very High",
     "spinRPM": "2015",
     "powerMPH": "57.0",
-    "powerPercentile": "95%",
+    "powerPercentile": "93%",
     "popMPH": "37.0",
-    "popPercentile": "90%"
+    "popPercentile": "89%"
+  },
+  {
+    "paddleName": "Friction Pro Elongated 14",
+    "brand": "RPM",
+    "price": "$249.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/rpme",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "Power",
+    "coreThickness": "14",
+    "gripLength": "5.50",
+    "gripSize": "4.00",
+    "weight": "7.81",
+    "swingweight": "115",
+    "swingweightPercentile": "48%",
+    "twistweight": "6.00",
+    "twistweightPercentile": "25%",
+    "balancePoint": "242",
+    "spinRating": "Very High",
+    "spinRPM": "2121",
+    "powerMPH": "56.2",
+    "powerPercentile": "67%",
+    "popMPH": "36.5",
+    "popPercentile": "70%"
+  },
+  {
+    "paddleName": "Friction Pro Elongated 16",
+    "brand": "RPM",
+    "price": "$249.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/rpme",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "Power",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "7.90",
+    "swingweight": "117",
+    "swingweightPercentile": "63%",
+    "twistweight": "6.14",
+    "twistweightPercentile": "34%",
+    "balancePoint": "243",
+    "spinRating": "Very High",
+    "spinRPM": "2106",
+    "powerMPH": "56.6",
+    "powerPercentile": "83%",
+    "popMPH": "36.7",
+    "popPercentile": "82%"
+  },
+  {
+    "paddleName": "Friction Pro Widebody 14",
+    "brand": "RPM",
+    "price": "$249.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/rmpw",
+    "yearReleased": "2025",
+    "shape": "Widebody",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "Power",
+    "coreThickness": "14",
+    "gripLength": "5.50",
+    "gripSize": "4.00",
+    "weight": "7.93",
+    "swingweight": "110",
+    "swingweightPercentile": "18%",
+    "twistweight": "7.10",
+    "twistweightPercentile": "90%",
+    "balancePoint": "237",
+    "spinRating": "Very High",
+    "spinRPM": "2035",
+    "powerMPH": "56.0",
+    "powerPercentile": "59%",
+    "popMPH": "36.2",
+    "popPercentile": "53%"
+  },
+  {
+    "paddleName": "Friction Pro Widebody 16",
+    "brand": "RPM",
+    "price": "$249.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/rmpw",
+    "yearReleased": "2025",
+    "shape": "Widebody",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "Power",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "7.95",
+    "swingweight": "110",
+    "swingweightPercentile": "18%",
+    "twistweight": "7.24",
+    "twistweightPercentile": "94%",
+    "balancePoint": "236",
+    "spinRating": "Very High",
+    "spinRPM": "2109",
+    "powerMPH": "56.3",
+    "powerPercentile": "70%",
+    "popMPH": "36.3",
+    "popPercentile": "60%"
   },
   {
     "paddleName": "Amped Epic Control",
@@ -6533,7 +7345,7 @@
     "swingweight": "105",
     "swingweightPercentile": "4%",
     "twistweight": "6.54",
-    "twistweightPercentile": "61%",
+    "twistweightPercentile": "62%",
     "balancePoint": "230"
   },
   {
@@ -6553,16 +7365,16 @@
     "gripSize": "4.25",
     "weight": "7.97",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "6.87",
     "twistweightPercentile": "83%",
     "balancePoint": "240",
     "spinRating": "Medium",
     "spinRPM": "1909",
     "powerMPH": "55.1",
-    "powerPercentile": "34%",
+    "powerPercentile": "29%",
     "popMPH": "36.1",
-    "popPercentile": "53%"
+    "popPercentile": "48%"
   },
   {
     "paddleName": "Amped Invikta Pro Air",
@@ -6583,14 +7395,14 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "5.90",
-    "twistweightPercentile": "21%",
+    "twistweightPercentile": "19%",
     "balancePoint": "246",
     "spinRating": "Medium",
     "spinRPM": "1895",
     "powerMPH": "55.5",
-    "powerPercentile": "44%",
+    "powerPercentile": "39%",
     "popMPH": "36.3",
-    "popPercentile": "65%"
+    "popPercentile": "60%"
   },
   {
     "paddleName": "Boomstick Elongated",
@@ -6601,7 +7413,7 @@
     "yearReleased": "2025",
     "shape": "Elongated",
     "faceMaterial": "Carbon",
-    "gritType": "Infinigrit",
+    "gritType": "Durable Texture",
     "buildType": "Gen 4",
     "paddleType": "Power",
     "coreThickness": "16",
@@ -6617,8 +7429,8 @@
     "spinRPM": "1989",
     "powerMPH": "57.1",
     "powerPercentile": "95%",
-    "popMPH": "37.2",
-    "popPercentile": "95%"
+    "popMPH": "37.3",
+    "popPercentile": "97%"
   },
   {
     "paddleName": "Boomstick Widebody",
@@ -6629,7 +7441,7 @@
     "yearReleased": "2025",
     "shape": "Widebody",
     "faceMaterial": "Carbon",
-    "gritType": "Infinigrit",
+    "gritType": "Durable Texture",
     "buildType": "Gen 4",
     "paddleType": "Power",
     "coreThickness": "16",
@@ -6639,14 +7451,14 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "7.72",
-    "twistweightPercentile": "99%",
+    "twistweightPercentile": "100%",
     "balancePoint": "233",
     "spinRating": "High",
     "spinRPM": "1980",
     "powerMPH": "56.8",
-    "powerPercentile": "90%",
-    "popMPH": "37.1",
-    "popPercentile": "93%"
+    "powerPercentile": "87%",
+    "popMPH": "37.2",
+    "popPercentile": "95%"
   },
   {
     "paddleName": "Luxx Control Air Epic",
@@ -6665,16 +7477,16 @@
     "gripSize": "4.25",
     "weight": "8.08",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "6.35",
-    "twistweightPercentile": "49%",
+    "twistweightPercentile": "50%",
     "balancePoint": "238",
     "spinRating": "Medium",
     "spinRPM": "1873",
     "powerMPH": "51.2",
     "powerPercentile": "0%",
     "popMPH": "33.1",
-    "popPercentile": "2%"
+    "popPercentile": "1%"
   },
   {
     "paddleName": "Luxx Control Air Invikta",
@@ -6721,14 +7533,14 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "5.83",
-    "twistweightPercentile": "17%",
+    "twistweightPercentile": "15%",
     "balancePoint": "243",
     "spinRating": "High",
     "spinRPM": "1993",
     "powerMPH": "54.2",
-    "powerPercentile": "18%",
+    "powerPercentile": "16%",
     "popMPH": "35.3",
-    "popPercentile": "21%"
+    "popPercentile": "19%"
   },
   {
     "paddleName": "Luxx Control Air S2",
@@ -6749,7 +7561,7 @@
     "swingweight": "107",
     "swingweightPercentile": "7%",
     "twistweight": "7.13",
-    "twistweightPercentile": "92%",
+    "twistweightPercentile": "91%",
     "balancePoint": "233",
     "spinRating": "Medium",
     "spinRPM": "1870",
@@ -6777,14 +7589,14 @@
     "swingweight": "104",
     "swingweightPercentile": "3%",
     "twistweight": "6.35",
-    "twistweightPercentile": "49%",
+    "twistweightPercentile": "50%",
     "balancePoint": "229",
     "spinRating": "Medium",
     "spinRPM": "1884",
     "powerMPH": "53.2",
-    "powerPercentile": "8%",
+    "powerPercentile": "7%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Power Air Invikta",
@@ -6803,16 +7615,16 @@
     "gripSize": "4.25",
     "weight": "8.00",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "5.62",
-    "twistweightPercentile": "9%",
+    "twistweightPercentile": "8%",
     "balancePoint": "237",
     "spinRating": "Medium",
     "spinRPM": "1894",
     "powerMPH": "53.5",
-    "powerPercentile": "11%",
+    "powerPercentile": "9%",
     "popMPH": "36.5",
-    "popPercentile": "72%"
+    "popPercentile": "70%"
   },
   {
     "paddleName": "Vanguard Control Epic (midweight)",
@@ -6831,7 +7643,7 @@
     "gripSize": "4.25",
     "weight": "8.14",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "6.37",
     "twistweightPercentile": "51%",
     "balancePoint": "236"
@@ -6855,7 +7667,7 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "5.65",
-    "twistweightPercentile": "10%",
+    "twistweightPercentile": "9%",
     "balancePoint": "237"
   },
   {
@@ -6877,7 +7689,7 @@
     "swingweight": "105",
     "swingweightPercentile": "4%",
     "twistweight": "7.09",
-    "twistweightPercentile": "90%",
+    "twistweightPercentile": "89%",
     "balancePoint": "230"
   },
   {
@@ -6897,16 +7709,16 @@
     "gripSize": "4.25",
     "weight": "8.03",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "5.89",
-    "twistweightPercentile": "20%",
+    "twistweightPercentile": "18%",
     "balancePoint": "237",
     "spinRating": "High",
     "spinRPM": "1937",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "35.2",
-    "popPercentile": "20%"
+    "popPercentile": "17%"
   },
   {
     "paddleName": "008 Epic 13mm",
@@ -6927,14 +7739,14 @@
     "swingweight": "102",
     "swingweightPercentile": "1%",
     "twistweight": "5.81",
-    "twistweightPercentile": "15%",
+    "twistweightPercentile": "14%",
     "balancePoint": "229",
     "spinRating": "High",
     "spinRPM": "1954",
     "powerMPH": "54.8",
-    "powerPercentile": "26%",
+    "powerPercentile": "22%",
     "popMPH": "35.4",
-    "popPercentile": "24%"
+    "popPercentile": "21%"
   },
   {
     "paddleName": "008 Invikta 10mm",
@@ -6953,16 +7765,16 @@
     "gripSize": "4.25",
     "weight": "7.90",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "5.20",
     "twistweightPercentile": "2%",
     "balancePoint": "234",
     "spinRating": "High",
     "spinRPM": "1995",
     "powerMPH": "55.0",
-    "powerPercentile": "31%",
+    "powerPercentile": "27%",
     "popMPH": "35.6",
-    "popPercentile": "33%"
+    "popPercentile": "28%"
   },
   {
     "paddleName": "008 Invikta 13mm",
@@ -6983,14 +7795,14 @@
     "swingweight": "109",
     "swingweightPercentile": "14%",
     "twistweight": "5.40",
-    "twistweightPercentile": "4%",
+    "twistweightPercentile": "3%",
     "balancePoint": "236",
     "spinRating": "High",
     "spinRPM": "1965",
     "powerMPH": "55.1",
-    "powerPercentile": "34%",
+    "powerPercentile": "29%",
     "popMPH": "35.3",
-    "popPercentile": "21%"
+    "popPercentile": "19%"
   },
   {
     "paddleName": "008 Tour 13mm",
@@ -7009,16 +7821,16 @@
     "gripSize": "4.25",
     "weight": "7.90",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "5.36",
     "twistweightPercentile": "3%",
     "balancePoint": "237",
     "spinRating": "High",
     "spinRPM": "1991",
     "powerMPH": "54.7",
-    "powerPercentile": "24%",
+    "powerPercentile": "21%",
     "popMPH": "35.0",
-    "popPercentile": "15%"
+    "popPercentile": "13%"
   },
   {
     "paddleName": "008 Tour 16mm",
@@ -7044,9 +7856,9 @@
     "spinRating": "High",
     "spinRPM": "1969",
     "powerMPH": "55.2",
-    "powerPercentile": "36%",
+    "powerPercentile": "31%",
     "popMPH": "34.8",
-    "popPercentile": "10%"
+    "popPercentile": "9%"
   },
   {
     "paddleName": "Project 005 Epic",
@@ -7065,9 +7877,9 @@
     "gripSize": "4.25",
     "weight": "7.97",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "6.88",
-    "twistweightPercentile": "84%",
+    "twistweightPercentile": "83%",
     "balancePoint": "238"
   },
   {
@@ -7089,14 +7901,14 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "5.97",
-    "twistweightPercentile": "26%",
+    "twistweightPercentile": "24%",
     "balancePoint": "236",
     "spinRating": "Low",
     "spinRPM": "1848",
     "powerMPH": "54.1",
-    "powerPercentile": "16%",
+    "powerPercentile": "14%",
     "popMPH": "34.4",
-    "popPercentile": "6%"
+    "popPercentile": "5%"
   },
   {
     "paddleName": "Project 007 Epic 14mm",
@@ -7107,7 +7919,7 @@
     "yearReleased": "2024",
     "shape": "Widebody",
     "faceMaterial": "Carbon",
-    "gritType": "Paint Grit",
+    "gritType": "Durable Texture",
     "buildType": "Gen 2/Edgeless",
     "paddleType": "Power",
     "coreThickness": "14",
@@ -7117,12 +7929,12 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "6.50",
-    "twistweightPercentile": "58%",
+    "twistweightPercentile": "59%",
     "balancePoint": "239",
     "spinRating": "High",
     "spinRPM": "1981",
     "powerMPH": "55.5",
-    "powerPercentile": "44%",
+    "powerPercentile": "39%",
     "popMPH": "36.8",
     "popPercentile": "84%"
   },
@@ -7135,7 +7947,7 @@
     "yearReleased": "2024",
     "shape": "Elongated",
     "faceMaterial": "Carbon",
-    "gritType": "Paint Grit",
+    "gritType": "Durable Texture",
     "buildType": "Gen 2",
     "paddleType": "Power",
     "coreThickness": "14",
@@ -7144,14 +7956,14 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "5.94",
-    "twistweightPercentile": "24%",
+    "twistweightPercentile": "22%",
     "balancePoint": "243",
     "spinRating": "Very High",
     "spinRPM": "2005",
     "powerMPH": "56.5",
-    "powerPercentile": "84%",
+    "powerPercentile": "79%",
     "popMPH": "36.3",
-    "popPercentile": "65%"
+    "popPercentile": "60%"
   },
   {
     "paddleName": "Black Diamond 14mm",
@@ -7170,14 +7982,14 @@
     "gripSize": "4.25",
     "weight": "8.00",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "6.46",
-    "twistweightPercentile": "56%",
+    "twistweightPercentile": "57%",
     "balancePoint": "237",
     "spinRating": "High",
     "spinRPM": "1988",
     "powerMPH": "55.6",
-    "powerPercentile": "47%",
+    "powerPercentile": "41%",
     "popMPH": "36.8",
     "popPercentile": "84%"
   },
@@ -7198,16 +8010,16 @@
     "gripSize": "4.25",
     "weight": "8.07",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.67",
-    "twistweightPercentile": "70%",
+    "twistweightPercentile": "71%",
     "balancePoint": "239",
     "spinRating": "High",
     "spinRPM": "1981",
     "powerMPH": "55.9",
-    "powerPercentile": "61%",
+    "powerPercentile": "54%",
     "popMPH": "36.3",
-    "popPercentile": "65%"
+    "popPercentile": "60%"
   },
   {
     "paddleName": "Black Diamond Amethyst Pro",
@@ -7250,21 +8062,21 @@
     "swingweight": "107",
     "swingweightPercentile": "7%",
     "twistweight": "5.80",
-    "twistweightPercentile": "14%",
+    "twistweightPercentile": "13%",
     "balancePoint": "229",
     "spinRating": "High",
     "spinRPM": "1990",
     "powerMPH": "52.8",
     "powerPercentile": "2%",
     "popMPH": "35.4",
-    "popPercentile": "24%"
+    "popPercentile": "21%"
   },
   {
     "paddleName": "Black Opal",
     "brand": "Six Zero",
     "price": "$250.00",
     "discountCode": "PBEFFECT",
-    "linkToPaddle": "Launching Late Oct",
+    "linkToPaddle": "https://a8qh.short.gy/bo",
     "yearReleased": "2025",
     "shape": "Hybrid",
     "faceMaterial": "Carbon",
@@ -7275,17 +8087,101 @@
     "gripLength": "5.50",
     "gripSize": "4.25",
     "weight": "8.10",
-    "swingweight": "115",
-    "swingweightPercentile": "48%",
-    "twistweight": "6.34",
-    "twistweightPercentile": "48%",
+    "swingweight": "114",
+    "swingweightPercentile": "42%",
+    "twistweight": "6.30",
+    "twistweightPercentile": "46%",
     "balancePoint": "239",
     "spinRating": "Very High",
     "spinRPM": "2024",
     "powerMPH": "57.6",
     "powerPercentile": "98%",
     "popMPH": "37.0",
-    "popPercentile": "90%"
+    "popPercentile": "89%"
+  },
+  {
+    "paddleName": "Coral Elongated",
+    "brand": "Six Zero",
+    "price": "$200.00",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/ce",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "All-Court",
+    "coreThickness": "16",
+    "gripLength": "5.75",
+    "gripSize": "4.25",
+    "weight": "8.00",
+    "swingweight": "113",
+    "swingweightPercentile": "35%",
+    "twistweight": "6.03",
+    "twistweightPercentile": "28%",
+    "balancePoint": "238",
+    "spinRating": "Very High",
+    "spinRPM": "2023",
+    "powerMPH": "56.4",
+    "powerPercentile": "75%",
+    "popMPH": "36.6",
+    "popPercentile": "74%"
+  },
+  {
+    "paddleName": "Coral Hybrid",
+    "brand": "Six Zero",
+    "price": "$200.00",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/ch",
+    "yearReleased": "2025",
+    "shape": "Hybrid",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "All-Court",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "8.16",
+    "swingweight": "112",
+    "swingweightPercentile": "28%",
+    "twistweight": "6.52",
+    "twistweightPercentile": "60%",
+    "balancePoint": "236",
+    "spinRating": "High",
+    "spinRPM": "1977",
+    "powerMPH": "56.3",
+    "powerPercentile": "70%",
+    "popMPH": "36.4",
+    "popPercentile": "64%"
+  },
+  {
+    "paddleName": "Coral Widebody",
+    "brand": "Six Zero",
+    "price": "$200.00",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/cw",
+    "yearReleased": "2025",
+    "shape": "Widebody",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "All-Court",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "8.26",
+    "swingweight": "108",
+    "swingweightPercentile": "10%",
+    "twistweight": "7.33",
+    "twistweightPercentile": "96%",
+    "balancePoint": "231",
+    "spinRating": "Very High",
+    "spinRPM": "2001",
+    "powerMPH": "56.1",
+    "powerPercentile": "63%",
+    "popMPH": "36.4",
+    "popPercentile": "64%"
   },
   {
     "paddleName": "Double Black Diamond (Elongated)",
@@ -7306,14 +8202,14 @@
     "swingweight": "122",
     "swingweightPercentile": "88%",
     "twistweight": "5.74",
-    "twistweightPercentile": "12%",
+    "twistweightPercentile": "11%",
     "balancePoint": "242",
     "spinRating": "High",
     "spinRPM": "1931",
     "powerMPH": "56.0",
-    "powerPercentile": "67%",
+    "powerPercentile": "59%",
     "popMPH": "36.2",
-    "popPercentile": "59%"
+    "popPercentile": "53%"
   },
   {
     "paddleName": "Double Black Diamond 14 mm",
@@ -7332,16 +8228,16 @@
     "gripSize": "4.25",
     "weight": "7.87",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "6.18",
-    "twistweightPercentile": "38%",
+    "twistweightPercentile": "37%",
     "balancePoint": "237",
     "spinRating": "Medium",
     "spinRPM": "1925",
     "powerMPH": "53.5",
-    "powerPercentile": "11%",
+    "powerPercentile": "9%",
     "popMPH": "36.9",
-    "popPercentile": "87%"
+    "popPercentile": "86%"
   },
   {
     "paddleName": "Double Black Diamond 16 mm",
@@ -7360,14 +8256,14 @@
     "gripSize": "4.25",
     "weight": "8.07",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.55",
-    "twistweightPercentile": "62%",
+    "twistweightPercentile": "63%",
     "balancePoint": "237",
     "powerMPH": "53.7",
-    "powerPercentile": "12%",
+    "powerPercentile": "11%",
     "popMPH": "35.9",
-    "popPercentile": "43%"
+    "popPercentile": "38%"
   },
   {
     "paddleName": "Double Black Diamond Infinity 16mm",
@@ -7386,9 +8282,9 @@
     "gripSize": "4.25",
     "weight": "8.10",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "5.90",
-    "twistweightPercentile": "21%",
+    "twistweightPercentile": "19%",
     "balancePoint": "231"
   },
   {
@@ -7410,33 +8306,8 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "6.00",
-    "twistweightPercentile": "27%",
+    "twistweightPercentile": "25%",
     "balancePoint": "234"
-  },
-  {
-    "paddleName": "Opal",
-    "brand": "Six Zero",
-    "discountCode": "PBEFFECT",
-    "linkToPaddle": "Coming Oct 2025",
-    "yearReleased": "2025",
-    "shape": "Hybrid",
-    "faceMaterial": "Carbon",
-    "gritType": "Raw Texture/Peel Ply",
-    "buildType": "Gen 4",
-    "paddleType": "Power",
-    "coreThickness": "14",
-    "weight": "8.10",
-    "swingweight": "115",
-    "swingweightPercentile": "48%",
-    "twistweight": "6.34",
-    "twistweightPercentile": "48%",
-    "balancePoint": "239",
-    "spinRating": "Very High",
-    "spinRPM": "2024",
-    "powerMPH": "57.8",
-    "powerPercentile": "98%",
-    "popMPH": "36.9",
-    "popPercentile": "87%"
   },
   {
     "paddleName": "Quartz",
@@ -7455,16 +8326,16 @@
     "gripSize": "4.25",
     "weight": "7.97",
     "swingweight": "108",
-    "swingweightPercentile": "11%",
+    "swingweightPercentile": "10%",
     "twistweight": "6.43",
-    "twistweightPercentile": "54%",
+    "twistweightPercentile": "55%",
     "balancePoint": "234",
     "spinRating": "High",
     "spinRPM": "1949",
     "powerMPH": "52.8",
     "powerPercentile": "2%",
     "popMPH": "34.8",
-    "popPercentile": "10%"
+    "popPercentile": "9%"
   },
   {
     "paddleName": "Ruby",
@@ -7489,9 +8360,9 @@
     "balancePoint": "238",
     "spinRating": "Low",
     "powerMPH": "53.9",
-    "powerPercentile": "14%",
+    "powerPercentile": "12%",
     "popMPH": "35.3",
-    "popPercentile": "21%"
+    "popPercentile": "19%"
   },
   {
     "paddleName": "Ruby (14mm)",
@@ -7510,16 +8381,38 @@
     "gripSize": "4.25",
     "weight": "8.10",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.53",
-    "twistweightPercentile": "60%",
+    "twistweightPercentile": "61%",
     "balancePoint": "238",
     "spinRating": "High",
     "spinRPM": "1965",
     "powerMPH": "55.4",
-    "powerPercentile": "41%",
+    "powerPercentile": "36%",
     "popMPH": "36.9",
-    "popPercentile": "87%"
+    "popPercentile": "86%"
+  },
+  {
+    "paddleName": "Ruby Pro",
+    "brand": "Six Zero",
+    "price": "$225.00",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/r-pro",
+    "yearReleased": "2025",
+    "shape": "Hybrid",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "All-Court",
+    "coreThickness": "14",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "8.10",
+    "swingweight": "114",
+    "swingweightPercentile": "42%",
+    "twistweight": "6.27",
+    "twistweightPercentile": "43%",
+    "balancePoint": "238"
   },
   {
     "paddleName": "Sapphire",
@@ -7540,7 +8433,7 @@
     "swingweight": "111",
     "swingweightPercentile": "23%",
     "twistweight": "5.40",
-    "twistweightPercentile": "4%",
+    "twistweightPercentile": "3%",
     "balancePoint": "224"
   },
   {
@@ -7562,7 +8455,7 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "6.19",
-    "twistweightPercentile": "39%",
+    "twistweightPercentile": "38%",
     "balancePoint": "241"
   },
   {
@@ -7628,7 +8521,7 @@
     "swingweight": "111",
     "swingweightPercentile": "23%",
     "twistweight": "6.94",
-    "twistweightPercentile": "86%",
+    "twistweightPercentile": "85%",
     "balancePoint": "237"
   },
   {
@@ -7648,16 +8541,16 @@
     "gripSize": "4.25",
     "weight": "7.90",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "6.77",
     "twistweightPercentile": "77%",
     "balancePoint": "237",
     "spinRating": "High",
     "spinRPM": "1983",
     "powerMPH": "54.1",
-    "powerPercentile": "16%",
+    "powerPercentile": "14%",
     "popMPH": "34.2",
-    "popPercentile": "4%"
+    "popPercentile": "3%"
   },
   {
     "paddleName": "Halo Control XL",
@@ -7678,7 +8571,7 @@
     "swingweight": "122",
     "swingweightPercentile": "88%",
     "twistweight": "6.07",
-    "twistweightPercentile": "30%",
+    "twistweightPercentile": "29%",
     "balancePoint": "244"
   },
   {
@@ -7698,9 +8591,9 @@
     "gripSize": "4.00",
     "weight": "7.97",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "6.54",
-    "twistweightPercentile": "61%",
+    "twistweightPercentile": "62%",
     "balancePoint": "234"
   },
   {
@@ -7727,9 +8620,9 @@
     "spinRating": "High",
     "spinRPM": "2000",
     "powerMPH": "55.5",
-    "powerPercentile": "44%",
+    "powerPercentile": "39%",
     "popMPH": "35.7",
-    "popPercentile": "37%"
+    "popPercentile": "33%"
   },
   {
     "paddleName": "Halo Power XL",
@@ -7748,7 +8641,7 @@
     "gripSize": "4.00",
     "weight": "7.97",
     "swingweight": "120",
-    "swingweightPercentile": "81%",
+    "swingweightPercentile": "82%",
     "twistweight": "5.59",
     "twistweightPercentile": "7%",
     "balancePoint": "245"
@@ -7770,16 +8663,16 @@
     "gripSize": "4.25",
     "weight": "7.92",
     "swingweight": "108",
-    "swingweightPercentile": "11%",
+    "swingweightPercentile": "10%",
     "twistweight": "7.00",
     "twistweightPercentile": "87%",
     "balancePoint": "234",
     "spinRating": "High",
     "spinRPM": "1953",
     "powerMPH": "55.1",
-    "powerPercentile": "34%",
+    "powerPercentile": "29%",
     "popMPH": "35.5",
-    "popPercentile": "28%"
+    "popPercentile": "24%"
   },
   {
     "paddleName": "Halo Pro XL",
@@ -7798,16 +8691,16 @@
     "gripSize": "4.25",
     "weight": "7.98",
     "swingweight": "120",
-    "swingweightPercentile": "81%",
+    "swingweightPercentile": "82%",
     "twistweight": "5.90",
-    "twistweightPercentile": "21%",
+    "twistweightPercentile": "19%",
     "balancePoint": "245",
     "spinRating": "High",
     "spinRPM": "1939",
     "powerMPH": "55.6",
-    "powerPercentile": "47%",
+    "powerPercentile": "41%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Apollo",
@@ -7826,16 +8719,16 @@
     "gripSize": "4.13",
     "weight": "8.07",
     "swingweight": "108",
-    "swingweightPercentile": "11%",
+    "swingweightPercentile": "10%",
     "twistweight": "7.54",
     "twistweightPercentile": "98%",
     "balancePoint": "232",
     "spinRating": "Medium",
     "spinRPM": "1927",
     "powerMPH": "53.5",
-    "powerPercentile": "11%",
+    "powerPercentile": "9%",
     "popMPH": "35.0",
-    "popPercentile": "15%"
+    "popPercentile": "13%"
   },
   {
     "paddleName": "Ballista",
@@ -7878,7 +8771,7 @@
     "swingweight": "121",
     "swingweightPercentile": "85%",
     "twistweight": "6.06",
-    "twistweightPercentile": "30%",
+    "twistweightPercentile": "29%",
     "balancePoint": "243"
   },
   {
@@ -7898,16 +8791,16 @@
     "gripSize": "4.25",
     "weight": "7.90",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "6.56",
     "twistweightPercentile": "63%",
     "balancePoint": "236",
     "spinRating": "Very High",
     "spinRPM": "2019",
     "powerMPH": "54.5",
-    "powerPercentile": "22%",
+    "powerPercentile": "19%",
     "popMPH": "35.2",
-    "popPercentile": "20%"
+    "popPercentile": "17%"
   },
   {
     "paddleName": "Olympus",
@@ -7928,14 +8821,14 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "6.32",
-    "twistweightPercentile": "47%",
+    "twistweightPercentile": "48%",
     "balancePoint": "238",
     "spinRating": "Very High",
     "spinRPM": "2043",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "36.5",
-    "popPercentile": "72%"
+    "popPercentile": "70%"
   },
   {
     "paddleName": "Orion",
@@ -7956,14 +8849,42 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "6.00",
-    "twistweightPercentile": "27%",
+    "twistweightPercentile": "25%",
     "balancePoint": "241",
     "spinRating": "Very High",
     "spinRPM": "2027",
     "powerMPH": "55.4",
-    "powerPercentile": "41%",
+    "powerPercentile": "36%",
     "popMPH": "35.5",
-    "popPercentile": "28%"
+    "popPercentile": "24%"
+  },
+  {
+    "paddleName": "P1 Hybrid",
+    "brand": "Spartus",
+    "price": "$219.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/p1h",
+    "yearReleased": "2026",
+    "shape": "Hybrid",
+    "faceMaterial": "Carbon",
+    "gritType": "Durable Texture",
+    "buildType": "Gen 4",
+    "paddleType": "Power",
+    "coreThickness": "16",
+    "gripLength": "5.30",
+    "gripSize": "4.25",
+    "weight": "8.12",
+    "swingweight": "115",
+    "swingweightPercentile": "48%",
+    "twistweight": "6.70",
+    "twistweightPercentile": "74%",
+    "balancePoint": "238",
+    "spinRating": "Very High",
+    "spinRPM": "2047",
+    "powerMPH": "56.8",
+    "powerPercentile": "87%",
+    "popMPH": "36.9",
+    "popPercentile": "86%"
   },
   {
     "paddleName": "TF-Blitz",
@@ -7982,12 +8903,12 @@
     "swingweight": "124",
     "swingweightPercentile": "94%",
     "twistweight": "5.81",
-    "twistweightPercentile": "15%",
+    "twistweightPercentile": "14%",
     "balancePoint": "244",
     "spinRating": "Very High",
     "spinRPM": "2092",
     "powerMPH": "56.5",
-    "powerPercentile": "84%",
+    "powerPercentile": "79%",
     "popMPH": "36.8",
     "popPercentile": "84%"
   },
@@ -8006,16 +8927,16 @@
     "gripSize": "4.25",
     "weight": "8.16",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "6.81",
     "twistweightPercentile": "80%",
     "balancePoint": "233",
     "spinRating": "Very High",
     "spinRPM": "2044",
     "powerMPH": "55.0",
-    "powerPercentile": "31%",
+    "powerPercentile": "27%",
     "popMPH": "35.7",
-    "popPercentile": "37%"
+    "popPercentile": "33%"
   },
   {
     "paddleName": "TF-Select",
@@ -8032,16 +8953,16 @@
     "gripSize": "4.25",
     "weight": "8.10",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "6.43",
-    "twistweightPercentile": "54%",
+    "twistweightPercentile": "55%",
     "balancePoint": "234",
     "spinRating": "Very High",
     "spinRPM": "2093",
     "powerMPH": "55.9",
-    "powerPercentile": "61%",
+    "powerPercentile": "54%",
     "popMPH": "36.6",
-    "popPercentile": "76%"
+    "popPercentile": "74%"
   },
   {
     "paddleName": "Azul 16",
@@ -8057,6 +8978,7 @@
     "paddleType": "Power",
     "coreThickness": "16",
     "gripLength": "5.25",
+    "gripSize": "4.25",
     "weight": "8.12",
     "swingweight": "117",
     "swingweightPercentile": "63%",
@@ -8066,9 +8988,9 @@
     "spinRating": "High",
     "spinRPM": "1948",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "36.0",
-    "popPercentile": "48%"
+    "popPercentile": "43%"
   },
   {
     "paddleName": "Blackout 16",
@@ -8084,18 +9006,41 @@
     "paddleType": "Power",
     "coreThickness": "16",
     "gripLength": "5.25",
+    "gripSize": "4.25",
     "weight": "8.28",
     "swingweight": "119",
-    "swingweightPercentile": "78%",
+    "swingweightPercentile": "77%",
     "twistweight": "6.71",
     "twistweightPercentile": "75%",
     "balancePoint": "242",
     "spinRating": "Medium",
     "spinRPM": "1897",
     "powerMPH": "56.5",
-    "powerPercentile": "84%",
+    "powerPercentile": "79%",
     "popMPH": "36.2",
-    "popPercentile": "59%"
+    "popPercentile": "53%"
+  },
+  {
+    "paddleName": "Fury Elongate",
+    "brand": "Thrive",
+    "price": "$199.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/furyE",
+    "yearReleased": "2025",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 3",
+    "paddleType": "Power",
+    "coreThickness": "16",
+    "gripLength": "5.50",
+    "gripSize": "4.25",
+    "weight": "7.90",
+    "swingweight": "115",
+    "swingweightPercentile": "48%",
+    "twistweight": "6.13",
+    "twistweightPercentile": "33%",
+    "balancePoint": "243"
   },
   {
     "paddleName": "Project Fury",
@@ -8114,16 +9059,16 @@
     "gripSize": "4.25",
     "weight": "8.00",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "6.54",
-    "twistweightPercentile": "61%",
+    "twistweightPercentile": "62%",
     "balancePoint": "237",
     "spinRating": "Very High",
     "spinRPM": "2037",
     "powerMPH": "56.2",
-    "powerPercentile": "75%",
+    "powerPercentile": "67%",
     "popMPH": "36.4",
-    "popPercentile": "69%"
+    "popPercentile": "64%"
   },
   {
     "paddleName": "Rush 13mm",
@@ -8139,18 +9084,19 @@
     "paddleType": "Power",
     "coreThickness": "13",
     "gripLength": "5.50",
+    "gripSize": "4.13",
     "weight": "7.90",
     "swingweight": "119",
-    "swingweightPercentile": "78%",
+    "swingweightPercentile": "77%",
     "twistweight": "6.10",
-    "twistweightPercentile": "31%",
+    "twistweightPercentile": "30%",
     "balancePoint": "244",
     "spinRating": "High",
     "spinRPM": "1931",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "35.6",
-    "popPercentile": "33%"
+    "popPercentile": "28%"
   },
   {
     "paddleName": "Smoke",
@@ -8165,19 +9111,20 @@
     "buildType": "Gen 1",
     "paddleType": "Power",
     "coreThickness": "15",
+    "gripLength": "5.50",
     "gripSize": "4.25",
     "weight": "7.96",
     "swingweight": "119",
-    "swingweightPercentile": "78%",
+    "swingweightPercentile": "77%",
     "twistweight": "6.14",
-    "twistweightPercentile": "35%",
+    "twistweightPercentile": "34%",
     "balancePoint": "242",
     "spinRating": "Very High",
     "spinRPM": "2003",
     "powerMPH": "56.4",
-    "powerPercentile": "82%",
+    "powerPercentile": "75%",
     "popMPH": "36.2",
-    "popPercentile": "59%"
+    "popPercentile": "53%"
   },
   {
     "paddleName": "Surge 16",
@@ -8193,6 +9140,7 @@
     "paddleType": "All-Court",
     "coreThickness": "16",
     "gripLength": "5.25",
+    "gripSize": "4.25",
     "weight": "8.03",
     "swingweight": "117",
     "swingweightPercentile": "63%",
@@ -8202,9 +9150,9 @@
     "spinRating": "High",
     "spinRPM": "1937",
     "powerMPH": "55.3",
-    "powerPercentile": "39%",
+    "powerPercentile": "34%",
     "popMPH": "35.6",
-    "popPercentile": "33%"
+    "popPercentile": "28%"
   },
   {
     "paddleName": "Threat 16mm",
@@ -8220,18 +9168,19 @@
     "paddleType": "All-Court",
     "coreThickness": "16",
     "gripLength": "5.50",
+    "gripSize": "4.25",
     "weight": "8.00",
     "swingweight": "122",
     "swingweightPercentile": "88%",
     "twistweight": "6.74",
-    "twistweightPercentile": "75%",
+    "twistweightPercentile": "76%",
     "balancePoint": "245",
     "spinRating": "Medium",
     "spinRPM": "1918",
     "powerMPH": "54.4",
-    "powerPercentile": "21%",
+    "powerPercentile": "18%",
     "popMPH": "34.6",
-    "popPercentile": "7%"
+    "popPercentile": "6%"
   },
   {
     "paddleName": "Flash 14 mm",
@@ -8250,14 +9199,14 @@
     "gripSize": "4.13",
     "weight": "7.94",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "6.15",
-    "twistweightPercentile": "36%",
+    "twistweightPercentile": "35%",
     "balancePoint": "235",
     "powerMPH": "53.9",
-    "powerPercentile": "14%",
+    "powerPercentile": "12%",
     "popMPH": "34.4",
-    "popPercentile": "6%"
+    "popPercentile": "5%"
   },
   {
     "paddleName": "Flash 16 mm",
@@ -8278,7 +9227,7 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "6.70",
-    "twistweightPercentile": "73%",
+    "twistweightPercentile": "74%",
     "balancePoint": "237",
     "spinRating": "High",
     "spinRPM": "1935"
@@ -8302,7 +9251,7 @@
     "swingweight": "107",
     "swingweightPercentile": "7%",
     "twistweight": "6.05",
-    "twistweightPercentile": "30%",
+    "twistweightPercentile": "28%",
     "balancePoint": "238"
   },
   {
@@ -8322,9 +9271,9 @@
     "gripSize": "4.13",
     "weight": "7.92",
     "swingweight": "112",
-    "swingweightPercentile": "29%",
+    "swingweightPercentile": "28%",
     "twistweight": "7.07",
-    "twistweightPercentile": "90%",
+    "twistweightPercentile": "89%",
     "balancePoint": "238"
   },
   {
@@ -8346,14 +9295,14 @@
     "swingweight": "111",
     "swingweightPercentile": "23%",
     "twistweight": "6.11",
-    "twistweightPercentile": "33%",
+    "twistweightPercentile": "32%",
     "balancePoint": "241",
     "spinRating": "High",
     "spinRPM": "1950",
     "powerMPH": "53.0",
-    "powerPercentile": "6%",
+    "powerPercentile": "5%",
     "popMPH": "35.0",
-    "popPercentile": "15%"
+    "popPercentile": "13%"
   },
   {
     "paddleName": "Prism Flash 16 mm",
@@ -8372,7 +9321,7 @@
     "gripSize": "4.13",
     "weight": "7.91",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.40",
     "twistweightPercentile": "53%",
     "balancePoint": "237",
@@ -8402,7 +9351,7 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "5.89",
-    "twistweightPercentile": "20%",
+    "twistweightPercentile": "18%",
     "balancePoint": "241"
   },
   {
@@ -8424,7 +9373,7 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "6.18",
-    "twistweightPercentile": "38%",
+    "twistweightPercentile": "37%",
     "balancePoint": "241"
   },
   {
@@ -8451,7 +9400,7 @@
     "powerMPH": "52.8",
     "powerPercentile": "2%",
     "popMPH": "34.6",
-    "popPercentile": "7%"
+    "popPercentile": "6%"
   },
   {
     "paddleName": "Prism V7 LH",
@@ -8470,14 +9419,14 @@
     "gripSize": "4.13",
     "weight": "7.97",
     "swingweight": "119",
-    "swingweightPercentile": "78%",
+    "swingweightPercentile": "77%",
     "twistweight": "6.16",
-    "twistweightPercentile": "37%",
+    "twistweightPercentile": "36%",
     "balancePoint": "243",
     "powerMPH": "53.2",
-    "powerPercentile": "8%",
+    "powerPercentile": "7%",
     "popMPH": "34.4",
-    "popPercentile": "6%"
+    "popPercentile": "5%"
   },
   {
     "paddleName": "Saga Bloom 14mm",
@@ -8503,9 +9452,9 @@
     "spinRating": "Very High",
     "spinRPM": "2038",
     "powerMPH": "55.7",
-    "powerPercentile": "50%",
+    "powerPercentile": "44%",
     "popMPH": "35.7",
-    "popPercentile": "37%"
+    "popPercentile": "33%"
   },
   {
     "paddleName": "Saga Bloom 16mm",
@@ -8526,14 +9475,14 @@
     "swingweight": "111",
     "swingweightPercentile": "23%",
     "twistweight": "7.02",
-    "twistweightPercentile": "88%",
+    "twistweightPercentile": "87%",
     "balancePoint": "237",
     "spinRating": "Very High",
     "spinRPM": "2028",
     "powerMPH": "53.9",
-    "powerPercentile": "14%",
+    "powerPercentile": "12%",
     "popMPH": "34.8",
-    "popPercentile": "10%"
+    "popPercentile": "9%"
   },
   {
     "paddleName": "Saga Flash LH 16mm",
@@ -8552,7 +9501,7 @@
     "gripSize": "4.13",
     "weight": "8.17",
     "swingweight": "120",
-    "swingweightPercentile": "81%",
+    "swingweightPercentile": "82%",
     "twistweight": "6.30",
     "twistweightPercentile": "46%",
     "balancePoint": "244"
@@ -8576,14 +9525,14 @@
     "swingweight": "109",
     "swingweightPercentile": "14%",
     "twistweight": "5.95",
-    "twistweightPercentile": "26%",
+    "twistweightPercentile": "23%",
     "balancePoint": "239",
     "spinRating": "Very High",
     "spinRPM": "2015",
     "powerMPH": "55.9",
-    "powerPercentile": "61%",
+    "powerPercentile": "54%",
     "popMPH": "35.7",
-    "popPercentile": "37%"
+    "popPercentile": "33%"
   },
   {
     "paddleName": "Saga Flash SH 16mm",
@@ -8602,16 +9551,16 @@
     "gripSize": "4.13",
     "weight": "7.93",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.39",
     "twistweightPercentile": "52%",
     "balancePoint": "240",
     "spinRating": "High",
     "spinRPM": "1961",
     "powerMPH": "56.5",
-    "powerPercentile": "84%",
+    "powerPercentile": "79%",
     "popMPH": "35.5",
-    "popPercentile": "28%"
+    "popPercentile": "24%"
   },
   {
     "paddleName": "Saga V7 LH",
@@ -8632,7 +9581,7 @@
     "swingweight": "125",
     "swingweightPercentile": "96%",
     "twistweight": "6.50",
-    "twistweightPercentile": "58%",
+    "twistweightPercentile": "59%",
     "balancePoint": "246",
     "popMPH": "0.0"
   },
@@ -8653,16 +9602,16 @@
     "gripSize": "4.13",
     "weight": "8.13",
     "swingweight": "120",
-    "swingweightPercentile": "81%",
+    "swingweightPercentile": "82%",
     "twistweight": "6.62",
     "twistweightPercentile": "68%",
     "balancePoint": "243",
     "spinRating": "High",
     "spinRPM": "1954",
     "powerMPH": "56.8",
-    "powerPercentile": "90%",
+    "powerPercentile": "87%",
     "popMPH": "35.6",
-    "popPercentile": "33%"
+    "popPercentile": "28%"
   },
   {
     "paddleName": "Saga V7 SH 14mm",
@@ -8683,14 +9632,14 @@
     "swingweight": "116",
     "swingweightPercentile": "56%",
     "twistweight": "6.23",
-    "twistweightPercentile": "41%",
+    "twistweightPercentile": "40%",
     "balancePoint": "242",
     "spinRating": "High",
     "spinRPM": "1978",
     "powerMPH": "56.3",
-    "powerPercentile": "77%",
+    "powerPercentile": "70%",
     "popMPH": "35.5",
-    "popPercentile": "28%"
+    "popPercentile": "24%"
   },
   {
     "paddleName": "V-Sol Power Bloom",
@@ -8711,8 +9660,14 @@
     "swingweight": "109",
     "swingweightPercentile": "14%",
     "twistweight": "7.02",
-    "twistweightPercentile": "88%",
-    "balancePoint": "236"
+    "twistweightPercentile": "87%",
+    "balancePoint": "236",
+    "spinRating": "Very High",
+    "spinRPM": "2069",
+    "powerMPH": "56.3",
+    "powerPercentile": "70%",
+    "popMPH": "36.4",
+    "popPercentile": "64%"
   },
   {
     "paddleName": "V-Sol Power Flash",
@@ -8731,10 +9686,16 @@
     "gripSize": "4.13",
     "weight": "7.97",
     "swingweight": "110",
-    "swingweightPercentile": "19%",
+    "swingweightPercentile": "18%",
     "twistweight": "6.29",
     "twistweightPercentile": "45%",
-    "balancePoint": "235"
+    "balancePoint": "235",
+    "spinRating": "Very High",
+    "spinRPM": "2073",
+    "powerMPH": "57.0",
+    "powerPercentile": "93%",
+    "popMPH": "36.6",
+    "popPercentile": "74%"
   },
   {
     "paddleName": "V-Sol Power V7",
@@ -8755,8 +9716,14 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "6.67",
-    "twistweightPercentile": "70%",
-    "balancePoint": "239"
+    "twistweightPercentile": "71%",
+    "balancePoint": "239",
+    "spinRating": "Very High",
+    "spinRPM": "2088",
+    "powerMPH": "57.3",
+    "powerPercentile": "97%",
+    "popMPH": "36.7",
+    "popPercentile": "82%"
   },
   {
     "paddleName": "V-Sol Pro Bloom",
@@ -8778,7 +9745,13 @@
     "swingweightPercentile": "7%",
     "twistweight": "6.87",
     "twistweightPercentile": "83%",
-    "balancePoint": "233"
+    "balancePoint": "233",
+    "spinRating": "Very High",
+    "spinRPM": "2111",
+    "powerMPH": "56.2",
+    "powerPercentile": "67%",
+    "popMPH": "36.6",
+    "popPercentile": "74%"
   },
   {
     "paddleName": "V-Sol Pro Flash",
@@ -8797,16 +9770,16 @@
     "gripSize": "4.13",
     "weight": "8.10",
     "swingweight": "108",
-    "swingweightPercentile": "11%",
+    "swingweightPercentile": "10%",
     "twistweight": "6.43",
-    "twistweightPercentile": "54%",
+    "twistweightPercentile": "55%",
     "balancePoint": "231",
     "spinRating": "Very High",
     "spinRPM": "2060",
     "powerMPH": "56.8",
-    "powerPercentile": "90%",
+    "powerPercentile": "87%",
     "popMPH": "37.0",
-    "popPercentile": "90%"
+    "popPercentile": "89%"
   },
   {
     "paddleName": "V-Sol Pro Flash LH",
@@ -8827,7 +9800,7 @@
     "swingweight": "109",
     "swingweightPercentile": "14%",
     "twistweight": "5.99",
-    "twistweightPercentile": "26%",
+    "twistweightPercentile": "25%",
     "balancePoint": "233"
   },
   {
@@ -8847,10 +9820,15 @@
     "gripSize": "4.13",
     "weight": "8.15",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.49",
     "twistweightPercentile": "58%",
-    "balancePoint": "236"
+    "balancePoint": "236",
+    "spinRPM": "2120",
+    "powerMPH": "57.1",
+    "powerPercentile": "95%",
+    "popMPH": "37.1",
+    "popPercentile": "93%"
   },
   {
     "paddleName": "V-Sol Pro V7 LH",
@@ -8869,9 +9847,9 @@
     "gripSize": "4.13",
     "weight": "7.97",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "6.02",
-    "twistweightPercentile": "28%",
+    "twistweightPercentile": "27%",
     "balancePoint": "237"
   },
   {
@@ -8891,16 +9869,16 @@
     "gripSize": "4.13",
     "weight": "8.32",
     "swingweight": "123",
-    "swingweightPercentile": "91%",
+    "swingweightPercentile": "92%",
     "twistweight": "6.93",
     "twistweightPercentile": "85%",
     "balancePoint": "244",
     "spinRating": "Medium",
     "spinRPM": "1916",
     "powerMPH": "54.3",
-    "powerPercentile": "19%",
+    "powerPercentile": "17%",
     "popMPH": "35.9",
-    "popPercentile": "43%"
+    "popPercentile": "38%"
   },
   {
     "paddleName": "V-Sol Power V7 LH",
@@ -8919,16 +9897,10 @@
     "gripSize": "4.13",
     "weight": "8.00",
     "swingweight": "119",
-    "swingweightPercentile": "78%",
+    "swingweightPercentile": "77%",
     "twistweight": "6.24",
-    "twistweightPercentile": "42%",
-    "balancePoint": "242",
-    "spinRating": "Very High",
-    "spinRPM": "2073",
-    "powerMPH": "57.0",
-    "powerPercentile": "95%",
-    "popMPH": "36.6",
-    "popPercentile": "76%"
+    "twistweightPercentile": "41%",
+    "balancePoint": "242"
   },
   {
     "paddleName": "Vector XL",
@@ -8954,9 +9926,9 @@
     "spinRating": "Medium",
     "spinRPM": "1916",
     "powerMPH": "56.1",
-    "powerPercentile": "71%",
+    "powerPercentile": "63%",
     "popMPH": "35.9",
-    "popPercentile": "43%"
+    "popPercentile": "38%"
   },
   {
     "paddleName": "CTRL 1 Forza",
@@ -8997,7 +9969,7 @@
     "gripSize": "4.15",
     "weight": "7.96",
     "swingweight": "108",
-    "swingweightPercentile": "11%",
+    "swingweightPercentile": "10%",
     "twistweight": "7.16",
     "twistweightPercentile": "92%",
     "balancePoint": "235"
@@ -9021,14 +9993,14 @@
     "swingweight": "115",
     "swingweightPercentile": "48%",
     "twistweight": "5.82",
-    "twistweightPercentile": "16%",
+    "twistweightPercentile": "14%",
     "balancePoint": "240",
     "spinRating": "Medium",
     "spinRPM": "1900",
     "powerMPH": "53.2",
-    "powerPercentile": "8%",
+    "powerPercentile": "7%",
     "popMPH": "36.1",
-    "popPercentile": "53%"
+    "popPercentile": "48%"
   },
   {
     "paddleName": "Mach 1 16mm",
@@ -9049,14 +10021,14 @@
     "swingweight": "118",
     "swingweightPercentile": "70%",
     "twistweight": "6.02",
-    "twistweightPercentile": "28%",
+    "twistweightPercentile": "27%",
     "balancePoint": "242",
     "spinRating": "Very High",
     "spinRPM": "2005",
     "powerMPH": "53.9",
-    "powerPercentile": "14%",
+    "powerPercentile": "12%",
     "popMPH": "34.7",
-    "popPercentile": "9%"
+    "popPercentile": "8%"
   },
   {
     "paddleName": "Mach 1 Forza 14mm",
@@ -9077,14 +10049,14 @@
     "swingweight": "109",
     "swingweightPercentile": "14%",
     "twistweight": "5.82",
-    "twistweightPercentile": "16%",
+    "twistweightPercentile": "14%",
     "balancePoint": "237",
     "spinRating": "High",
     "spinRPM": "1954",
     "powerMPH": "54.0",
-    "powerPercentile": "16%",
+    "powerPercentile": "14%",
     "popMPH": "35.7",
-    "popPercentile": "37%"
+    "popPercentile": "33%"
   },
   {
     "paddleName": "Mach 1 Forza 16mm",
@@ -9105,14 +10077,14 @@
     "swingweight": "117",
     "swingweightPercentile": "63%",
     "twistweight": "6.57",
-    "twistweightPercentile": "63%",
+    "twistweightPercentile": "64%",
     "balancePoint": "240",
     "spinRating": "High",
     "spinRPM": "1988",
     "powerMPH": "55.0",
-    "powerPercentile": "31%",
+    "powerPercentile": "27%",
     "popMPH": "35.5",
-    "popPercentile": "28%"
+    "popPercentile": "24%"
   },
   {
     "paddleName": "Mach 2 14mm",
@@ -9140,7 +10112,7 @@
     "powerMPH": "52.8",
     "powerPercentile": "2%",
     "popMPH": "35.0",
-    "popPercentile": "15%"
+    "popPercentile": "13%"
   },
   {
     "paddleName": "Mach 2 16 mm",
@@ -9159,16 +10131,16 @@
     "gripSize": "4.15",
     "weight": "7.97",
     "swingweight": "108",
-    "swingweightPercentile": "11%",
+    "swingweightPercentile": "10%",
     "twistweight": "6.77",
     "twistweightPercentile": "77%",
     "balancePoint": "231",
     "spinRating": "Very High",
     "spinRPM": "2003",
     "powerMPH": "53.0",
-    "powerPercentile": "6%",
+    "powerPercentile": "5%",
     "popMPH": "35.0",
-    "popPercentile": "15%"
+    "popPercentile": "13%"
   },
   {
     "paddleName": "Mach 2 Forza 14mm",
@@ -9189,14 +10161,14 @@
     "swingweight": "109",
     "swingweightPercentile": "14%",
     "twistweight": "6.90",
-    "twistweightPercentile": "85%",
+    "twistweightPercentile": "84%",
     "balancePoint": "238",
     "spinRating": "High",
     "spinRPM": "1998",
     "powerMPH": "52.9",
-    "powerPercentile": "6%",
+    "powerPercentile": "5%",
     "popMPH": "35.9",
-    "popPercentile": "43%"
+    "popPercentile": "38%"
   },
   {
     "paddleName": "Mach 2 Forza 16mm",
@@ -9217,14 +10189,98 @@
     "swingweight": "111",
     "swingweightPercentile": "23%",
     "twistweight": "7.26",
-    "twistweightPercentile": "95%",
+    "twistweightPercentile": "94%",
     "balancePoint": "238",
     "spinRating": "High",
     "spinRPM": "1987",
     "powerMPH": "53.5",
-    "powerPercentile": "11%",
+    "powerPercentile": "9%",
     "popMPH": "33.7",
     "popPercentile": "2%"
+  },
+  {
+    "paddleName": "Shift EL 14",
+    "brand": "Volair",
+    "price": "$189.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/eshift",
+    "yearReleased": "2026",
+    "shape": "Elongated",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "Power",
+    "coreThickness": "14",
+    "gripLength": "5.60",
+    "gripSize": "4.13",
+    "weight": "8.20",
+    "swingweight": "122",
+    "swingweightPercentile": "88%",
+    "twistweight": "6.23",
+    "twistweightPercentile": "40%",
+    "balancePoint": "246",
+    "spinRating": "High",
+    "spinRPM": "1979",
+    "powerMPH": "57.2",
+    "powerPercentile": "96%",
+    "popMPH": "37.0",
+    "popPercentile": "89%"
+  },
+  {
+    "paddleName": "Shift HYB 14",
+    "brand": "Volair",
+    "price": "$189.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/hshift",
+    "yearReleased": "2026",
+    "shape": "Hybrid",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "Power",
+    "coreThickness": "14",
+    "gripLength": "5.60",
+    "gripSize": "4.13",
+    "weight": "8.15",
+    "swingweight": "117",
+    "swingweightPercentile": "63%",
+    "twistweight": "6.63",
+    "twistweightPercentile": "68%",
+    "balancePoint": "242",
+    "spinRating": "Very High",
+    "spinRPM": "2055",
+    "powerMPH": "56.7",
+    "powerPercentile": "86%",
+    "popMPH": "36.7",
+    "popPercentile": "82%"
+  },
+  {
+    "paddleName": "Shift WB 14",
+    "brand": "Volair",
+    "price": "$189.99",
+    "discountCode": "PBEFFECT",
+    "linkToPaddle": "https://a8qh.short.gy/wshift",
+    "yearReleased": "2026",
+    "shape": "Widebody",
+    "faceMaterial": "Carbon",
+    "gritType": "Raw Texture/Peel Ply",
+    "buildType": "Gen 4",
+    "paddleType": "Power",
+    "coreThickness": "14",
+    "gripLength": "5.50",
+    "gripSize": "4.13",
+    "weight": "8.20",
+    "swingweight": "108",
+    "swingweightPercentile": "10%",
+    "twistweight": "7.30",
+    "twistweightPercentile": "95%",
+    "balancePoint": "234",
+    "spinRating": "Very High",
+    "spinRPM": "2018",
+    "powerMPH": "56.8",
+    "powerPercentile": "87%",
+    "popMPH": "36.8",
+    "popPercentile": "84%"
   },
   {
     "paddleName": "V.1F HYB",
@@ -9250,9 +10306,9 @@
     "spinRating": "Very High",
     "spinRPM": "2027",
     "powerMPH": "55.3",
-    "powerPercentile": "39%",
+    "powerPercentile": "34%",
     "popMPH": "35.0",
-    "popPercentile": "15%"
+    "popPercentile": "13%"
   },
   {
     "paddleName": "V.1F WB",
@@ -9273,14 +10329,14 @@
     "swingweight": "111",
     "swingweightPercentile": "23%",
     "twistweight": "7.42",
-    "twistweightPercentile": "97%",
+    "twistweightPercentile": "98%",
     "balancePoint": "237",
     "spinRating": "Very High",
     "spinRPM": "2035",
     "powerMPH": "55.1",
-    "powerPercentile": "34%",
+    "powerPercentile": "29%",
     "popMPH": "35.7",
-    "popPercentile": "37%"
+    "popPercentile": "33%"
   },
   {
     "paddleName": "Vesper Control 17",
@@ -9301,14 +10357,14 @@
     "swingweight": "113",
     "swingweightPercentile": "35%",
     "twistweight": "5.96",
-    "twistweightPercentile": "26%",
+    "twistweightPercentile": "24%",
     "balancePoint": "236",
     "spinRating": "High",
     "spinRPM": "1998",
     "powerMPH": "55.6",
-    "powerPercentile": "47%",
+    "powerPercentile": "41%",
     "popMPH": "35.0",
-    "popPercentile": "15%"
+    "popPercentile": "13%"
   },
   {
     "paddleName": "Vesper Power 14",
@@ -9327,15 +10383,15 @@
     "gripSize": "4.25",
     "weight": "8.00",
     "swingweight": "114",
-    "swingweightPercentile": "43%",
+    "swingweightPercentile": "42%",
     "twistweight": "5.19",
     "twistweightPercentile": "2%",
     "balancePoint": "238",
     "spinRating": "High",
     "spinRPM": "1978",
     "powerMPH": "56.2",
-    "powerPercentile": "75%",
+    "powerPercentile": "67%",
     "popMPH": "35.3",
-    "popPercentile": "21%"
+    "popPercentile": "19%"
   }
 ]

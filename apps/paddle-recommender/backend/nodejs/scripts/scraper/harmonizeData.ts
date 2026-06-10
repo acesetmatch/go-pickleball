@@ -189,26 +189,81 @@ function harmonizePickleballstudio(data: any[]): HarmonizedPaddle[] {
   }));
 }
 
+type SourceKey = 'mattspickleball' | 'pickleballeffect' | 'pickleballstudio';
+
+function parseSourcesFromArgs(): SourceKey[] {
+  const sourceFlagIndex = process.argv.findIndex(arg => arg === '--source' || arg === '--sources');
+  if (sourceFlagIndex === -1) {
+    return ['mattspickleball', 'pickleballeffect', 'pickleballstudio'];
+  }
+
+  const rawValue = process.argv[sourceFlagIndex + 1];
+  if (!rawValue) {
+    console.error('Missing value for --source/--sources. Example: --source pickleballeffect');
+    process.exit(1);
+  }
+
+  const allowedSources = new Set<SourceKey>(['mattspickleball', 'pickleballeffect', 'pickleballstudio']);
+  const sources = rawValue
+    .split(',')
+    .map(source => source.trim())
+    .filter(Boolean)
+    .filter(source => {
+      if (!allowedSources.has(source as SourceKey)) {
+        console.error(`Invalid source: ${source}. Allowed: mattspickleball, pickleballeffect, pickleballstudio`);
+        process.exit(1);
+      }
+      return true;
+    }) as SourceKey[];
+
+  if (sources.length === 0) {
+    console.error('No valid sources provided for --source/--sources.');
+    process.exit(1);
+  }
+
+  return sources;
+}
+
 function main() {
-  console.log('Loading data from all sources...\n');
+  const sources = parseSourcesFromArgs();
+  console.log(`Loading data from sources: ${sources.join(', ')}...\n`);
 
-  const mattspickleballPath = './output/raw/mattspickleball_paddle_data.json';
-  const pickleballeffectPath = './output/raw/pickleballeffect_paddle_data.json';
-  const pickleballstudioPath = './output/raw/pickleballstudio_paddle_data.json';
+  const sourceConfigs: Record<SourceKey, { path: string; label: string; harmonize: (data: any[]) => HarmonizedPaddle[] }> = {
+    mattspickleball: {
+      path: './output/raw/mattspickleball_paddle_data.json',
+      label: "Matt's Pickleball",
+      harmonize: harmonizeMattspickleball
+    },
+    pickleballeffect: {
+      path: './output/raw/pickleballeffect_paddle_data.json',
+      label: 'Pickleball Effect',
+      harmonize: harmonizePickleballeffect
+    },
+    pickleballstudio: {
+      path: './output/raw/pickleballstudio_paddle_data.json',
+      label: 'Pickleball Studio',
+      harmonize: harmonizePickleballstudio
+    }
+  };
 
-  const mattspickleballData = JSON.parse(fs.readFileSync(mattspickleballPath, 'utf-8'));
-  const pickleballeffectData = JSON.parse(fs.readFileSync(pickleballeffectPath, 'utf-8'));
-  const pickleballstudioData = JSON.parse(fs.readFileSync(pickleballstudioPath, 'utf-8'));
+  const sourceData: Record<SourceKey, any[]> = {} as Record<SourceKey, any[]>;
 
-  console.log(`Loaded ${mattspickleballData.length} records from Matt's Pickleball`);
-  console.log(`Loaded ${pickleballeffectData.length} records from PickleballEffect`);
-  console.log(`Loaded ${pickleballstudioData.length} records from Pickleball Studio`);
+  for (const source of sources) {
+    const config = sourceConfigs[source];
+    if (!fs.existsSync(config.path)) {
+      console.error(`Missing raw data for ${config.label}: ${config.path}`);
+      process.exit(1);
+    }
+    sourceData[source] = JSON.parse(fs.readFileSync(config.path, 'utf-8'));
+    console.log(`Loaded ${sourceData[source].length} records from ${config.label}`);
+  }
 
   console.log('\nHarmonizing data...\n');
 
-  const harmonizedMatt = harmonizeMattspickleball(mattspickleballData);
-  const harmonizedEffect = harmonizePickleballeffect(pickleballeffectData);
-  const harmonizedStudio = harmonizePickleballstudio(pickleballstudioData);
+  const harmonizedBySource: Record<SourceKey, HarmonizedPaddle[]> = {} as Record<SourceKey, HarmonizedPaddle[]>;
+  for (const source of sources) {
+    harmonizedBySource[source] = sourceConfigs[source].harmonize(sourceData[source]);
+  }
 
   // Save individual harmonized files
   const harmonizedDir = './output/harmonized';
@@ -216,30 +271,14 @@ function main() {
     fs.mkdirSync(harmonizedDir, { recursive: true });
   }
 
-  fs.writeFileSync(
-    path.join(harmonizedDir, 'harmonized_mattspickleball.json'),
-    JSON.stringify(harmonizedMatt, null, 2)
-  );
-  console.log(`✓ Saved harmonized_mattspickleball.json (${harmonizedMatt.length} records)`);
-
-  fs.writeFileSync(
-    path.join(harmonizedDir, 'harmonized_pickleballeffect.json'),
-    JSON.stringify(harmonizedEffect, null, 2)
-  );
-  console.log(`✓ Saved harmonized_pickleballeffect.json (${harmonizedEffect.length} records)`);
-
-  fs.writeFileSync(
-    path.join(harmonizedDir, 'harmonized_pickleballstudio.json'),
-    JSON.stringify(harmonizedStudio, null, 2)
-  );
-  console.log(`✓ Saved harmonized_pickleballstudio.json (${harmonizedStudio.length} records)`);
+  for (const source of sources) {
+    const outputPath = path.join(harmonizedDir, `harmonized_${source}.json`);
+    fs.writeFileSync(outputPath, JSON.stringify(harmonizedBySource[source], null, 2));
+    console.log(`✓ Saved harmonized_${source}.json (${harmonizedBySource[source].length} records)`);
+  }
 
   // Combine all sources
-  const combined = [
-    ...harmonizedMatt,
-    ...harmonizedEffect,
-    ...harmonizedStudio
-  ];
+  const combined = sources.flatMap(source => harmonizedBySource[source]);
 
   fs.writeFileSync(
     path.join(harmonizedDir, 'harmonized_all_sources.json'),
@@ -250,11 +289,9 @@ function main() {
   // Generate summary statistics
   const stats = {
     totalRecords: combined.length,
-    bySource: {
-      mattspickleball: harmonizedMatt.length,
-      pickleballeffect: harmonizedEffect.length,
-      pickleballstudio: harmonizedStudio.length
-    },
+    bySource: Object.fromEntries(
+      sources.map(source => [source, harmonizedBySource[source].length])
+    ),
     uniqueCompanies: [...new Set(combined.map(p => p.company))].sort(),
     recordsWithSwingWeight: combined.filter(p => p.swingWeight).length,
     recordsWithTwistWeight: combined.filter(p => p.twistWeight).length,

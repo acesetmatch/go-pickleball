@@ -50,7 +50,7 @@ describe('applyMods', () => {
     expect(applyMods(66.666, [0.15])).toBe(76.67); // 66.666 * 1.15 = 76.6659, rounded to 76.67
     
     // Multiple operations with intermediate rounding
-    expect(applyMods(12.345, [0.1, 0.2])).toBe(16.25); // 12.345 * 1.1 = 13.5795 -> 13.58, then 13.58 * 1.2 = 16.296 -> 16.30
+    expect(applyMods(12.345, [0.1, 0.2])).toBe(16.30); // 12.345 * 1.1 = 13.5795 -> 13.58, then 13.58 * 1.2 = 16.296 -> 16.30
   });
 
   it('handles edge cases', () => {
@@ -70,8 +70,8 @@ describe('applyMods', () => {
   it('matches backend rounding behavior exactly', () => {
     // Test cases that specifically verify backend parity
     const testCases = [
-      { base: 85.67, mods: [0.12, -0.05], expected: 91.51 }, // 85.67 * 1.12 = 95.95 -> 95.95 * 0.95 = 91.1525 -> 91.15
-      { base: 123.456, mods: [0.08, 0.03, -0.02], expected: 135.02 }, // Multi-step with rounding
+      { base: 85.67, mods: [0.12, -0.05], expected: 91.15 }, // 85.67 * 1.12 = 95.95 -> 95.95 * 0.95 = 91.1525 -> 91.15
+      { base: 123.456, mods: [0.08, 0.03, -0.02], expected: 134.58 }, // 123.456 * 1.08 = 133.33 -> * 1.03 = 137.33 -> * 0.98 = 134.58
       { base: 99.99, mods: [0.01], expected: 100.99 }, // 99.99 * 1.01 = 100.9899 -> 100.99
       { base: 1.234, mods: [0.5, 0.25], expected: 2.31 }, // 1.234 * 1.5 = 1.851 -> 1.85 * 1.25 = 2.3125 -> 2.31
     ];
@@ -115,12 +115,12 @@ describe('applyMods', () => {
     // Realistic paddle modification scenarios
     
     // Power paddle: base weight 8.2oz, +5% for grip tape, -2% for edge guard removal
-    expect(applyMods(8.2, [0.05, -0.02])).toBe(8.45); // 8.2 * 1.05 = 8.61 -> 8.61 * 0.98 = 8.4378 -> 8.44
+    expect(applyMods(8.2, [0.05, -0.02])).toBe(8.44); // 8.2 * 1.05 = 8.61 -> 8.61 * 0.98 = 8.4378 -> 8.44
     
     // Control paddle: base price $150, +10% premium materials, +8% custom grip
     expect(applyMods(150, [0.1, 0.08])).toBe(178.2); // 150 * 1.1 = 165, then 165 * 1.08 = 178.2
     
     // Spin rating: base 7.5, +15% textured surface, -5% for wear
-    expect(applyMods(7.5, [0.15, -0.05])).toBe(8.19); // 7.5 * 1.15 = 8.625 -> 8.63 * 0.95 = 8.1985 -> 8.20
+    expect(applyMods(7.5, [0.15, -0.05])).toBe(8.20); // 7.5 * 1.15 = 8.625 -> 8.63 * 0.95 = 8.1985 -> 8.20
   });
 });
