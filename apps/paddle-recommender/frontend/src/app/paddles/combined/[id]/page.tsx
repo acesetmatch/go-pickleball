@@ -1,8 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { getCombinedPaddles, CombinedPaddle } from '@/services/fetch';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -10,63 +8,18 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import { CombinedPaddlePerformanceChart } from "@/components/CombinedPaddlePerformanceChart";
+import { useLoadPaddleData } from '@/hooks/useLoadPaddleData';
+import { getSourceBadgeVariant } from '@/components/paddles/sourceBadges';
 
 export default function CombinedPaddleDetailsPage() {
-  const [paddle, setPaddle] = useState<CombinedPaddle | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
-
   const params = useParams();
   const router = useRouter();
   const paddleId = params.id as string;
 
-  useEffect(() => {
-    async function loadPaddleData(): Promise<void> {
-      try {
-        setLoading(true);
-
-        // Decode the ID (format: "Company-PaddleName")
-        const decodedId = decodeURIComponent(paddleId);
-        const [company, ...nameParts] = decodedId.split('-');
-        const paddleName = nameParts.join('-');
-
-        // Fetch all combined paddles and find the matching one
-        const response = await getCombinedPaddles();
-        const foundPaddle = response.data.find(
-          p => p.company === company && p.paddleName === paddleName
-        );
-
-        if (foundPaddle) {
-          setPaddle(foundPaddle);
-          setError(null);
-        } else {
-          setError('Paddle not found');
-        }
-      } catch (err: unknown) {
-        console.error('Failed to fetch paddle:', err);
-        setError(err instanceof Error ? err.message : 'Failed to load paddle details. Please try again later.');
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    if (paddleId) {
-      loadPaddleData();
-    }
-  }, [paddleId]);
+  const { paddle, loading, error } = useLoadPaddleData(paddleId);
 
   const handleBack = () => {
     router.push('/paddles');
-  };
-
-  // Get source badge variant color
-  const getSourceBadgeVariant = (source: string) => {
-    const variants: Record<string, "default" | "secondary" | "outline"> = {
-      'mattspickleball': 'default',
-      'pickleballeffect': 'secondary',
-      'pickleballstudio': 'outline'
-    };
-    return variants[source] || 'outline';
   };
 
   if (loading) {

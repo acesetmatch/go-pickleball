@@ -110,3 +110,5 @@ export interface ReadinessResponse {
     };
   };
 }
+
+export * from './paddles';

@@ -1,0 +1,38 @@
+#!/bin/bash
+# Generate commit message from staged changes using Claude Code
+# Only runs when no message was provided (not with `git commit -m "..."`)
+# Skips for merge commits, rebase, etc.
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+
+# Skip if a message was provided via -m, -t, -F, or if it's a merge/rebase
+if [ -n "$COMMIT_SOURCE" ]; then
+  exit 0
+fi
+
+# Check for WIP or simple messages already written
+FIRST_LINE=$(head -n 1 "$COMMIT_MSG_FILE" 2>/dev/null)
+if [ -n "$FIRST_LINE" ] && [ "$FIRST_LINE" != "# Please enter the commit message for your changes." ]; then
+  exit 0
+fi
+
+# Check that Claude is logged in
+if ! claude whoami &>/dev/null; then
+  echo "⚠️  Claude Code not logged in. Skipping commit message generation."
+  exit 0
+fi
+
+echo "🤖 Generating commit message with Claude..."
+GENERATED_MSG=$(claude -p "Generate a concise git commit message based on the staged changes. Follow conventional commits format (e.g., 'feat:', 'fix:', 'refactor:', 'chore:', 'docs:', 'test:'). Include a scope where relevant. Use the diff and recent commit history for context. Output ONLY the commit message, nothing else — no markdown, no backticks, no explanations." \
+  --allowedTools "Bash(git diff --cached *),Bash(git log *),Bash(git diff *),Bash(git status *)" \
+  --output-format text 2>/dev/null)
+
+if [ -n "$GENERATED_MSG" ]; then
+  echo "$GENERATED_MSG" > "$COMMIT_MSG_FILE"
+  echo "✅ Commit message generated:"
+  echo ""
+  echo "$GENERATED_MSG"
+else
+  echo "⚠️  Claude failed to generate a commit message. Edit manually."
+fi
