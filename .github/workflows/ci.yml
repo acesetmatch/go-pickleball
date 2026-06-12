@@ -165,6 +165,4 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker tag paddle-recommender:$IMAGE_TAG $REGISTRY/$REPOSITORY:$IMAGE_TAG
-          docker tag paddle-recommender:$IMAGE_TAG $REGISTRY/$REPOSITORY:latest
           docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
-          docker push $REGISTRY/$REPOSITORY:latest
