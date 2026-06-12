@@ -1,0 +1,12 @@
+{
+  "language": "python",
+  "app": "python main.py",
+  "projectId": "paddle-recommender-platform",
+  "sendCrashReports": false,
+  "terraformProviders": [
+    "hashicorp/aws@~> 5.0"
+  ],
+  "terraformModules": [],
+  "codeMakerOutput": "imports",
+  "context": {}
+}

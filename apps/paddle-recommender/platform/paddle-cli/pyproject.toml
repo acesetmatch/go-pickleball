@@ -1,0 +1,29 @@
+[project]
+name = "paddle-cli"
+version = "0.1.0"
+description = "CLI for self-provisioning paddle-recommender infrastructure"
+requires-python = ">=3.11"
+authors = [
+  { name = "Shawn Hong", email = "acesetmatch@gmail.com" },
+]
+license = { text = "MIT" }
+dependencies = [
+  "click>=8.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "ruff>=0.1.0",
+]
+
+[project.scripts]
+paddle-cli = "paddle_cli.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

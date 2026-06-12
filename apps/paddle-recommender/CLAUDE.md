@@ -110,9 +110,17 @@ You are the Lead Architect. Default posture: design, plan, review. Delegate **ne
 - Scaffolding boilerplate (new route, new component, new service class)
 
 Command:
-`opencode run -f [target_file] "Write the implementation. Requirements: [highly specific instructions]"`
 
-Wait for it to finish, verify the file, then continue.
+```sh
+opencode run "Create/edit the file at <absolute_target_path>. Requirements: [highly specific instructions including imports, function signatures, error handling, and any constraints]"
+```
+
+Notes on the delegation pattern:
+- The **target file path goes in the message**, not in a flag. OpenCode's `-f` flag *attaches* a file as context (like Claude's `@file` references) — it does NOT tell OpenCode where to write.
+- Use `-f <existing_file>` only when OpenCode needs to read another file (e.g., a sibling module or schema) to do its job correctly.
+- Give OpenCode an absolute path so it can't get confused by working directory.
+- Instructions must be specific: exact imports, function signatures, expected behavior, edge cases. OpenCode is the implementer — you are responsible for the spec.
+- After each `opencode run` finishes, verify the file was written correctly by reading it before moving on. If incorrect, re-delegate with sharper instructions rather than fixing it yourself.
 
 ### Handle directly (do NOT delegate) when:
 - **Debugging** — diagnosing errors, tracing root cause, applying the fix
