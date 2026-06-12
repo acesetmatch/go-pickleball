@@ -174,7 +174,7 @@ export const useOnboardingStore = create<OnboardingState>()(
       // Navigation
       next: () => {
         const state = get();
-        if (state.validateCurrentStep() && state.step < 7) {
+        if (state.validateCurrentStep() && state.step < 8) {
           set({ step: state.step + 1 });
           return true;
         }
@@ -192,7 +192,7 @@ export const useOnboardingStore = create<OnboardingState>()(
       }),
 
       goToStep: (step) => {
-        if (step >= 0 && step <= 7) {
+        if (step >= 0 && step <= 8) {
           set({ step });
         }
       },

@@ -84,25 +84,25 @@ describe("Auth API", () => {
       expect(JSON.parse(response.body).success).toBe(false);
     });
 
-    it("returns 409 when username is too short (< 3 chars)", async () => {
+    it("returns 400 when username is too short (< 3 chars)", async () => {
       const response = await app.inject({
         method: "POST",
         url: "/api/v1/auth/register",
         payload: { username: "ab", password: "strongpass123" },
       });
 
-      expect(response.statusCode).toBe(409);
+      expect(response.statusCode).toBe(400);
       expect(JSON.parse(response.body).error).toBe("Username must be at least 3 characters");
     });
 
-    it("returns 409 when password is too short (< 8 chars)", async () => {
+    it("returns 400 when password is too short (< 8 chars)", async () => {
       const response = await app.inject({
         method: "POST",
         url: "/api/v1/auth/register",
         payload: { username: "validuser", password: "short" },
       });
 
-      expect(response.statusCode).toBe(409);
+      expect(response.statusCode).toBe(400);
       expect(JSON.parse(response.body).error).toBe("Password must be at least 8 characters");
     });
 
