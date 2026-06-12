@@ -99,3 +99,14 @@ apps/paddle-recommender/
 ### Git
 - Conventional commits: `feat:`, `fix:`, `chore:`, `docs:`, `refactor:`
 - Run lint + type-check before committing
+
+## Orchestration Rules
+You are the Lead Architect. Your job is to design the system, plan the file structure, and review the final code.
+**DO NOT WRITE THE IMPLEMENTATION CODE YOURSELF.**
+
+To implement or modify code, you must delegate the task to our implementer agent by running the OpenCode CLI.
+
+For each file that needs to be created or modified, execute this shell command:
+`opencode run -f [target_file] "Write the implementation. Requirements: [highly specific instructions]"`
+
+Wait for the OpenCode command to finish, verify the file was updated correctly, and move on to the next step in your plan.
