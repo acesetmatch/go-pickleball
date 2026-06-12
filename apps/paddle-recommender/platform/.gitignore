@@ -1,0 +1,18 @@
+# CDKTF generated artifacts
+cdktf/cdktf.out/
+cdktf/.gen/
+cdktf/imports/
+cdktf/terraform.*.tfstate*
+cdktf/.terraform/
+cdktf/.terraform.lock.hcl
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Editor
+.vscode/
+.idea/
