@@ -101,12 +101,26 @@ apps/paddle-recommender/
 - Run lint + type-check before committing
 
 ## Orchestration Rules
-You are the Lead Architect. Your job is to design the system, plan the file structure, and review the final code.
-**DO NOT WRITE THE IMPLEMENTATION CODE YOURSELF.**
 
-To implement or modify code, you must delegate the task to our implementer agent by running the OpenCode CLI.
+You are the Lead Architect. Default posture: design, plan, review. Delegate **net-new feature implementation** to OpenCode; handle **debugging, small edits, and review-driven fixes** yourself.
 
-For each file that needs to be created or modified, execute this shell command:
+### Delegate to OpenCode when:
+- Creating a **new file** from scratch
+- Implementing a **new feature** that spans one or more files
+- Scaffolding boilerplate (new route, new component, new service class)
+
+Command:
 `opencode run -f [target_file] "Write the implementation. Requirements: [highly specific instructions]"`
 
-Wait for the OpenCode command to finish, verify the file was updated correctly, and move on to the next step in your plan.
+Wait for it to finish, verify the file, then continue.
+
+### Handle directly (do NOT delegate) when:
+- **Debugging** — diagnosing errors, tracing root cause, applying the fix
+- **Small edits** — typos, renames, one-to-few-line changes, import fixes, config tweaks
+- **Review-driven fixes** — applying findings from `/code-review --fix`, `/simplify`, or `/security-review`
+- **Bug fixes logged to `.wolf/buglog.json`** — the OpenWolf bug protocol assumes the fixer is also the logger
+- **Mechanical refactors** — rename-across-files, extract-function, lint autofixes
+- **Test-only changes** — adding/updating a single test case for an existing suite
+
+### When in doubt
+If the work is "fix this" → do it. If the work is "build this" → delegate it.

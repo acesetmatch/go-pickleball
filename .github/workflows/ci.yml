@@ -121,32 +121,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Manually exchange the GitHub OIDC token for AWS credentials using the
-      # AWS CLI directly instead of configure-aws-credentials action.
-      - name: Configure AWS credentials via OIDC
-        env:
-          AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN }}
-          AWS_REGION: ${{ secrets.AWS_REGION }}
-        run: |
-          set +e
-          jwt=$(curl -s -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
-            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=sts.amazonaws.com" | jq -r '.value')
-          echo "JWT length: ${#jwt}"
-          creds=$(aws sts assume-role-with-web-identity \
-            --role-arn "$AWS_ROLE_ARN" \
-            --role-session-name "GitHubActions" \
-            --web-identity-token "$jwt" \
-            --duration-seconds 3600 \
-            --region "$AWS_REGION" \
-            --output json 2>&1)
-          ec=$?
-          echo "Exit code: $ec"
-          echo "Output:"
-          echo "$creds"
-          if [ $ec -ne 0 ]; then exit $ec; fi
-          echo "AWS_ACCESS_KEY_ID=$(echo "$creds" | jq -r '.Credentials.AccessKeyId')" >> $GITHUB_ENV
-          echo "AWS_SECRET_ACCESS_KEY=$(echo "$creds" | jq -r '.Credentials.SecretAccessKey')" >> $GITHUB_ENV
-          echo "AWS_SESSION_TOKEN=$(echo "$creds" | jq -r '.Credentials.SessionToken')" >> $GITHUB_ENV
       # No long-lived AWS keys are stored — the role is assumed dynamically
       # and credentials expire when the job finishes.
       - name: Configure AWS credentials via OIDC
