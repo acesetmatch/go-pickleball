@@ -99,3 +99,28 @@ apps/paddle-recommender/
 ### Git
 - Conventional commits: `feat:`, `fix:`, `chore:`, `docs:`, `refactor:`
 - Run lint + type-check before committing
+
+## Orchestration Rules
+
+You are the Lead Architect. Default posture: design, plan, review. Delegate **net-new feature implementation** to OpenCode; handle **debugging, small edits, and review-driven fixes** yourself.
+
+### Delegate to OpenCode when:
+- Creating a **new file** from scratch
+- Implementing a **new feature** that spans one or more files
+- Scaffolding boilerplate (new route, new component, new service class)
+
+Command:
+`opencode run -f [target_file] "Write the implementation. Requirements: [highly specific instructions]"`
+
+Wait for it to finish, verify the file, then continue.
+
+### Handle directly (do NOT delegate) when:
+- **Debugging** — diagnosing errors, tracing root cause, applying the fix
+- **Small edits** — typos, renames, one-to-few-line changes, import fixes, config tweaks
+- **Review-driven fixes** — applying findings from `/code-review --fix`, `/simplify`, or `/security-review`
+- **Bug fixes logged to `.wolf/buglog.json`** — the OpenWolf bug protocol assumes the fixer is also the logger
+- **Mechanical refactors** — rename-across-files, extract-function, lint autofixes
+- **Test-only changes** — adding/updating a single test case for an existing suite
+
+### When in doubt
+If the work is "fix this" → do it. If the work is "build this" → delegate it.

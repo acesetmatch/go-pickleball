@@ -1,7 +1,11 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-06-12T16:45:44.433Z
-> Files: 234 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-06-12T20:42:09.341Z
+> Files: 235 tracked | Anatomy hits: 0 | Misses: 0
+
+## ../../.github/workflows/
+
+- `ci.yml` — CI: CI (~1580 tok)
 
 ## ./
 
@@ -10,7 +14,7 @@
 - `.gitignore` — Git ignore rules (~250 tok)
 - `.prettierignore` (~29 tok)
 - `.prettierrc` — Prettier configuration (~55 tok)
-- `CLAUDE.md` — OpenWolf (~781 tok)
+- `CLAUDE.md` — OpenWolf (~1104 tok)
 - `DEPLOYMENT.md` — Deployment Setup (~428 tok)
 - `developer_context.md` — Developer Reference — Pickleball Paddle Recommender (~2646 tok)
 - `Makefile` — Make build targets (~407 tok)
@@ -51,7 +55,7 @@
 - `Dockerfile` — Docker container definition (~1694 tok)
 - `notion_debug.json` (~2514 tok)
 - `package-lock.json` — npm lock file (~71599 tok)
-- `package.json` — Node.js package manifest (~749 tok)
+- `package.json` — Node.js package manifest (~798 tok)
 - `README.md` — Project documentation (~881 tok)
 - `seed-source-paddles.cjs` — Seeds the source_paddles table from harmonized JSON output files. (~1053 tok)
 - `start.sh` — Quick start script for TypeScript + Fastify paddle recommendation service (~262 tok)
@@ -145,7 +149,7 @@
 
 ## backend/nodejs/src/
 
-- `server.ts` — Declares envSchema (~1205 tok)
+- `server.ts` — Declares envSchema (~1214 tok)
 
 ## backend/nodejs/src/data/
 

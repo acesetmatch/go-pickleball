@@ -1,5 +1,5 @@
 import "dotenv/config";
-import Fastify from "fastify";
+import Fastify, { FastifyError } from "fastify";
 import cors from "@fastify/cors";
 import helmet from "@fastify/helmet";
 import env from "@fastify/env";
@@ -95,7 +95,7 @@ const start = async (): Promise<void> => {
     await fastify.register(paddleRoutes, { prefix: "/api/paddles" });
 
     // Global error handler
-    fastify.setErrorHandler((error, request, reply) => {
+    fastify.setErrorHandler((error: FastifyError, request, reply) => {
       fastify.log.error(error, "Unhandled error");
 
       const statusCode = error.statusCode || 500;
