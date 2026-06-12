@@ -1,53 +1,140 @@
+# =============================================================================
+# Docker Compose — Production Stack
+# Orchestrates the Node.js API and PostgreSQL database into a single,
+# isolated network. Data persists across restarts via named volumes.
+# =============================================================================
+
 services:
+  # ---------------------------------------------------------------------------
   # PostgreSQL Database
+  # ---------------------------------------------------------------------------
   postgres:
-    image: postgres:15
+    # Use the Alpine variant for a smaller image (~80 MB vs ~400 MB for full)
+    image: postgres:16-alpine
+
+    # Restart automatically unless explicitly stopped by the user.
+    # "always" is appropriate for stateful data stores.
+    restart: always
+
+    # Expose on a non-standard host port (5433) to avoid conflict with any
+    # other PostgreSQL instance on the host (e.g., the project's Go service
+    # which uses 5432). Inside the container network, the port is still 5432.
     ports:
-      - "5433:5432"  # Different port to avoid conflict with Go service
+      - "5433:5432"
+
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: paddle_recommender_db
+
     volumes:
+      # Persistent volume — data survives container restarts and rebuilds.
       - postgres_data:/var/lib/postgresql/data
-      - ./migrations:/docker-entrypoint-initdb.d
+
+    # Health check ensures the API container waits until Postgres is ready
+    # to accept connections before starting.
     healthcheck:
-      test: ['CMD-SHELL', 'pg_isready -U postgres']
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 10s
       timeout: 5s
       retries: 5
+      start_period: 10s
+
     networks:
       - paddle-network
 
+  # ---------------------------------------------------------------------------
   # Node.js Backend API
+  # ---------------------------------------------------------------------------
   api:
     build:
       context: .
       dockerfile: Dockerfile
+      # Build only the production stage (skips intermediate builder artifacts
+      # in multi-stage output). This is the default when targeting a stage
+      # named "production".
+      target: production
+
     ports:
       - "3001:3001"
+
+    # Startup sequence:
+    #   1. Apply any pending Prisma schema migrations
+    #   2. Seed source_paddles from harmonized scraped data (idempotent upsert)
+    #   3. Start the application
+    command: /bin/sh -c "npx prisma migrate deploy && node seed-source-paddles.cjs && node dist/server.js"
+
     environment:
-      - NODE_ENV=production
-      - LOG_LEVEL=info
-      - PORT=3001
-      - CORS_ORIGIN=http://localhost:3000
-      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/paddle_recommender_db
+      # ---- Application ----
+      NODE_ENV: production
+      LOG_LEVEL: info
+      PORT: "3001"
+      CORS_ORIGIN: "http://localhost:3000"
+      API_VERSION: v1
+
+      # ---- Database ----
+      # Uses the service name "postgres" as the hostname (Docker DNS resolves
+      # this to the postgres container's internal IP on the paddle-network).
+      DATABASE_URL: "postgresql://postgres:postgres@postgres:5432/paddle_recommender_db"
+
+      # ---- Authentication ----
+      # JWT_SECRET is intentionally omitted here — it must be supplied via
+      # the .env file (env_file below) so the secret is never committed to VCS.
+
+    # ---- Load additional variables from an .env file if present ----
+    # This allows you to override any of the above without modifying
+    # docker-compose.yml (e.g., JWT_SECRET, CORS_ORIGIN).
+    # Create a file named .env in this directory with lines like:
+    #   JWT_SECRET=my-actual-secret
+    #   CORS_ORIGIN=https://myapp.com
+    env_file:
+      - .env
+
+    # ---- Service orchestration ----
+    # Do NOT start the API until Postgres is confirmed healthy. This
+    # prevents the app from crashing on startup due to a missing database.
     depends_on:
       postgres:
         condition: service_healthy
+
+    # Automatically restart the API if it crashes (but not if stopped by
+    # the user).
     restart: unless-stopped
-    networks:
-      - paddle-network
+
+    # Health check against the application's /health endpoint. Docker will
+    # mark the container as unhealthy if this fails repeatedly.
     healthcheck:
-      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3001/api/v1/health', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) })"]
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3001/api/v1/health', (r) => { process.exit(r.statusCode === 200 ? 0 : 1) })"]
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 40s
+      start_period: 40s  # Allow time for Prisma migrations and cold start
 
+    networks:
+      - paddle-network
+
+# =============================================================================
+# Persistent volumes
+# Named volumes are managed by Docker and survive container removal.
+# They are NOT deleted when you run `docker-compose down` (only orphans).
+# Use `docker-compose down -v` to destroy them explicitly.
+# =============================================================================
 volumes:
   postgres_data:
+    # Uncomment the following lines to pin the volume to a host path for
+    # easier debugging / backups:
+    # driver: local
+    # driver_opts:
+    #   type: none
+    #   device: /path/on/host/pgdata
+    #   o: bind
 
+# =============================================================================
+# Network
+# An isolated bridge network gives services DNS-based service discovery
+# (the API can reach the database at hostname "postgres"). No external
+# services can access the database unless ports are explicitly published.
+# =============================================================================
 networks:
   paddle-network:
     driver: bridge

@@ -80,3 +80,11 @@ docker-compose.override.yml
 
 # Claude (local overrides only)
 .claude/settings.local.json
+
+# OpenWolf runtime state (auto-updated each session)
+.wolf/hooks/_session.json
+.wolf/memory.md
+.wolf/token-ledger.json
+
+# Playwright generated reports
+frontend/e2e/e2e/
