@@ -94,7 +94,7 @@ jobs:
         run: npm test
         env:
           DATABASE_URL: postgresql://postgres:postgres@localhost:5432/paddle_recommender_db
-          JWT_SECRET: test-secret-for-ci
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
           NODE_ENV: test
 
   # ─── Docker — Build, Trivy Scan & Push to ECR ────────────────────────────
