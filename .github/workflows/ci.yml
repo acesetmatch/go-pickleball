@@ -121,6 +121,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Debug: inspect the OIDC token claims
+      - name: Debug OIDC token
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const token = process.env.ACTIONS_ID_TOKEN_REQUEST_TOKEN;
+            const url = `${process.env.ACTIONS_ID_TOKEN_REQUEST_URL}&audience=sts.amazonaws.com`;
+            const response = await fetch(url, {
+              headers: { Authorization: `bearer ${token}` }
+            });
+            const jwt = await response.json();
+            const parts = jwt.value.split('.');
+            const claims = JSON.parse(Buffer.from(parts[1], 'base64url').toString());
+            core.info(`Issuer: ${claims.iss}`);
+            core.info(`Audience: ${claims.aud}`);
+            core.info(`Subject: ${claims.sub}`);
+
       # Exchange the GitHub OIDC token for temporary AWS credentials.
       # No long-lived AWS keys are stored — the role is assumed dynamically
       # and credentials expire when the job finishes.
@@ -129,6 +146,8 @@ jobs:
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ secrets.AWS_REGION }}
+          audience: sts.amazonaws.com
+          role-session-name: GitHubActions
 
       - name: Login to Amazon ECR
         id: login-ecr
