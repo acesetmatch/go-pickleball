@@ -54,6 +54,17 @@ FROM node:22-alpine AS production
 WORKDIR /app
 
 # ---------------------------------------------------------------------------
+# Base image hardening
+# Upgrade Alpine system packages to pick up the latest security patches
+# (e.g. OpenSSL CVEs in libcrypto3/libssl3 that ship with node:22-alpine),
+# and upgrade the bundled npm to a version whose internal deps (picomatch
+# et al.) have no outstanding HIGH/CRITICAL CVEs.
+# ---------------------------------------------------------------------------
+RUN apk upgrade --no-cache && \
+    npm install -g npm@latest && \
+    rm -rf /var/cache/apk/*
+
+# ---------------------------------------------------------------------------
 # Security: use the built-in unprivileged 'node' user
 # The official node:22-alpine image ships with a 'node' user (uid 1000).
 # Running the application as non-root limits damage from container
